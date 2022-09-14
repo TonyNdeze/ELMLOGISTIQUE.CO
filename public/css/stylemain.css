@@ -35,7 +35,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
 body .HR_Styled {
   background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent);
   border: 0;
