@@ -1,0 +1,17 @@
+
+@media only screen and (max-width:767px){
+  
+  [class*=col-]{
+    width:100%;
+  }
+  .sticky{
+    position:fixed;
+    top:0;
+    transition-duration:1s;
+    z-index:999;
+  }
+    .HeroContent{
+      width:95%;
+    }
+    }
+
