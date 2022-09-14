@@ -129,6 +129,7 @@ body {
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .Wrapper-Navigation .Nav-bar nav a:hover {
@@ -356,8 +357,13 @@ footer i {
   margin: 2rem 0.5rem;
 }
 
-footer .Copywrite {
-  font-size: 1.2rem;
+footer {
+  .Copywrite{
+    font-size: 1.6rem;
+  }
+  .Copywrite a{
+    font-size: 1.4rem;
+  }
 }
 
 footer .Copywrite a, footer .Footer-Icons a {

@@ -129,6 +129,7 @@ body .HR_Styled {
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   text-align: center;
+  text-decoration: none;
 }
 
 .Wrapper-Navigation .Nav-bar nav a:hover {
@@ -357,7 +358,10 @@ footer i {
 }
 
 footer .Copywrite {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+}
+footer .Copywrite a {
+  font-size: 1.4rem;
 }
 
 footer .Copywrite a, footer .Footer-Icons a {
