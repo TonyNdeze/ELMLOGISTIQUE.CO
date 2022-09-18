@@ -1,8 +1,7 @@
 html {
   font-size: 62.5%;
 }
-
-* {
+html * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,8 +17,6 @@ html {
 [class*=-grid] {
   display: grid;
   gap: 2rem;
-  margin-block: 5rem;
-  margin-top: 1rem;
 }
 
 body {
@@ -72,39 +69,16 @@ body .HR_Styled {
   padding-block: 0.5rem;
   width: 100%;
 }
-
 #Top-bar a {
   margin-inline: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-
 #Top-bar a #Logo-Top {
   display: block;
   margin-inline: auto;
   width: 65px;
-}
-
-#NavLogo {
-  display: none;
-}
-
-#Nav-LogoLink {
-  margin: 1rem 0 0;
-  padding: 0;
-}
-
-#Nav-LogoLink #Nav-logo {
-  margin: 0;
-  padding: 0;
-  width: 7rem;
-}
-
-#Nav-LogoLink:hover {
-  border-bottom: none !important;
-  cursor: pointer;
-  text-decoration: none;
 }
 
 .Wrapper-Navigation {
@@ -112,41 +86,53 @@ body .HR_Styled {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
 }
-
-.Wrapper-Navigation .Nav-bar nav {
-  display: flex;
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo {
+  display: none;
 }
-
-.Wrapper-Navigation .Nav-bar nav a {
+.Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo #Nav-LogoLink {
+  margin: 0;
+  padding: 0;
+}
+.Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo #Nav-LogoLink:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo #Nav-LogoLink i {
+  margin: 0;
+  padding: 0;
+  width: 7rem;
+}
+.Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu {
+  display: inline-block;
+  margin-inline: auto;
+  width: fit-content;
+  display: flex;
+  align-content: center;
+}
+.Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu a {
   color: #fff8dc;
   cursor: pointer;
   display: inline-block;
-  font-size: 12pt;
+  font-size: 1.4rem;
   padding-block: 0.5rem;
   padding-inline: 0.5rem;
   text-align: center;
   text-decoration: none;
 }
-
-.Wrapper-Navigation .Nav-bar nav a:hover {
+.Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu a:hover {
   background-color: #f9f9f9;
   color: #6695d2;
-  text-decoration: underline;
+  text-decoration: none;
 }
-
-.Wrapper-Navigation .Nav-bar nav a i {
+.Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu a i {
   display: block;
   font-size: 2rem;
   margin-top: 0.5rem;
   text-decoration: none;
 }
-
-.Wrapper-Navigation .NavLinkActivePage {
+.Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu .NavLinkActivePage {
   text-decoration: none;
+  border-bottom: 0.2rem solid #f5f5f5;
 }
 
 #Hero-Image {
@@ -159,7 +145,6 @@ body .HR_Styled {
   height: fit-content;
   position: relative;
 }
-
 #Hero-Image .HeroContent {
   color: #f9f9f9;
   margin-inline: auto;
@@ -170,25 +155,15 @@ body .HR_Styled {
   width: -moz-fit-content;
   width: fit-content;
 }
-
-#Hero-Image .HeroContent * {
-  -webkit-margin-after: 1rem;
-  margin-block-end: 1rem;
-}
-
 #Hero-Image .HeroContent h1 {
   font-size: clamp(3.5rem, 4vw, 5rem);
 }
-
 #Hero-Image .HeroContent p {
   font-family: arial;
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   line-height: 1.5;
 }
-
 #Hero-Image .HeroContent button {
-  -webkit-margin-before: 2rem;
-  -webkit-margin-after: 1rem;
   margin-block-end: 1rem;
   margin-block-start: 2rem;
   padding-block: 1rem !important;
@@ -204,7 +179,6 @@ body .HR_Styled {
   font-weight: 500;
   padding: 1rem 2.5rem;
 }
-
 .Buttons:hover {
   background-color: #6695d2;
   border-radius: 10px;
@@ -248,35 +222,39 @@ body .HR_Styled {
 .Page-Icons {
   fill: #655f5f;
   display: block;
-  font-size: 5rem;
   margin-inline: auto;
-  width: 8rem;
+  width: 5rem;
 }
 
-#Truck-Container {
-  -webkit-margin-after: -1.5rem;
-  height: 8rem;
-  margin-block-end: -1.5rem;
-  width: 10rem;
+.Card-services-set .Card-Services {
+  overflow: hidden;
+  border-radius: 0.6rem;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  transition: 0.3s;
 }
-
-.Card-Services {
-  padding-top: 5rem;
+.Card-services-set .Card-Services p {
+  display: none;
 }
-
-.Card-Services .LinkToService {
+.Card-services-set .Card-Services:hover {
+  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+.Card-services-set .Card-Services:hover p {
+  display: block;
+}
+.Card-services-set .Card-Services .LinkToService {
   color: #655f5f;
   text-decoration: none;
 }
-
-.Card-Services .LinkToService:hover {
+.Card-services-set .Card-Services .LinkToService:hover {
   color: #77a0cb;
   -webkit-text-decoration: wavy;
   text-decoration: wavy;
 }
-
-.Card-Services .LinkToService:hover .Page-Icons {
-  fill: #77a0cb;
+.Card-services-set .Card-Services #Truck-Container {
+  margin-top: 1rem;
+  width: 8rem;
 }
 
 #OurServicesBTN {
@@ -285,7 +263,7 @@ body .HR_Styled {
   margin-inline: auto;
 }
 
-#Counter-Iamge {
+#Counter-Image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../assets/images/IMG_1069.JPG);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -296,8 +274,7 @@ body .HR_Styled {
   height: fit-content;
   padding: 5rem 0;
 }
-
-#Counter-Iamge .CountNumber {
+#Counter-Image .CountNumber {
   color: #fff8dc;
   line-height: 2;
 }
@@ -305,24 +282,20 @@ body .HR_Styled {
 .PartnerSection {
   padding: 40px 10px;
 }
-
-.PartnerIcon {
+.PartnerSection .PartnerIcon {
   display: inline-block;
   width: 10rem;
 }
-
-.LinkToPartner {
+.PartnerSection .PartnerIcon .LinkToPartner {
   color: #f9f9f9;
   text-decoration: none;
 }
-
-#PacificOilIcon {
-  width: 8rem;
-}
-
-.LinkToPartner:hover {
+.PartnerSection .PartnerIcon .LinkToPartner:hover {
   color: #fff8dc;
   text-decoration: underline;
+}
+.PartnerSection .PartnerIcon #PacificOilIcon {
+  width: 8rem;
 }
 
 footer {
@@ -333,12 +306,10 @@ footer {
   padding: 2rem 1rem;
   width: 100%;
 }
-
 footer #Logo-Footer {
   display: inline-block;
   width: 150px;
 }
-
 footer a {
   color: #fff8dc;
   display: block;
@@ -346,24 +317,21 @@ footer a {
   line-height: 1.5;
   text-decoration: none;
 }
-
 footer a:hover {
   color: #f9f9f9;
   text-decoration: underline;
 }
-
 footer i {
   font-size: 3.5rem;
   margin: 2rem 0.5rem;
 }
-
 footer .Copywrite {
   font-size: 1.6rem;
 }
 footer .Copywrite a {
+  display: inline;
   font-size: 1.4rem;
 }
-
-footer .Copywrite a, footer .Footer-Icons a {
+footer .Footer-Icons a {
   display: inline !important;
 }

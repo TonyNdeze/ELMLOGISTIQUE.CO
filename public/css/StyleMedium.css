@@ -9,43 +9,44 @@
     width: 100%;
     z-index: 1;
   }
-  .Nav-bar div, .Nav-bar nav {
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo, .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu {
     display: inline-block;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
   }
-  .Nav-bar .Navigation-Menu a {
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo {
+    padding-inline: 1rem;
+    margin-block: 0.5rem;
+  }
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu #NavLogo #Nav-LogoLink {
+    display: flex;
+  }
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu {
+    position: relative;
+    bottom: -0.8rem;
+  }
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu a {
     color: #77a0cb !important;
     margin-inline: 1rem;
-    text-decoration: none;
+    height: fit-content;
+    overflow: hidden;
+    padding-block-end: 3rem;
   }
-  .Nav-bar .Navigation-Menu a:hover {
-    color: #6695d2;
-  }
-  .Nav-bar .NavLinkActivePage, .Nav-bar .Navigation-Menu a:hover {
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu a:hover {
+    color: #4879b9;
     border-bottom: 2px solid #77a0cb;
-    text-decoration: none;
+    background-color: #f5f5f5;
   }
-  .Nav-bar .Navigation-Menu a i {
-    -webkit-padding-end: 0.5rem;
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu a i {
     display: inline;
     padding-block: 1rem;
     padding-inline-end: 0.5rem;
   }
-  .Nav-bar #NavLogo {
-    display: inline-block;
-    padding-block: 0.5rem;
-    padding-inline: 1rem;
-  }
-  .Hero {
-    margin-top: 5rem;
-  }
-  #Nav-LogoLink {
-    display: inline;
+  .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu .NavLinkActivePage {
+    border-bottom: 0.2rem solid #6695d2;
   }
   #Hero-Image {
     background-position: 50%;
+    margin-top: 5rem;
   }
   .Container-2-grid {
     grid-template-columns: 1fr 1fr;

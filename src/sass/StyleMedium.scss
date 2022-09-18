@@ -9,44 +9,56 @@
     top:0;
     width:100%;
     z-index:1;
+    .Nav-bar {
+      .Navigation-Menu{
+        #NavLogo, .LinkMenu{
+          display:inline-block;
+          width:fit-content;
+        }
+        #NavLogo{
+          padding-inline:1rem;
+          margin-block: 0.5rem;
+          #Nav-LogoLink{
+          display:flex;
+        }
+        }
+        .LinkMenu {
+          position: relative;
+          bottom: -.8rem;
+          a{
+            color:#77a0cb !important;
+            margin-inline:1rem;
+            height: fit-content;
+            overflow: hidden;
+            padding-block-end: 3rem;
+            &:hover{
+              color:#4879b9;
+              border-bottom:2px solid #77a0cb;
+              background-color: #f5f5f5;
+            }
+            i{
+              display:inline;
+              padding-block:1rem;
+              padding-inline-end:.5rem;
+            }
+          }
+          .NavLinkActivePage{
+            border-bottom: .2rem solid #6695d2;
+          }
+        }
+        
+    }
+    } 
   }
-  .Nav-bar div, .Nav-bar nav{
-    display:inline-block;
-    width:-webkit-fit-content;
-    width:-moz-fit-content;
-    width:fit-content;
-  }
-  .Nav-bar .Navigation-Menu a{
-    color:#77a0cb !important;
-    margin-inline:1rem;
-    text-decoration:none;
-  }
-  .Nav-bar .Navigation-Menu a:hover{
-    color:#6695d2}
-    .Nav-bar .NavLinkActivePage,.Nav-bar .Navigation-Menu a:hover{
-      border-bottom:2px solid #77a0cb;
-      text-decoration:none
-    }
-    .Nav-bar .Navigation-Menu a i{
-      -webkit-padding-end:.5rem;
-      display:inline;
-      padding-block:1rem;
-      padding-inline-end:.5rem
-    }
-    .Nav-bar #NavLogo{
-      display:inline-block;
-      padding-block:.5rem;
-      padding-inline:1rem;
-    }
-    .Hero{
-      margin-top:5rem;
-    }
-    #Nav-LogoLink{
-      display:inline;
-    }
+  
     #Hero-Image{
       background-position:50%;
+      margin-top:5rem;
     }
+
+    
+
+
     .Container-2-grid{
       grid-template-columns:1fr 1fr;
     }

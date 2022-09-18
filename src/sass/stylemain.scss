@@ -1,13 +1,14 @@
 html {
   font-size: 62.5%;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
+
 
 .row:after {
   clear: both;
@@ -18,8 +19,6 @@ html {
 [class*=-grid] {
   display: grid;
   gap: 2rem;
-  margin-block: 5rem;
-  margin-top: 1rem;
 }
 
 body {
@@ -71,83 +70,80 @@ body {
   background-color: #f9f9f9;
   padding-block: 0.5rem;
   width: 100%;
-}
-
-#Top-bar a {
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-#Top-bar a #Logo-Top {
-  display: block;
-  margin-inline: auto;
-  width: 65px;
-}
-
-#NavLogo {
-  display: none;
-}
-
-#Nav-LogoLink {
-  margin: 1rem 0 0;
-  padding: 0;
-}
-
-#Nav-LogoLink #Nav-logo {
-  margin: 0;
-  padding: 0;
-  width: 7rem;
-}
-
-#Nav-LogoLink:hover {
-  border-bottom: none !important;
-  cursor: pointer;
-  text-decoration: none;
+  a {
+    margin-inline: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    #Logo-Top {
+      display: block;
+      margin-inline: auto;
+      width: 65px;
+    }
+  }
+  
 }
 
 .Wrapper-Navigation {
   background-color: #77a0cb;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   width: 100%;
+  .Nav-bar {
+    .Navigation-Menu{
+      #NavLogo {
+        display: none;
+        #Nav-LogoLink {
+          margin: 0;
+          padding: 0;
+          &:hover {
+            cursor: pointer;
+            text-decoration: none;
+          }
+          i {
+            margin: 0;
+            padding: 0;
+            width: 7rem;
+          }
+        }
+        
+      }
+      .LinkMenu {
+        display: inline-block;
+        margin-inline: auto;
+        width: fit-content;
+        display: flex;
+        align-content: center;
+        a {
+          color: #fff8dc;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 1.4rem;
+          padding-block: 0.5rem;
+          padding-inline: 0.5rem;
+          text-align: center;
+          text-decoration: none;
+          &:hover {
+            background-color: #f9f9f9;
+            color: #6695d2;
+            text-decoration: none;
+          }
+          i {
+            display: block;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+            text-decoration: none;
+          }
+        }
+        .NavLinkActivePage {
+          text-decoration: none;
+          border-bottom: .2rem solid #f5f5f5;
+        }
+      }
+    }
+  }
 }
 
-.Wrapper-Navigation .Nav-bar nav {
-  display: flex;
-  margin-inline: auto;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-.Wrapper-Navigation .Nav-bar nav a {
-  color: #fff8dc;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 12pt;
-  padding-block: 0.5rem;
-  padding-inline: 0.5rem;
-  text-align: center;
-  text-decoration: none;
-}
-
-.Wrapper-Navigation .Nav-bar nav a:hover {
-  background-color: #f9f9f9;
-  color: #6695d2;
-  text-decoration: underline;
-}
-
-.Wrapper-Navigation .Nav-bar nav a i {
-  display: block;
-  font-size: 2rem;
-  margin-top: 0.5rem;
-  text-decoration: none;
-}
-
-.Wrapper-Navigation .NavLinkActivePage {
-  text-decoration: none;
-}
+ 
 
 #Hero-Image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Web-Large-Banner-IMG1.png);
@@ -158,41 +154,30 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   position: relative;
-}
-
-#Hero-Image .HeroContent {
-  color: #f9f9f9;
-  margin-inline: auto;
-  padding-bottom: 3rem;
-  padding-top: 15%;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-#Hero-Image .HeroContent * {
-  -webkit-margin-after: 1rem;
-  margin-block-end: 1rem;
-}
-
-#Hero-Image .HeroContent h1 {
-  font-size: clamp(3.5rem, 4vw, 5rem);
-}
-
-#Hero-Image .HeroContent p {
-  font-family: arial;
-  font-size: clamp(1.8rem, 2vw, 2.5rem);
-  line-height: 1.5;
-}
-
-#Hero-Image .HeroContent button {
-  -webkit-margin-before: 2rem;
-  -webkit-margin-after: 1rem;
-  margin-block-end: 1rem;
-  margin-block-start: 2rem;
-  padding-block: 1rem !important;
-  padding-inline: 3.5rem !important;
+  .HeroContent {
+    color: #f9f9f9;
+    margin-inline: auto;
+    padding-bottom: 3rem;
+    padding-top: 15%;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    h1 {
+      font-size: clamp(3.5rem, 4vw, 5rem);
+    }
+    p {
+      font-family: arial;
+      font-size: clamp(1.8rem, 2vw, 2.5rem);
+      line-height: 1.5;
+    }
+    button {
+      margin-block-end: 1rem;
+      margin-block-start: 2rem;
+      padding-block: 1rem !important;
+      padding-inline: 3.5rem !important;
+    }
+  }
 }
 
 .Buttons {
@@ -203,13 +188,14 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2.5rem;
+  &:hover {
+    background-color: #6695d2;
+    border-radius: 10px;
+    text-decoration: underline;
+  }
+  
 }
 
-.Buttons:hover {
-  background-color: #6695d2;
-  border-radius: 10px;
-  text-decoration: underline;
-}
 
 .Text-Header, .Text-Subheader, .Text-Subtitle, .Text-Title {
   font-family: Arial, Helvetica, sans-serif;
@@ -224,12 +210,10 @@ body {
   font-size: clamp(1.8rem, 3vw, 3rem);
   line-height: 1.5;
 }
-
 .Text-Title {
   font-size: clamp(3rem, 3vw, 3.5rem);
   line-height: 2;
 }
-
 .Text-Subtitle {
   font-size: clamp(2.5rem, 2vvw, 3rem);
   line-height: 1.5;
@@ -248,35 +232,43 @@ body {
 .Page-Icons {
   fill: #655f5f;
   display: block;
-  font-size: 5rem;
   margin-inline: auto;
-  width: 8rem;
+  width: 5rem;
+  
 }
 
-#Truck-Container {
-  -webkit-margin-after: -1.5rem;
-  height: 8rem;
-  margin-block-end: -1.5rem;
-  width: 10rem;
-}
 
-.Card-Services {
-  padding-top: 5rem;
-}
-
-.Card-Services .LinkToService {
-  color: #655f5f;
-  text-decoration: none;
-}
-
-.Card-Services .LinkToService:hover {
-  color: #77a0cb;
-  -webkit-text-decoration: wavy;
-  text-decoration: wavy;
-}
-
-.Card-Services .LinkToService:hover .Page-Icons {
-  fill: #77a0cb;
+.Card-services-set{
+  .Card-Services {
+    overflow: hidden;
+      border-radius: .6rem;
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+    padding-block: 2rem;
+    padding-inline: 2rem;
+    transition: 0.3s;
+    p{
+      display: none;
+    }
+    &:hover{
+      p{
+        display: block;
+      }
+      box-shadow: 0 0px 20px 0px rgba(0,0,0,0.2);
+    }
+    .LinkToService {
+      color: #655f5f;
+      text-decoration: none;
+      &:hover {
+        color: #77a0cb;
+        -webkit-text-decoration: wavy;
+        text-decoration: wavy;
+      }
+    }
+    #Truck-Container{
+      margin-top: 1rem;
+      width: 8rem;
+    }
+  }
 }
 
 #OurServicesBTN {
@@ -285,7 +277,7 @@ body {
   margin-inline: auto;
 }
 
-#Counter-Iamge {
+#Counter-Image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../assets/images/IMG_1069.JPG);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -295,34 +287,31 @@ body {
   height: -moz-fit-content;
   height: fit-content;
   padding: 5rem 0;
+  .CountNumber {
+    color: #fff8dc;
+    line-height: 2;
+  }
 }
-
-#Counter-Iamge .CountNumber {
-  color: #fff8dc;
-  line-height: 2;
-}
-
 .PartnerSection {
   padding: 40px 10px;
-}
-
-.PartnerIcon {
-  display: inline-block;
-  width: 10rem;
-}
-
-.LinkToPartner {
-  color: #f9f9f9;
-  text-decoration: none;
-}
-
-#PacificOilIcon {
-  width: 8rem;
-}
-
-.LinkToPartner:hover {
-  color: #fff8dc;
-  text-decoration: underline;
+  .PartnerIcon {
+    display: inline-block;
+    width: 10rem;
+    
+  .LinkToPartner {
+    color: #f9f9f9;
+    text-decoration: none;
+    &:hover{
+      color: #fff8dc;
+      text-decoration: underline;
+    }
+  }
+  
+  #PacificOilIcon {
+    width: 8rem;
+  }
+  }
+  
 }
 
 footer {
@@ -332,40 +321,38 @@ footer {
   height: fit-content;
   padding: 2rem 1rem;
   width: 100%;
-}
+  #Logo-Footer {
+    display: inline-block;
+    width: 150px;
+  }
 
-footer #Logo-Footer {
-  display: inline-block;
-  width: 150px;
-}
-
-footer a {
-  color: #fff8dc;
-  display: block;
-  font-size: 1.8rem;
-  line-height: 1.5;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #f9f9f9;
-  text-decoration: underline;
-}
-
-footer i {
-  font-size: 3.5rem;
-  margin: 2rem 0.5rem;
-}
-
-footer {
+  a {
+    color: #fff8dc;
+    display: block;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-decoration: none;
+    &:hover {
+      color: #f9f9f9;
+      text-decoration: underline;
+    }
+  }
+  i {
+    font-size: 3.5rem;
+    margin: 2rem 0.5rem;
+  }
   .Copywrite{
     font-size: 1.6rem;
+    a{
+      display: inline;
+      font-size: 1.4rem;
+    }
   }
-  .Copywrite a{
-    font-size: 1.4rem;
+    .Footer-Icons a {
+      display: inline !important;
   }
 }
 
-footer .Copywrite a, footer .Footer-Icons a {
-  display: inline !important;
-}
+
+
+
