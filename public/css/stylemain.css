@@ -223,7 +223,7 @@ body .HR_Styled {
   fill: #655f5f;
   display: block;
   margin-inline: auto;
-  width: 5rem;
+  width: 3rem;
 }
 
 .Card-services-set .Card-Services {
@@ -234,27 +234,19 @@ body .HR_Styled {
   padding-inline: 2rem;
   transition: 0.3s;
 }
-.Card-services-set .Card-Services p {
-  display: none;
-}
-.Card-services-set .Card-Services:hover {
-  box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.2);
-}
-.Card-services-set .Card-Services:hover p {
-  display: block;
-}
 .Card-services-set .Card-Services .LinkToService {
   color: #655f5f;
   text-decoration: none;
 }
 .Card-services-set .Card-Services .LinkToService:hover {
   color: #77a0cb;
+  fill: #77a0cb;
   -webkit-text-decoration: wavy;
   text-decoration: wavy;
 }
 .Card-services-set .Card-Services #Truck-Container {
   margin-top: 1rem;
-  width: 8rem;
+  width: 6rem;
 }
 
 #OurServicesBTN {
@@ -286,15 +278,15 @@ body .HR_Styled {
   display: inline-block;
   width: 10rem;
 }
-.PartnerSection .PartnerIcon .LinkToPartner {
+.PartnerSection .LinkToPartner {
   color: #f9f9f9;
   text-decoration: none;
 }
-.PartnerSection .PartnerIcon .LinkToPartner:hover {
+.PartnerSection .LinkToPartner:hover {
   color: #fff8dc;
   text-decoration: underline;
 }
-.PartnerSection .PartnerIcon #PacificOilIcon {
+.PartnerSection #PacificOilIcon {
   width: 8rem;
 }
 
@@ -313,8 +305,8 @@ footer #Logo-Footer {
 footer a {
   color: #fff8dc;
   display: block;
-  font-size: 1.8rem;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  line-height: 2;
   text-decoration: none;
 }
 footer a:hover {

@@ -233,7 +233,7 @@ body {
   fill: #655f5f;
   display: block;
   margin-inline: auto;
-  width: 5rem;
+  width: 3rem;
   
 }
 
@@ -246,27 +246,20 @@ body {
     padding-block: 2rem;
     padding-inline: 2rem;
     transition: 0.3s;
-    p{
-      display: none;
-    }
-    &:hover{
-      p{
-        display: block;
-      }
-      box-shadow: 0 0px 20px 0px rgba(0,0,0,0.2);
-    }
+    
     .LinkToService {
       color: #655f5f;
       text-decoration: none;
       &:hover {
         color: #77a0cb;
+        fill: #77a0cb;
         -webkit-text-decoration: wavy;
         text-decoration: wavy;
       }
     }
     #Truck-Container{
       margin-top: 1rem;
-      width: 8rem;
+      width: 6rem;
     }
   }
 }
@@ -297,7 +290,7 @@ body {
   .PartnerIcon {
     display: inline-block;
     width: 10rem;
-    
+  }
   .LinkToPartner {
     color: #f9f9f9;
     text-decoration: none;
@@ -309,7 +302,6 @@ body {
   
   #PacificOilIcon {
     width: 8rem;
-  }
   }
   
 }
@@ -329,8 +321,8 @@ footer {
   a {
     color: #fff8dc;
     display: block;
-    font-size: 1.8rem;
-    line-height: 1.5;
+    font-size: 1.6rem;
+    line-height: 2;
     text-decoration: none;
     &:hover {
       color: #f9f9f9;

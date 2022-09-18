@@ -62,7 +62,8 @@
     .Container-2-grid{
       grid-template-columns:1fr 1fr;
     }
-    .Container-3-grid{
+    .Container-3-min-grid{
+      width: fit-content;
       grid-template-columns:1fr 1fr 1fr;
     }
     .Container-4-grid{
