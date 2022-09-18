@@ -50,26 +50,12 @@
     }
     } 
   }
-  
+  .Card-services-set, .Counter--set{
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
     #Hero-Image{
       background-position:50%;
-      margin-top:5rem;
-    }
-
-    
-
-
-    .Container-2-grid{
-      grid-template-columns:1fr 1fr;
-    }
-    .Container-3-min-grid{
-      width: fit-content;
-      grid-template-columns:1fr 1fr 1fr;
-    }
-    .Container-4-grid{
-      grid-template-columns:1fr 1fr 1fr 1fr;
-    }
-    .Container-5-grid{
-      grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+      top: 50em;
     }
     }

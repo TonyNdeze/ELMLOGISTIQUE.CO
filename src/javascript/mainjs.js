@@ -18,6 +18,12 @@ function myStickyNav() {
 }
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myStickyNav()};
-})
+});
 
+
+
+//Counter section
+let CountNumbers = document.querySelectorAll(".CountNumber");
+let iterval = 5000;
+console.log(CountNumbers);
 

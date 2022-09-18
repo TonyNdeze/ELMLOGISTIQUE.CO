@@ -14,11 +14,6 @@ html * {
   display: table;
 }
 
-[class*=-grid] {
-  display: grid;
-  gap: 2rem;
-}
-
 body {
   background-attachment: fixed;
   background-clip: initial;
@@ -47,11 +42,11 @@ body .HR_Styled {
 }
 
 .PageBGOpac {
-  background-color: hsla(0deg, 0%, 98%, 0.9);
+  background-color: rgba(250, 250, 250, 0.9);
 }
 
 .ContentBGOPac {
-  background-color: hsla(0deg, 0%, 98%, 0.5);
+  background-color: rgba(250, 250, 250, 0.5);
 }
 
 .ContentBGAccentBlue {
@@ -62,6 +57,63 @@ body .HR_Styled {
 .FooterBGOpac {
   background-color: #655f5f;
   border-top: 3px solid #6695d2;
+}
+
+.Buttons {
+  background-color: #77a0cb;
+  border-radius: 5px;
+  border-style: none;
+  color: #fff8dc;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 2.5rem;
+}
+.Buttons:hover {
+  background-color: #6695d2;
+  border-radius: 10px;
+  text-decoration: underline;
+}
+
+.Text-Header, .Text-Subheader, .Text-Subtitle, .Text-Title {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Text-Header {
+  font-size: clamp(4rem, 5vw, 5rem);
+  line-height: 1.5;
+}
+
+.Text-Subheader {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.5;
+}
+
+.Text-Title {
+  font-size: clamp(3rem, 3vw, 3.5rem);
+  line-height: 2;
+}
+
+.Text-Subtitle {
+  font-size: clamp(1.6rem, 1vw, 2rem);
+  line-height: 1.5;
+}
+
+.Text-Paragraph {
+  font-size: clamp(1.6rem, 1vw, 3rem);
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.Text-Centered {
+  text-align: center;
+  text-justify: auto;
+}
+
+.Page-Icons {
+  fill: #655f5f;
+  display: block;
+  margin-inline: auto;
+  width: 3rem;
 }
 
 #Top-bar {
@@ -140,23 +192,19 @@ body .HR_Styled {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  position: relative;
+  height: 500px;
 }
 #Hero-Image .HeroContent {
+  position: relative;
+  top: 20em;
   color: #f9f9f9;
-  margin-inline: auto;
-  padding-bottom: 3rem;
-  padding-top: 15%;
+  width: 90%;
+  margin: auto;
   text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 #Hero-Image .HeroContent h1 {
   font-size: clamp(3.5rem, 4vw, 5rem);
+  line-height: 1.8;
 }
 #Hero-Image .HeroContent p {
   font-family: arial;
@@ -170,72 +218,19 @@ body .HR_Styled {
   padding-inline: 3.5rem !important;
 }
 
-.Buttons {
-  background-color: #77a0cb;
-  border-radius: 5px;
-  border-style: none;
-  color: #fff8dc;
-  font-size: 1.6rem;
-  font-weight: 500;
-  padding: 1rem 2.5rem;
-}
-.Buttons:hover {
-  background-color: #6695d2;
-  border-radius: 10px;
-  text-decoration: underline;
-}
-
-.Text-Header, .Text-Subheader, .Text-Subtitle, .Text-Title {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.Text-Header {
-  font-size: clamp(4rem, 5vw, 5rem);
-  line-height: 1.5;
-}
-
-.Text-Subheader {
-  font-size: clamp(1.8rem, 3vw, 3rem);
-  line-height: 1.5;
-}
-
-.Text-Title {
-  font-size: clamp(3rem, 3vw, 3.5rem);
-  line-height: 2;
-}
-
-.Text-Subtitle {
-  font-size: clamp(2.5rem, 2vvw, 3rem);
-  line-height: 1.5;
-}
-
-.Text-Paragraph {
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
-.Text-Centered {
-  text-align: center;
-  text-justify: auto;
-}
-
-.Page-Icons {
-  fill: #655f5f;
-  display: block;
-  margin-inline: auto;
-  width: 3rem;
+.Card-services-set, .Counter--set {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 
 .Card-services-set .Card-Services {
-  overflow: hidden;
-  border-radius: 0.6rem;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
-  padding-block: 2rem;
-  padding-inline: 2rem;
-  transition: 0.3s;
+  border-radius: 0.6em;
+  box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+  padding: 2em;
 }
 .Card-services-set .Card-Services .LinkToService {
-  color: #655f5f;
+  color: #8b4848;
   text-decoration: none;
 }
 .Card-services-set .Card-Services .LinkToService:hover {
@@ -246,7 +241,7 @@ body .HR_Styled {
 }
 .Card-services-set .Card-Services #Truck-Container {
   margin-top: 1rem;
-  width: 6rem;
+  width: 5rem;
 }
 
 #OurServicesBTN {
@@ -261,12 +256,13 @@ body .HR_Styled {
   background-repeat: no-repeat;
   background-size: cover;
   color: #f9f9f9;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 5rem 0;
 }
-#Counter-Image .CountNumber {
+#Counter-Image .Counter--set .Counter-item {
+  grid-template-columns: repeat(autofit, minmax());
+}
+#Counter-Image .Counter--set .Counter-item .CountNumber {
   color: #fff8dc;
   line-height: 2;
 }
