@@ -279,7 +279,7 @@ opacity: 1;
   margin-inline: auto;
 }
 
-#Counter-Image {
+#Counter-Section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../assets/images/IMG_1069.JPG);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -321,16 +321,20 @@ opacity: 1;
 
 footer {
   color: #f9f9f9;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 2rem 1rem;
   width: 100%;
+  .Footer{
+    .FooterLinks{
+      display: grid;
+      grid-gap: 3em;
+      grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+    }
+  }
   #Logo-Footer {
     display: inline-block;
     width: 150px;
   }
-
   a {
     color: #fff8dc;
     display: block;

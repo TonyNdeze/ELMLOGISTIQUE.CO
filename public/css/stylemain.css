@@ -269,7 +269,7 @@ body .HR_Styled {
   margin-inline: auto;
 }
 
-#Counter-Image {
+#Counter-Section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../assets/images/IMG_1069.JPG);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -278,10 +278,10 @@ body .HR_Styled {
   height: fit-content;
   padding: 5rem 0;
 }
-#Counter-Image .Counter--set .Counter-item {
+#Counter-Section .Counter--set .Counter-item {
   grid-template-columns: repeat(autofit, minmax());
 }
-#Counter-Image .Counter--set .Counter-item .CountNumber {
+#Counter-Section .Counter--set .Counter-item .CountNumber {
   color: #fff8dc;
   line-height: 2;
 }
@@ -307,11 +307,14 @@ body .HR_Styled {
 
 footer {
   color: #f9f9f9;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
   height: fit-content;
   padding: 2rem 1rem;
   width: 100%;
+}
+footer .Footer .FooterLinks {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 footer #Logo-Footer {
   display: inline-block;

@@ -52,4 +52,7 @@
     background-position: 50%;
     top: 50em;
   }
+  .Footer .FooterLinks {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
+  }
 }
