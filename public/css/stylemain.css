@@ -30,9 +30,10 @@ body {
 body .HR_Styled {
   background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent);
   border: 0;
-  height: 1px;
+  height: 0.1em;
   margin-inline: auto;
-  margin: 20px auto;
+  margin-block: 4em;
+  margin-inline: auto;
   width: 50%;
 }
 
@@ -116,6 +117,18 @@ body .HR_Styled {
   width: 3rem;
 }
 
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
 #Top-bar {
   background-color: #f9f9f9;
   padding-block: 0.5rem;
@@ -187,31 +200,37 @@ body .HR_Styled {
   border-bottom: 0.2rem solid #f5f5f5;
 }
 
-#Hero-Image {
+.Container--Section {
+  height: fit-content;
+  padding-block: 2em;
+  padding-inline: 1em;
+}
+
+#Hero-Section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Web-Large-Banner-IMG1.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 100vh;
 }
-#Hero-Image .HeroContent {
+#Hero-Section .HeroContent {
   position: relative;
-  top: 20em;
+  top: 20vh;
   color: #f9f9f9;
   width: 90%;
   margin: auto;
   text-align: center;
 }
-#Hero-Image .HeroContent h1 {
+#Hero-Section .HeroContent h1 {
   font-size: clamp(3.5rem, 4vw, 5rem);
   line-height: 1.8;
 }
-#Hero-Image .HeroContent p {
+#Hero-Section .HeroContent p {
   font-family: arial;
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   line-height: 1.5;
 }
-#Hero-Image .HeroContent button {
+#Hero-Section .HeroContent button {
   margin-block-end: 1rem;
   margin-block-start: 2rem;
   padding-block: 1rem !important;

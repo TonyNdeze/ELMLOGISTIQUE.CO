@@ -18,6 +18,7 @@
       "serve": "browser-sync start --server public --files public",
       "start": "npm-run-all copy --parallel watch serve",
       "build": "npm-run-all copy:html build:*",
+      "build:javascript": "npm-run-all copy:javascript build:*",
       "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
     },
     "dependencies": {

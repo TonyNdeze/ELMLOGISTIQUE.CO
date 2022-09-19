@@ -31,9 +31,10 @@ body {
   .HR_Styled {
     background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent);
     border: 0;
-    height: 1px;
+    height: 0.1em;
     margin-inline: auto;
-    margin: 20px auto;
+    margin-block: 4em;
+    margin-inline:  auto;
     width: 50%;
   }
 }
@@ -118,6 +119,17 @@ body {
   
 }
 
+.reveal{
+position: relative;
+transform: translateY(150px);
+opacity: 0;
+transition: all 2s ease;
+}
+.active{
+transform: translateX(0);
+opacity: 1;
+}
+
 #Top-bar {
   background-color: #f9f9f9;
   padding-block: 0.5rem;
@@ -195,17 +207,21 @@ body {
   }
 }
 
- 
+.Container--Section{
+  height: fit-content;
+  padding-block: 2em;
+  padding-inline: 1em;
+}
 
-#Hero-Image {
+#Hero-Section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Web-Large-Banner-IMG1.png);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 100vh;
   .HeroContent {
     position: relative;
-    top: 20em;
+    top: 20vh;
     color: #f9f9f9;
     width: 90%;
     margin: auto;

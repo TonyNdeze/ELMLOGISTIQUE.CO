@@ -1,28 +1,4 @@
- 
- //Counter section
-// let CountNumbers = document.querySelectorAll(".CountNumber");
-// let interval = 3000;
-
-// CountNumbers.forEach((CountNumbers) =>{
-//   let startValue = 0;
-//   let endValue = parseInt(CountNumbers.getAttribute
-//     ("data-val"));
-  
-//   let duration = Math.floor(interval / endValue);
-//   let counter = setInterval(function(){
-//     startValue += 1;
-//     CountNumbers.textContent= startValue;
-//     if(startValue == endValue){
-//       clearInterval(counter);
-//     }
-//   }, duration);
-// });
-
- 
- 
- 
- 
- // When the event DOMContentLoaded occurs, it is safe to access the DOM
+    // When the event DOMContentLoaded occurs, it is safe to access the DOM
 document.addEventListener('DOMContentLoaded', function() {
     // When the user scrolls the page, execute myFunction 
   window.addEventListener('scroll', myStickyNav);
@@ -45,19 +21,21 @@ window.onscroll = function() {myStickyNav()};
 });
 
 
+window.addEventListener('scroll', reveal);
+function reveal(){
+  var reveals = document.querySelectorAll(".reveal");
 
+  for(var i = 0; i < reveals.length; i++){
+    
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 100;
 
-var counter = setInterval(updatedCount, 100);
-var upto=0;
- 
-function updatedCount() {
-  let count = document.querySelectorAll(".CountNumber");
-  count.forEach((count) => {
-    count.innerHTML= ++upto;
-  if(upto === 50) {
-    clearInterval(counter);
+    if(revealtop < windowheight - revealpoint){
+     reveals[i].classList.add('active');
+    }
+    else{
+      reveals[i].classList.remove('active');
+    }
   }
-  });
-  
 }
-

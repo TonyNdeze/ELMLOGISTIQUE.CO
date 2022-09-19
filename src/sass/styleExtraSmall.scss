@@ -6,8 +6,9 @@
   }
 
   @media  only screen and ( min-width: 400px) {
-      
-.Card-services-set, .Counter--set{
+
+    .Card-services-set, .Counter--set{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
   }
+
 }
