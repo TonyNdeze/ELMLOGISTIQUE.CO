@@ -121,7 +121,7 @@ body .HR_Styled {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: all 2s ease;
+  transition: all 1s ease;
 }
 
 .active {
