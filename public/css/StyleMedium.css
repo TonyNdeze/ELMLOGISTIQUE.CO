@@ -48,7 +48,7 @@
     height: 95vh;
   }
   #Hero-Section .HeroContent {
-    top: 45vh;
+    top: 24vh;
   }
   .Card-services-set, .Counter--set {
     grid-gap: 2em;

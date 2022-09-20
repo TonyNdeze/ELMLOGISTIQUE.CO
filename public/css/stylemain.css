@@ -8,12 +8,6 @@ html * {
   scroll-behavior: smooth;
 }
 
-.row:after {
-  clear: both;
-  content: "";
-  display: table;
-}
-
 body {
   background-attachment: fixed;
   background-clip: initial;
@@ -35,6 +29,12 @@ body .HR_Styled {
   margin-block: 4em;
   margin-inline: auto;
   width: 50%;
+}
+
+.row:after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .Content-Width {
