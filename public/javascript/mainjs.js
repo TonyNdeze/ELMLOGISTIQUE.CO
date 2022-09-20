@@ -22,7 +22,6 @@ function myStickyNav() {
 }
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myStickyNav()};
-
 });
 
 // Reveal content block

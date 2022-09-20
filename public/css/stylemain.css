@@ -254,7 +254,7 @@ body .HR_Styled {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/IMG_1079.JPG);
 }
 
-.Card-services-set, .Counter--set {
+.Card-services-set, .About-Section, .Counter--set {
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
