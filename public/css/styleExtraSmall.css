@@ -2,6 +2,18 @@
   .Wrapper-Navigation .Content-Width {
     width: 100% !important;
   }
+  .sticky {
+    position: fixed;
+    top: 0;
+    transition-duration: 1s;
+    z-index: 999;
+  }
+  #Hero-Section {
+    height: 80vh;
+  }
+  #Hero-Section .HeroContent {
+    top: 15vh;
+  }
 }
 @media only screen and (min-width: 400px) {
   .Card-services-set, .Counter--set {

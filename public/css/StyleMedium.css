@@ -44,13 +44,20 @@
   .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu .NavLinkActivePage {
     border-bottom: 0.2rem solid #6695d2;
   }
+  #Hero-Section {
+    height: 95vh;
+  }
+  #Hero-Section .HeroContent {
+    top: 45vh;
+  }
   .Card-services-set, .Counter--set {
     grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   #Hero-Section {
     background-position: 50%;
-    top: 50em;
+  }
+  .Container-Accent-grid {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
   }
   .Footer .FooterLinks {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;

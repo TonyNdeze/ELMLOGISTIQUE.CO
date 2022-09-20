@@ -1,11 +1,16 @@
 
-@media only screen and (max-width:767px){
-  
+@media only screen and (min-width:351px){
   .sticky{
     position:fixed;
     top:0;
     transition-duration:1s;
     z-index:999;
+  }
+  #Hero-Section{
+    height: 80vh;
+    .HeroContent {
+      top: 40vh;
+    }
   }
     .HeroContent{
       width:95%;
