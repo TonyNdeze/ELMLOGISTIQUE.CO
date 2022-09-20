@@ -1,5 +1,9 @@
     // When the event DOMContentLoaded occurs, it is safe to access the DOM
 document.addEventListener('DOMContentLoaded', function() {
+
+  // HeroSlideShow Starts
+  
+
     // When the user scrolls the page, execute myFunction 
   window.addEventListener('scroll', myStickyNav);
 // Get the navbar
@@ -18,9 +22,10 @@ function myStickyNav() {
 }
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myStickyNav()};
+
 });
 
-
+// Reveal content block
 window.addEventListener('scroll', reveal);
 function reveal(){
   var reveals = document.querySelectorAll(".reveal");
@@ -39,3 +44,4 @@ function reveal(){
     }
   }
 }
+

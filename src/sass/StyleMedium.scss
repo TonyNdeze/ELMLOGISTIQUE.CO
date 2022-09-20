@@ -51,18 +51,16 @@
     } 
   }
 
-  #Hero-Section{
-    height: 95vh;
-    .HeroContent {
-      top: 24vh;
-    }
-  }
 
   .Card-services-set, .Counter--set{
     grid-gap: 2em;
   }
-    #Hero-Section{
+  .Hero, .HeroImage1, .HeroImage2, .HeroImage3{
       background-position:50%;
+      height: 95vh;
+      .HeroContent {
+        top: 24vh;
+      }
     }
     .Container-Accent-grid{
       grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;

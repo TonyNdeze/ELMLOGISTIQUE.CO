@@ -44,17 +44,15 @@
   .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu .NavLinkActivePage {
     border-bottom: 0.2rem solid #6695d2;
   }
-  #Hero-Section {
-    height: 95vh;
-  }
-  #Hero-Section .HeroContent {
-    top: 24vh;
-  }
   .Card-services-set, .Counter--set {
     grid-gap: 2em;
   }
-  #Hero-Section {
+  .Hero, .HeroImage1, .HeroImage2, .HeroImage3 {
     background-position: 50%;
+    height: 95vh;
+  }
+  .Hero .HeroContent, .HeroImage1 .HeroContent, .HeroImage2 .HeroContent, .HeroImage3 .HeroContent {
+    top: 24vh;
   }
   .Container-Accent-grid {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;

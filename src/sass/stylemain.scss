@@ -1,3 +1,9 @@
+
+$HeroImage_0: url(../assets/images/Web-Large-Banner-IMG1.png);
+$HeroImage_1: url(../assets/images/IMG_1071.JPG);
+$HeroImage_2: url(../assets/images/IMG_1076.JPG);
+$HeroImage_3: url(../assets/images/IMG_1079.JPG);
+
 html {
   font-size: 62.5%;
   * {
@@ -7,7 +13,6 @@ html {
     scroll-behavior: smooth;
   }
 }
-
 
 body {
   background-attachment: fixed;
@@ -213,8 +218,7 @@ opacity: 1;
   padding-inline: 1em;
 }
 
-#Hero-Section {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/Web-Large-Banner-IMG1.png);
+.Hero, .HeroImage1, .HeroImage2, .HeroImage3{
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,6 +244,19 @@ opacity: 1;
       padding-inline: 3.5rem !important;
     }
   }
+} 
+.Hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), $HeroImage_0; 
+  
+}
+.HeroImage1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $HeroImage_1;
+}
+.HeroImage2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $HeroImage_2;
+}
+.HeroImage3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $HeroImage_3;
 }
 
 .Card-services-set, .Counter--set{

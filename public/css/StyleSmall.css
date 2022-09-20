@@ -5,13 +5,11 @@
     transition-duration: 1s;
     z-index: 999;
   }
-  #Hero-Section {
+  .Hero, .HeroImage1, .HeroImage2, .HeroImage3 {
     height: 80vh;
   }
-  #Hero-Section .HeroContent {
-    top: 18vh;
-  }
-  .HeroContent {
+  .Hero .HeroContent, .HeroImage1 .HeroContent, .HeroImage2 .HeroContent, .HeroImage3 .HeroContent {
     width: 95%;
+    top: 18vh;
   }
 }
