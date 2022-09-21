@@ -1,9 +1,6 @@
     // When the event DOMContentLoaded occurs, it is safe to access the DOM
 document.addEventListener('DOMContentLoaded', function() {
 
-  // HeroSlideShow Starts
-  
-
     // When the user scrolls the page, execute myFunction 
   window.addEventListener('scroll', myStickyNav);
 // Get the navbar
@@ -43,4 +40,44 @@ function reveal(){
     }
   }
 }
+
+
+// Counter Section 
+
+ const counts = document.querySelectorAll(".CountNumber");
+ const speed = 97;
+
+counts.forEach(counter => {
+  const updateCount = () => {
+    const target = +counter.getAttribute('data-target');
+    const count = +counter.innerText;
+
+    const inc = target / speed;
+
+    if(count < target){
+      counter.innerText = count +inc;
+      setTimeout(updateCount, 1);
+    }else{
+      count.innerText = target;
+    }
+  }
+updateCount();
+
+
+// function upData(){
+//   const target = Number(counter.getAttribute('data-target'));
+//   const count = Number(counter.innerText);
+//   const inc = target /speed;
+//   if(count < target){
+//     counter.innerText = Math.floor(inc + count);
+//      setTimeout(upData, 1);
+      
+//       }
+//       else{
+//         counter.innerText = target;
+//       }
+// }
+});
+
+
 
