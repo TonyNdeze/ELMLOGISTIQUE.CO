@@ -216,7 +216,7 @@ body .HR_Styled {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
-  animation: HeroSlider 15s linear infinite;
+  animation: HeroSlider 20s linear infinite;
 }
 .Hero .HeroContent {
   position: relative;
