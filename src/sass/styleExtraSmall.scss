@@ -13,6 +13,11 @@
     height: calc(100vh - 10em);
     .HeroContent {
       top: 15vh;
+      button{
+        width: 100%;
+        margin-inline: 0;
+        margin-block-end: 0 !important;
+      }
     }
   }
   }

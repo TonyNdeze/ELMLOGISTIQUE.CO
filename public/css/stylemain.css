@@ -66,7 +66,7 @@ body .HR_Styled {
 
 .Buttons {
   background-color: #77a0cb;
-  border-radius: 5px;
+  border-radius: 0.5em;
   border-style: none;
   color: #fff8dc;
   font-size: 1.6rem;
@@ -236,10 +236,13 @@ body .HR_Styled {
 .Hero .HeroContent button {
   margin-block-end: 1rem;
   margin-block-start: 2rem;
+  margin-inline: 1em;
   padding-block: 1rem !important;
   padding-inline: 3.5rem !important;
+  border-radius: 1.5em;
+  width: 12em;
+  box-shadow: 0 5px 10px 0 rgba(100, 100, 100, 0.2);
 }
-
 @keyframes HeroSlider {
   25% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
@@ -254,6 +257,7 @@ body .HR_Styled {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/IMG_1079.JPG);
   }
 }
+
 .Card-services-set, .About-Section, .Counter--set {
   display: grid;
   grid-gap: 3em;
