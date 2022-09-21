@@ -72,6 +72,7 @@ body .HR_Styled {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 1rem 2.5rem;
+  transition: all 0.5s;
 }
 .Buttons:hover {
   background-color: #6695d2;
@@ -240,7 +241,6 @@ body .HR_Styled {
   padding-block: 1rem !important;
   padding-inline: 3.5rem !important;
   border-radius: 1.5em;
-  width: 12em;
   box-shadow: 0 5px 10px 0 rgba(100, 100, 100, 0.2);
 }
 @keyframes HeroSlider {
@@ -256,6 +256,14 @@ body .HR_Styled {
   100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/IMG_1079.JPG);
   }
+}
+
+#LearnMore-BTN {
+  background-color: transparent;
+  border: 0.15em solid #77a0cb;
+}
+#LearnMore-BTN:hover {
+  background-color: #6695d2;
 }
 
 .Card-services-set, .About-Section, .Counter--set {

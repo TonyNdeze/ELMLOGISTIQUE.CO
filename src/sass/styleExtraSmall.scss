@@ -12,9 +12,9 @@
   .Hero{
     height: calc(100vh - 10em);
     .HeroContent {
-      top: 15vh;
+      top: 10vh;
       button{
-        width: 100%;
+        width: 90vw;
         margin-inline: 0;
         margin-block-end: 0 !important;
       }

@@ -1,5 +1,6 @@
 
-@media only screen and (min-width:768px){
+@media only screen 
+and (min-width:768px){
   #Top-bar{
     display:none;
   }
@@ -51,7 +52,6 @@
     } 
   }
 
-
   .Card-services-set, .Counter--set{
     grid-gap: 2em;
   }
@@ -60,6 +60,10 @@
       height: 95vh;
       .HeroContent {
         top: 24vh;
+        button{
+          width: 35vw;
+          display: inline;
+        }
       }
     }
     .Container-Accent-grid{
@@ -70,4 +74,12 @@
         grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
       }
     }
+    }
+
+    @media only screen and (min-heigt:912px){
+      .Hero{
+        .HeroContent{
+          top: 40vh !important;
+        }
+      }
     }

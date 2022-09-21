@@ -10,10 +10,21 @@
     height: 80vh;
     .HeroContent {
       width:95%;
-      top: 18vh;
+      top: 12vh;
     }
   }
     }
 
-    
+    @media only screen 
+    and (min-width: 351px) and (max-width:500px){
+      .Hero{
+        .HeroContent {
+          button{
+            width: 70vw;
+            margin-block-end: 0!important;
+            
+        }
+      }
+    }
+  }
      

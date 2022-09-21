@@ -54,10 +54,19 @@
   .Hero .HeroContent {
     top: 24vh;
   }
+  .Hero .HeroContent button {
+    width: 35vw;
+    display: inline;
+  }
   .Container-Accent-grid {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
   }
   .Footer .FooterLinks {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
+  }
+}
+@media only screen and (min-heigt: 912px) {
+  .Hero .HeroContent {
+    top: 40vh !important;
   }
 }
