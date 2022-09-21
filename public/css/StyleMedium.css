@@ -47,11 +47,11 @@
   .Card-services-set, .Counter--set {
     grid-gap: 2em;
   }
-  .Hero, .HeroImage1, .HeroImage2, .HeroImage3 {
+  .Hero {
     background-position: 50%;
     height: 95vh;
   }
-  .Hero .HeroContent, .HeroImage1 .HeroContent, .HeroImage2 .HeroContent, .HeroImage3 .HeroContent {
+  .Hero .HeroContent {
     top: 24vh;
   }
   .Container-Accent-grid {

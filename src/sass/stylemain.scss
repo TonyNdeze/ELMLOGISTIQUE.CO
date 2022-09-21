@@ -1,9 +1,9 @@
 
 $HeroImage_0: url(../assets/images/Web-Large-Banner-IMG1.png);
-$HeroImage_1: url(../assets/images/IMG_1071.JPG);
-$HeroImage_2: url(../assets/images/IMG_1076.JPG);
+$HeroImage_1: url(../assets/images/Web-Exta-Large-Banner-IMG2.png);
+$HeroImage_2: url(../assets/images/Web-Exta-Large-Banner-IMG3.png);
 $HeroImage_3: url(../assets/images/IMG_1079.JPG);
-
+$HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 html {
   font-size: 62.5%;
   * {
@@ -218,10 +218,13 @@ opacity: 1;
   padding-inline: 1em;
 }
 
-.Hero, .HeroImage1, .HeroImage2, .HeroImage3{
+.Hero{
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+   background-image: 
+    $HeroImage-Gradient, $HeroImage_0;
+   animation: HeroSlider 15s linear infinite;
   .HeroContent {
     position: relative;
     color: #f9f9f9;
@@ -245,18 +248,23 @@ opacity: 1;
     }
   }
 } 
-.Hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), $HeroImage_0; 
-  
-}
-.HeroImage1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $HeroImage_1;
-}
-.HeroImage2{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $HeroImage_2;
-}
-.HeroImage3{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $HeroImage_3;
+@keyframes HeroSlider {
+  25%{
+    background-image:
+    $HeroImage-Gradient, $HeroImage_0;
+  }
+  50%{
+    background-image:
+    $HeroImage-Gradient, $HeroImage_1;
+  }
+  75%{
+    background-image:
+    $HeroImage-Gradient, $HeroImage_2;
+  }
+  100%{
+    background-image:
+    $HeroImage-Gradient, $HeroImage_3;
+  }
 }
 
 .Card-services-set, .About-Section, .Counter--set{

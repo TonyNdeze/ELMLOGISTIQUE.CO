@@ -210,50 +210,50 @@ body .HR_Styled {
   padding-inline: 1em;
 }
 
-.Hero, .HeroImage1, .HeroImage2, .HeroImage3 {
+.Hero {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
+  animation: HeroSlider 15s linear infinite;
 }
-.Hero .HeroContent, .HeroImage1 .HeroContent, .HeroImage2 .HeroContent, .HeroImage3 .HeroContent {
+.Hero .HeroContent {
   position: relative;
   color: #f9f9f9;
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.Hero .HeroContent h1, .HeroImage1 .HeroContent h1, .HeroImage2 .HeroContent h1, .HeroImage3 .HeroContent h1 {
+.Hero .HeroContent h1 {
   font-size: clamp(3.5rem, 6vw, 7rem);
   line-height: 1.8;
 }
-.Hero .HeroContent p, .HeroImage1 .HeroContent p, .HeroImage2 .HeroContent p, .HeroImage3 .HeroContent p {
+.Hero .HeroContent p {
   font-family: arial;
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   line-height: 1.5;
 }
-.Hero .HeroContent button, .HeroImage1 .HeroContent button, .HeroImage2 .HeroContent button, .HeroImage3 .HeroContent button {
+.Hero .HeroContent button {
   margin-block-end: 1rem;
   margin-block-start: 2rem;
   padding-block: 1rem !important;
   padding-inline: 3.5rem !important;
 }
 
-.Hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../assets/images/Web-Large-Banner-IMG1.png);
+@keyframes HeroSlider {
+  25% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
+  }
+  50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Exta-Large-Banner-IMG2.png);
+  }
+  75% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Exta-Large-Banner-IMG3.png);
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/IMG_1079.JPG);
+  }
 }
-
-.HeroImage1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/IMG_1071.JPG);
-}
-
-.HeroImage2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/IMG_1076.JPG);
-}
-
-.HeroImage3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../assets/images/IMG_1079.JPG);
-}
-
 .Card-services-set, .About-Section, .Counter--set {
   display: grid;
   grid-gap: 3em;

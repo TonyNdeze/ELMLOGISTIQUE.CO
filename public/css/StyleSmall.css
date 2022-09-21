@@ -5,10 +5,10 @@
     transition-duration: 1s;
     z-index: 999;
   }
-  .Hero, .HeroImage1, .HeroImage2, .HeroImage3 {
+  .Hero {
     height: 80vh;
   }
-  .Hero .HeroContent, .HeroImage1 .HeroContent, .HeroImage2 .HeroContent, .HeroImage3 .HeroContent {
+  .Hero .HeroContent {
     width: 95%;
     top: 18vh;
   }
