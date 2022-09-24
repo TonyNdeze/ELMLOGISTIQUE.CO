@@ -12,6 +12,15 @@
     width: 95%;
     top: 12vh;
   }
+  .Contact_form fieldset .intext {
+    width: 84%;
+  }
+  .Contact_form fieldset #Ufname {
+    width: 35%;
+  }
+  .Contact_form fieldset #Ulname {
+    width: 44%;
+  }
 }
 @media only screen and (min-width: 351px) and (max-width: 500px) {
   .Hero .HeroContent button {

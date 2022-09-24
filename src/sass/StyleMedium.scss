@@ -1,6 +1,5 @@
 
-@media only screen 
-and (min-width:768px){
+@media only screen and (min-width:768px){
   #Top-bar{
     display:none;
   }
@@ -66,14 +65,32 @@ and (min-width:768px){
         }
       }
     }
+    .Hero-minimazed{
+      height: 90vh;
+      animation: none !important;
+      .HeroContent{
+        top: 20vh !important;
+      }
+    }
     .Container-Accent-grid{
       grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
     }
+
+
+    
+    #Ufname{
+      width: 20%;
+    }
+    #Ulname{
+      width: 30%;
+    }
+
     .Footer{
       .FooterLinks{
         grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
       }
     }
+
     }
 
     @media only screen and (min-heigt:912px){

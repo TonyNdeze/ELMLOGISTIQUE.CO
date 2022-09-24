@@ -20,6 +20,27 @@
       }
     }
   }
+ 
+.Hero-minimazed{
+  height: 60vh;
+  animation: none !important;
+  .HeroContent{
+    top: 5vh !important;
+  }
+}
+.Contact_form{
+  fieldset{
+   .intext{
+    width: 84%;
+   }
+   #Ufname{
+    width: 35%;
+  }
+  #Ulname{
+    width: 47%;
+  }
+  }
+}
   }
 
 

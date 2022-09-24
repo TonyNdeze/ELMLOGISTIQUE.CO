@@ -66,7 +66,7 @@ body .HR_Styled {
 
 .Buttons {
   background-color: #77a0cb;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border-style: none;
   color: #fff8dc;
   font-size: 1.6rem;
@@ -76,7 +76,7 @@ body .HR_Styled {
 }
 .Buttons:hover {
   background-color: #6695d2;
-  border-radius: 2em;
+  border-radius: 1em;
   text-decoration: underline;
 }
 
@@ -210,30 +210,30 @@ body .HR_Styled {
   padding-inline: 1em;
 }
 
-.Hero {
+.Hero, .Hero-minimazed {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
   animation: HeroSlider 20s linear infinite;
 }
-.Hero .HeroContent {
+.Hero .HeroContent, .Hero-minimazed .HeroContent {
   position: relative;
   color: #f9f9f9;
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.Hero .HeroContent h1 {
+.Hero .HeroContent h1, .Hero-minimazed .HeroContent h1 {
   font-size: clamp(3.5rem, 6vw, 7rem);
   line-height: 1.8;
 }
-.Hero .HeroContent p {
+.Hero .HeroContent p, .Hero-minimazed .HeroContent p {
   font-family: arial;
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   line-height: 1.5;
 }
-.Hero .HeroContent button {
+.Hero .HeroContent button, .Hero-minimazed .HeroContent button {
   margin-block-end: 1rem;
   margin-block-start: 2rem;
   margin-inline: 1em;
@@ -255,6 +255,11 @@ body .HR_Styled {
   100% {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/IMG_1079.JPG);
   }
+}
+
+.Hero-minimazed {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png) !important;
+  animation: none !important;
 }
 
 #LearnMore-BTN {
@@ -361,6 +366,41 @@ body .HR_Styled {
   display: grid;
   gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+}
+
+.Contact_form fieldset {
+  border: none;
+  padding: 1em;
+  margin-block: 3em;
+  background-color: whitesmoke;
+}
+.Contact_form fieldset div {
+  padding-block: 1em;
+}
+.Contact_form fieldset div * {
+  font-size: clamp(1.4em, 1vw, 3em);
+}
+.Contact_form fieldset div i {
+  margin-inline: 0.2em;
+  color: #888888;
+  font-size: 2em !important;
+}
+.Contact_form fieldset div .intext {
+  border-radius: 0.4em;
+  border: none;
+  padding-block: 1em;
+  padding-inline: 1em;
+  color: #888888;
+  max-width: 500px;
+}
+.Contact_form fieldset div textarea {
+  width: 100% !important;
+}
+.Contact_form fieldset div label {
+  line-height: 3;
+}
+.Contact_form fieldset .inButton {
+  float: right;
 }
 
 footer {

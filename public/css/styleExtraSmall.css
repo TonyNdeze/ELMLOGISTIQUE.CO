@@ -19,6 +19,22 @@
     margin-inline: 0;
     margin-block-end: 0 !important;
   }
+  .Hero-minimazed {
+    height: 60vh;
+    animation: none !important;
+  }
+  .Hero-minimazed .HeroContent {
+    top: 5vh !important;
+  }
+  .Contact_form fieldset .intext {
+    width: 84%;
+  }
+  .Contact_form fieldset #Ufname {
+    width: 35%;
+  }
+  .Contact_form fieldset #Ulname {
+    width: 47%;
+  }
 }
 @media only screen and (min-width: 400px) {
   .Card-services-set, .Counter--set {

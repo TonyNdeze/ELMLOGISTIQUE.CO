@@ -71,7 +71,7 @@ body {
 
 .Buttons {
   background-color: #77a0cb;
-  border-radius: 1em;
+  border-radius: 0.5em;
   border-style: none;
   color: #fff8dc;
   font-size: 1.6rem;
@@ -80,7 +80,7 @@ body {
   transition: all 0.5s;
   &:hover {
     background-color: #6695d2;
-    border-radius: 2em;
+    border-radius: 1em;
     text-decoration: underline;
   }
   
@@ -218,7 +218,7 @@ opacity: 1;
   padding-inline: 1em;
 }
 
-.Hero{
+.Hero, .Hero-minimazed{
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,8 +251,6 @@ opacity: 1;
     }
    
   }
-
-  
 @keyframes HeroSlider {
   25%{
     background-image:
@@ -272,6 +270,10 @@ opacity: 1;
   }
 }
 } 
+.Hero-minimazed{
+  background-image: $HeroImage-Gradient, $HeroImage_0 !important;
+  animation: none !important;
+      }
 #LearnMore-BTN{
   background-color: transparent;
   border: 0.15em solid #77a0cb;
@@ -279,6 +281,8 @@ opacity: 1;
     background-color: #6695d2;
   }
 }
+
+// Homepage
 .Card-services-set, .About-Section, .Counter--set{
   display: grid;
   grid-gap: 3em;
@@ -384,6 +388,46 @@ opacity: 1;
   gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
+
+// Contact Page
+.Contact_form{
+  fieldset{
+    border: none;
+    padding: 1em;
+    margin-block: 3em;
+    background-color: whitesmoke;
+    div {
+      padding-block: 1em;
+      *{
+        font-size: clamp(1.4em, 1vw, 3em);
+      }
+      i{
+        margin-inline: 0.2em;
+        color: #888888;
+        font-size: 2em !important;
+      }
+      .intext{
+        border-radius: 0.4em;
+        border: none;
+        padding-block: 1em;
+        padding-inline: 1em;
+        color: #888888;
+        max-width: 500px;
+      }
+      textarea{
+        width: 100% !important;
+      }
+      label{
+        line-height: 3;
+      }
+    }
+    .inButton{
+      float: right;
+    }
+    }
+}
+
+
 footer {
   color: #f9f9f9;
   height: fit-content;
