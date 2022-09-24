@@ -368,17 +368,19 @@ body .HR_Styled {
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 
+.Contact_form {
+  padding-block: 1.5em;
+}
 .Contact_form fieldset {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: none;
   padding: 1em;
-  margin-block: 3em;
-  background-color: whitesmoke;
 }
 .Contact_form fieldset div {
   padding-block: 1em;
 }
 .Contact_form fieldset div * {
-  font-size: clamp(1.4em, 1vw, 3em);
+  font-size: clamp(1.2em, 1vw, 3em);
 }
 .Contact_form fieldset div i {
   margin-inline: 0.2em;
@@ -395,9 +397,11 @@ body .HR_Styled {
 }
 .Contact_form fieldset div textarea {
   width: 100% !important;
+  margin-left: 3%;
 }
 .Contact_form fieldset div label {
   line-height: 3;
+  color: #888888;
 }
 .Contact_form fieldset .inButton {
   float: right;
