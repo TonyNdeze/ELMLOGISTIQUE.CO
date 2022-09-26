@@ -66,24 +66,34 @@
       }
     }
     .Hero-minimazed{
-      height: 90vh;
-      animation: none !important;
-      .HeroContent{
-        top: 20vh !important;
-      }
+      height: 100vh!important;
     }
     .Container-Accent-grid{
       grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
     }
 
-
+    .Container--ContactForm{
+      .Contact_form{
+         width: 90vw;
+  
+         fieldset{
+      #Ufname{
+        width: 40%;
+      }
+      #Ulname{
+        width: 50%;
     
-    #Ufname{
-      width: 20%;
+      }
+      textarea{
+        width: 100% !important;
+      }
+      .intext{
+        width: 92%;
+      }
+         }
+      }
     }
-    #Ulname{
-      width: 30%;
-    }
+  
 
     .Footer{
       .FooterLinks{
@@ -93,10 +103,16 @@
 
     }
 
-    @media only screen and (min-heigt:912px){
+    @media only screen and (min-height:912px){
       .Hero{
         .HeroContent{
-          top: 40vh !important;
+          top: 50vh !important;
+        }
+      }
+      .Hero-minimazed{
+        height: 100vh!important;
+        .HeroContent{
+          transform: translateY(90%) !important;
         }
       }
     }

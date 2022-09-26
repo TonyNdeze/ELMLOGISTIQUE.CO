@@ -28,21 +28,28 @@
     top: 5vh !important;
   }
 }
-.Contact_form{
-  fieldset{
-   .intext{
-    width: 84%;
-   }
-   #Ufname{
-    width: 35%;
+.Container--ContactForm{
+  .Contact_form{
+     width: 100vw;
+     fieldset{
+
+  #Ufname{
+    width: 35vw;
   }
   #Ulname{
-    width: 47%;
+    width: 43vw;
+
   }
+  textarea{
+    width: 93vw !important;
+  }
+  .intext{
+    width: 81vw;
+  }
+     }
   }
 }
-  }
-
+}
 
 
 

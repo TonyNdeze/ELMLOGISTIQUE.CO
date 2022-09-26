@@ -283,7 +283,7 @@ opacity: 1;
 }
 
 // Homepage
-.Card-services-set, .About-Section, .Counter--set{
+.Card-services-set, .Split, .Counter--set{
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
@@ -390,44 +390,60 @@ opacity: 1;
 }
 
 // Contact Page
-.Contact_form{
-  padding-block: 1.5em;
-  fieldset{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    border: none;
-    padding: 1em;
-    div {
-      padding-block: 1em;
-      *{
-        font-size: clamp(1.2em, 1vw, 3em);
-      }
-      i{
-        margin-inline: 0.2em;
-        color: #888888;
-        font-size: 2em !important;
-      }
-      .intext{
-        border-radius: 0.4em;
-        border: none;
-        padding-block: 1em;
-        padding-inline: 1em;
-        color: #888888;
-        max-width: 500px;
-      }
-      textarea{
-        width: 100% !important;
-        margin-left: 3%;
-      }
-      label{
-        line-height: 3;
-        color: #888888;
-      }
-    }
-    .inButton{
-      float: right;
-    }
-    }
+.block{
+  height: 70vh;
+  position: relative; 
+  transform: translateY(25%);
 }
+.Container--ContactForm{
+  .Contact_form{
+     width: 90%;
+     overflow: hidden;
+     margin: 0 auto;
+    padding-block: 1.5em;
+    fieldset{
+      height: fit-content;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      border: none;
+      padding: 1em;
+      div {
+        padding-block: 1em;
+        max-width: 500px;
+        p{
+          font-size: clamp(1.6rem, 1.5vw, 3rem);
+        }
+        *{
+          font-size: clamp(1.2em, 1vw, 3em);
+        }
+        i{
+          margin-inline: 0.1em;
+          color: whitesmoke;
+          font-size: 1.6em !important;
+        }
+        .intext{
+          border-radius: 0.4em;
+          border: none;
+          padding-block: 1em;
+          padding-inline: 1em;
+          color: #888888;
+        }
+        textarea{
+          line-height: 1.5;
+          min-height: clamp(10em, 15em, 40em);
+        }
+        label{
+          line-height: 3;
+          font-size: clamp(1.6rem, 1vw, 2.5rem);
+          color: whitesmoke
+        }
+      }
+      .inButton{
+        float: right;
+      }
+      }
+  }
+}
+
 
 
 footer {

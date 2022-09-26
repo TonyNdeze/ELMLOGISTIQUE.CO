@@ -13,21 +13,38 @@
       top: 12vh;
     }
   }
-  .Contact_form{
-    fieldset{
-     .intext{
-      width: 84%;
-     }
-     #Ufname{
-      width:35%;
-    }
-    #Ulname{
-      width:44%;
-    }
+  .Hero-minimazed{
+    height: 60vh;
+    animation: none !important;
+    .HeroContent{
+      top: 25vh !important;
     }
   }
   
+  .Container--ContactForm{
+    .Contact_form{
+       width: 90vw;
+
+       fieldset{
+        *{
+          margin-inline: auto;
+        }
+    #Ufname{
+      width: 35%;
+    }
+    #Ulname{
+      width: 50%;
   
+    }
+    textarea{
+      width: 100% !important;
+    }
+    .intext{
+      width: 88%;
+    }
+       }
+    }
+  }
     }
 
     @media only screen 

@@ -270,7 +270,7 @@ body .HR_Styled {
   background-color: #6695d2;
 }
 
-.Card-services-set, .About-Section, .Counter--set {
+.Card-services-set, .Split, .Counter--set {
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
@@ -368,42 +368,56 @@ body .HR_Styled {
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 
-.Contact_form {
+.block {
+  height: 70vh;
+  position: relative;
+  transform: translateY(25%);
+}
+
+.Container--ContactForm .Contact_form {
+  width: 90%;
+  overflow: hidden;
+  margin: 0 auto;
   padding-block: 1.5em;
 }
-.Contact_form fieldset {
+.Container--ContactForm .Contact_form fieldset {
+  height: fit-content;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: none;
   padding: 1em;
 }
-.Contact_form fieldset div {
+.Container--ContactForm .Contact_form fieldset div {
   padding-block: 1em;
+  max-width: 500px;
 }
-.Contact_form fieldset div * {
+.Container--ContactForm .Contact_form fieldset div p {
+  font-size: clamp(1.6rem, 1.5vw, 3rem);
+}
+.Container--ContactForm .Contact_form fieldset div * {
   font-size: clamp(1.2em, 1vw, 3em);
 }
-.Contact_form fieldset div i {
-  margin-inline: 0.2em;
-  color: #888888;
-  font-size: 2em !important;
+.Container--ContactForm .Contact_form fieldset div i {
+  margin-inline: 0.1em;
+  color: whitesmoke;
+  font-size: 1.6em !important;
 }
-.Contact_form fieldset div .intext {
+.Container--ContactForm .Contact_form fieldset div .intext {
   border-radius: 0.4em;
   border: none;
   padding-block: 1em;
   padding-inline: 1em;
   color: #888888;
-  max-width: 500px;
 }
-.Contact_form fieldset div textarea {
-  width: 100% !important;
-  margin-left: 3%;
+.Container--ContactForm .Contact_form fieldset div textarea {
+  line-height: 1.5;
+  min-height: 15em;
 }
-.Contact_form fieldset div label {
+.Container--ContactForm .Contact_form fieldset div label {
   line-height: 3;
-  color: #888888;
+  font-size: clamp(1.6rem, 1vw, 2.5rem);
+  color: whitesmoke;
 }
-.Contact_form fieldset .inButton {
+.Container--ContactForm .Contact_form fieldset .inButton {
   float: right;
 }
 
