@@ -420,7 +420,7 @@ body .HR_Styled {
 }
 .Container--ContactForm .Contact_form fieldset div {
   padding-block: 1em;
-  max-width: 800px;
+  max-width: 900px;
 }
 .Container--ContactForm .Contact_form fieldset div p {
   font-size: clamp(1.6rem, 1.5vw, 3rem);
