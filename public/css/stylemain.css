@@ -368,10 +368,42 @@ body .HR_Styled {
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 
-.block {
-  height: 70vh;
+.block .contact_list {
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 1em !important;
+}
+.block .contact_list .Card-Contacts {
+  background-color: white;
+  border-radius: 0.6em;
+  box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+  padding: 2em;
+}
+.block .contact_list .Card-Contacts i {
+  color: #655f5f;
+  display: block;
+  font-size: 3rem;
+}
+.block .contact_list .Card-Contacts a {
+  font-size: clamp(1.6rem, 1vw, 2rem);
+  line-height: 1.6;
+  color: #77a0cb;
+  display: block;
+  text-decoration: none;
+}
+.block .contact_list .Card-Contacts a:hover {
+  color: #8b4848;
+  fill: #77a0cb;
+  -webkit-text-decoration: wavy;
+  text-decoration: wavy;
+}
+.block .contact_list .Card-Contacts a i {
   position: relative;
-  transform: translateY(25%);
+  bottom: -0.1em;
+  margin-inline-end: 1em;
+  color: inherit;
+  display: inline;
+  font-size: 2rem;
 }
 
 .Container--ContactForm .Contact_form {
@@ -388,10 +420,11 @@ body .HR_Styled {
 }
 .Container--ContactForm .Contact_form fieldset div {
   padding-block: 1em;
-  max-width: 500px;
+  max-width: 800px;
 }
 .Container--ContactForm .Contact_form fieldset div p {
   font-size: clamp(1.6rem, 1.5vw, 3rem);
+  padding-block: 2em;
 }
 .Container--ContactForm .Contact_form fieldset div * {
   font-size: clamp(1.2em, 1vw, 3em);
@@ -419,6 +452,7 @@ body .HR_Styled {
 }
 .Container--ContactForm .Contact_form fieldset .inButton {
   float: right;
+  font-size: 2rem;
 }
 
 footer {

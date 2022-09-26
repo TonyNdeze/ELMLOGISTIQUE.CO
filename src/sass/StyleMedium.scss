@@ -51,7 +51,7 @@
     } 
   }
 
-  .Card-services-set, .Counter--set{
+  .Card-services-set, .Split, .Counter--set{
     grid-gap: 2em;
   }
   .Hero{
@@ -77,18 +77,19 @@
          width: 90vw;
   
          fieldset{
+          
       #Ufname{
-        width: 40%;
+        width: 43%;
       }
       #Ulname{
-        width: 50%;
+        width: 51%;
     
       }
       textarea{
         width: 100% !important;
       }
       .intext{
-        width: 92%;
+        width: 95%;
       }
          }
       }

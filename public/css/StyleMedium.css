@@ -44,7 +44,7 @@
   .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu .NavLinkActivePage {
     border-bottom: 0.2rem solid #6695d2;
   }
-  .Card-services-set, .Counter--set {
+  .Card-services-set, .Split, .Counter--set {
     grid-gap: 2em;
   }
   .Hero {
@@ -68,16 +68,16 @@
     width: 90vw;
   }
   .Container--ContactForm .Contact_form fieldset #Ufname {
-    width: 40%;
+    width: 43%;
   }
   .Container--ContactForm .Contact_form fieldset #Ulname {
-    width: 50%;
+    width: 51%;
   }
   .Container--ContactForm .Contact_form fieldset textarea {
     width: 100% !important;
   }
   .Container--ContactForm .Contact_form fieldset .intext {
-    width: 92%;
+    width: 95%;
   }
   .Footer .FooterLinks {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
