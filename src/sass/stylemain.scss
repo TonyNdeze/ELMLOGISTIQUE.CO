@@ -92,12 +92,15 @@ body {
 .Text-Header {
   font-size: clamp(4rem, 5vw, 5rem);
   line-height: 1.5;
+  
+  color: #655f5f;
 }
 .Text-Subheader {
   font-size: clamp(1.8rem, 3vw, 3rem);
   line-height: 1.5;
 }
 .Text-Title {
+  color: #655f5f;
   font-size: clamp(3rem, 3vw, 3.5rem);
   line-height: 2;
 }
@@ -218,7 +221,7 @@ opacity: 1;
   padding-inline: 1em;
 }
 
-.Hero, .Hero-minimazed{
+.Hero, .Hero-minimazed, .Hero-small{
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,6 +285,12 @@ opacity: 1;
   }
 }
 
+.Hero-small{
+  background-position: center !important;
+  height: 40vh !important;
+  background-image: $HeroImage_0 !important;
+}
+
 // Homepage
 .Card-services-set, .Split, .Counter--set{
   display: grid;
@@ -321,21 +330,6 @@ opacity: 1;
     }
   }
 }
-.Maps{
-  height: fit-content;
-  overflow:hidden;
-  position: relative;
-  top: -3em;
-  iframe{
-    width: 100%;
-    margin: 0 auto;
-    padding: 5em 1em 1em;
-    background-color: whitesmoke;
-  }
-  .shrinked{
-    height: fit-content;
-  }
-}
 #OurServicesBTN {
   display: block;
   margin-block: 2.5rem;
@@ -350,6 +344,9 @@ opacity: 1;
   color: #f9f9f9;
   height: fit-content;
   padding: 5rem 0;
+  h1{
+    color: #ffff;
+  }
   .Counter--set{
     .Counter-item{
       grid-template-columns: repeat(autofit, minmax());
@@ -390,6 +387,22 @@ opacity: 1;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 
+.Maps{
+  height: fit-content;
+  position: relative;
+  top: -3em;
+  iframe{
+    border-radius: 1em;
+    width: 100%;
+    margin: 0 auto;
+    // padding: 5em 1em 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: whitesmoke;
+  }
+  .shrinked{
+    height: fit-content;
+  }
+}
 // Contact Page
 .block{
   .contact_list{

@@ -87,6 +87,7 @@ body .HR_Styled {
 .Text-Header {
   font-size: clamp(4rem, 5vw, 5rem);
   line-height: 1.5;
+  color: #655f5f;
 }
 
 .Text-Subheader {
@@ -95,6 +96,7 @@ body .HR_Styled {
 }
 
 .Text-Title {
+  color: #655f5f;
   font-size: clamp(3rem, 3vw, 3.5rem);
   line-height: 2;
 }
@@ -210,30 +212,30 @@ body .HR_Styled {
   padding-inline: 1em;
 }
 
-.Hero, .Hero-minimazed {
+.Hero, .Hero-minimazed, .Hero-small {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
   animation: HeroSlider 20s linear infinite;
 }
-.Hero .HeroContent, .Hero-minimazed .HeroContent {
+.Hero .HeroContent, .Hero-minimazed .HeroContent, .Hero-small .HeroContent {
   position: relative;
   color: #f9f9f9;
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.Hero .HeroContent h1, .Hero-minimazed .HeroContent h1 {
+.Hero .HeroContent h1, .Hero-minimazed .HeroContent h1, .Hero-small .HeroContent h1 {
   font-size: clamp(3.5rem, 6vw, 7rem);
   line-height: 1.8;
 }
-.Hero .HeroContent p, .Hero-minimazed .HeroContent p {
+.Hero .HeroContent p, .Hero-minimazed .HeroContent p, .Hero-small .HeroContent p {
   font-family: arial;
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   line-height: 1.5;
 }
-.Hero .HeroContent button, .Hero-minimazed .HeroContent button {
+.Hero .HeroContent button, .Hero-minimazed .HeroContent button, .Hero-small .HeroContent button {
   margin-block-end: 1rem;
   margin-block-start: 2rem;
   margin-inline: 1em;
@@ -270,6 +272,12 @@ body .HR_Styled {
   background-color: #6695d2;
 }
 
+.Hero-small {
+  background-position: center !important;
+  height: 40vh !important;
+  background-image: url(../assets/images/Web-Large-Banner-IMG1.png) !important;
+}
+
 .Card-services-set, .Split, .Counter--set {
   display: grid;
   grid-gap: 3em;
@@ -303,22 +311,6 @@ body .HR_Styled {
   width: 4.9em;
 }
 
-.Maps {
-  height: fit-content;
-  overflow: hidden;
-  position: relative;
-  top: -3em;
-}
-.Maps iframe {
-  width: 100%;
-  margin: 0 auto;
-  padding: 5em 1em 1em;
-  background-color: whitesmoke;
-}
-.Maps .shrinked {
-  height: fit-content;
-}
-
 #OurServicesBTN {
   display: block;
   margin-block: 2.5rem;
@@ -333,6 +325,9 @@ body .HR_Styled {
   color: #f9f9f9;
   height: fit-content;
   padding: 5rem 0;
+}
+#Counter-Section h1 {
+  color: white;
 }
 #Counter-Section .Counter--set .Counter-item {
   grid-template-columns: repeat(autofit, minmax());
@@ -366,6 +361,22 @@ body .HR_Styled {
   display: grid;
   gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+}
+
+.Maps {
+  height: fit-content;
+  position: relative;
+  top: -3em;
+}
+.Maps iframe {
+  border-radius: 1em;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: whitesmoke;
+}
+.Maps .shrinked {
+  height: fit-content;
 }
 
 .block .contact_list {
