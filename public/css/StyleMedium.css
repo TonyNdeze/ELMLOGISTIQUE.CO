@@ -59,7 +59,7 @@
     display: inline;
   }
   .Hero-minimazed {
-    height: 100vh !important;
+    height: 90vh !important;
   }
   .Container-Accent-grid {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
