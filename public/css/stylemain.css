@@ -594,17 +594,61 @@ body .HR_Styled {
   font-size: clamp(2.5rem, 1vw, 3rem);
   font-weight: bold;
 }
-.Elmservices .Service--Section .grid {
+.Elmservices .Service--Section .contenu .grid-list {
   display: grid;
   gap: 1em;
-  padding-block: 2em;
+  padding-block: 4em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
-.Elmservices .Service--Section .grid li {
+.Elmservices .Service--Section .contenu .grid-list li {
   margin-inline-start: 2em;
   color: #8b4848;
   font-size: clamp(1.4rem, 1vw, 2rem);
   list-style: square;
+}
+.Elmservices .Service--Section .contenu .legende {
+  padding-block: 1em;
+}
+.Elmservices .Service--Section .contenu .legende span .fa-check {
+  color: green;
+}
+.Elmservices .Service--Section .contenu .legende span .fa-times {
+  color: #8b4848;
+}
+.Elmservices .Service--Section .contenu .legende table {
+  width: 800px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.Elmservices .Service--Section .contenu .legende th,
+.Elmservices .Service--Section .contenu .legende td {
+  padding: 15px;
+  background-color: whitesmoke;
+  color: rgb(38, 38, 38);
+}
+.Elmservices .Service--Section .contenu .legende th {
+  text-align: left;
+  color: #f2f2f2;
+}
+.Elmservices .Service--Section .contenu .legende thead th {
+  background-color: #55608f;
+}
+.Elmservices .Service--Section .contenu .legende tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.Elmservices .Service--Section .contenu .legende tbody td {
+  position: relative;
+}
+.Elmservices .Service--Section .contenu .legende tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: white;
+  z-index: -1;
 }
 
 footer {
