@@ -79,6 +79,13 @@
   .Container--ContactForm .Contact_form fieldset .intext {
     width: 95%;
   }
+  .Content-WidthSmall {
+    max-width: 80em;
+    margin: 0 auto;
+  }
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
+  }
   .Footer .FooterLinks {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
   }

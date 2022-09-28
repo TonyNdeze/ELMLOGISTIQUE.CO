@@ -94,7 +94,14 @@
          }
       }
     }
-  
+    
+.Content-WidthSmall{
+  max-width: 80em;
+  margin: 0 auto;
+}
+.grid{
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
+}
 
     .Footer{
       .FooterLinks{

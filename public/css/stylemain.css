@@ -25,8 +25,7 @@ body .HR_Styled {
   background-image: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.3), transparent);
   border: 0;
   height: 0.1em;
-  margin-inline: auto;
-  margin-block: 4em;
+  margin-block: 3em;
   margin-inline: auto;
   width: 50%;
 }
@@ -37,7 +36,7 @@ body .HR_Styled {
   display: table;
 }
 
-.Content-Width {
+.Content-Width, .Content-WidthSmall {
   margin-inline: auto;
   width: 90%;
 }
@@ -80,7 +79,10 @@ body .HR_Styled {
   text-decoration: underline;
 }
 
-.Text-Header, .Text-Subheader, .Text-Subtitle, .Text-Title {
+.Text-Header,
+.Text-Subheader,
+.Text-Subtitle,
+.Text-Title {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -107,8 +109,8 @@ body .HR_Styled {
 }
 
 .Text-Paragraph {
-  font-size: clamp(1.4rem, 1vw, 3rem);
-  line-height: 1.5;
+  font-size: clamp(1.5rem, 1vw, 3rem);
+  line-height: 1.8;
 }
 
 .Text-Centered {
@@ -212,30 +214,40 @@ body .HR_Styled {
   padding-inline: 1em;
 }
 
-.Hero, .Hero-minimazed, .Hero-small {
+.Hero,
+.Hero-minimazed,
+.Hero-small {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
   animation: HeroSlider 20s linear infinite;
 }
-.Hero .HeroContent, .Hero-minimazed .HeroContent, .Hero-small .HeroContent {
+.Hero .HeroContent,
+.Hero-minimazed .HeroContent,
+.Hero-small .HeroContent {
   position: relative;
   color: #f9f9f9;
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.Hero .HeroContent h1, .Hero-minimazed .HeroContent h1, .Hero-small .HeroContent h1 {
+.Hero .HeroContent h1,
+.Hero-minimazed .HeroContent h1,
+.Hero-small .HeroContent h1 {
   font-size: clamp(3.5rem, 6vw, 7rem);
   line-height: 1.8;
 }
-.Hero .HeroContent p, .Hero-minimazed .HeroContent p, .Hero-small .HeroContent p {
+.Hero .HeroContent p,
+.Hero-minimazed .HeroContent p,
+.Hero-small .HeroContent p {
   font-family: arial;
   font-size: clamp(1.8rem, 2vw, 2.5rem);
   line-height: 1.5;
 }
-.Hero .HeroContent button, .Hero-minimazed .HeroContent button, .Hero-small .HeroContent button {
+.Hero .HeroContent button,
+.Hero-minimazed .HeroContent button,
+.Hero-small .HeroContent button {
   margin-block-end: 1rem;
   margin-block-start: 2rem;
   margin-inline: 1em;
@@ -278,7 +290,9 @@ body .HR_Styled {
   background-image: url(../assets/images/Web-Large-Banner-IMG1.png) !important;
 }
 
-.Card-services-set, .Split, .Counter--set {
+.Card-services-set,
+.Split,
+.Counter--set {
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
@@ -337,12 +351,31 @@ body .HR_Styled {
   line-height: 2;
 }
 
+.Maps {
+  height: fit-content;
+  position: relative;
+  top: -3em;
+}
+.Maps iframe {
+  border-radius: 1em;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: whitesmoke;
+}
+.Maps .shrinked {
+  height: fit-content;
+}
+
 .PartnerSection {
   padding: 40px 10px;
 }
 .PartnerSection .PartnerIcon {
   display: inline-block;
   width: 10rem;
+}
+.PartnerSection h1 {
+  color: #f5f5f5;
 }
 .PartnerSection .LinkToPartner {
   color: #f9f9f9;
@@ -361,22 +394,6 @@ body .HR_Styled {
   display: grid;
   gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
-}
-
-.Maps {
-  height: fit-content;
-  position: relative;
-  top: -3em;
-}
-.Maps iframe {
-  border-radius: 1em;
-  width: 100%;
-  margin: 0 auto;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: whitesmoke;
-}
-.Maps .shrinked {
-  height: fit-content;
 }
 
 .block .contact_list {
@@ -454,6 +471,7 @@ body .HR_Styled {
 }
 .Container--ContactForm .Contact_form fieldset div textarea {
   line-height: 1.5;
+  font-size: medium;
   min-height: 15em;
 }
 .Container--ContactForm .Contact_form fieldset div label {
@@ -495,6 +513,98 @@ body .HR_Styled {
 .Container--ContactForm .Contact_form fieldset .inButton {
   float: right;
   font-size: 2rem;
+}
+
+.Elmservices .ServiceIntro {
+  background-color: #f2f2f2;
+  border-radius: 2%;
+  padding: 0.5em;
+}
+.Elmservices .ServiceIntro h1 {
+  line-height: 1.5;
+  color: #000000;
+}
+.Elmservices .ServiceTip {
+  padding-block-start: 1em;
+  padding-inline-start: 2em;
+}
+.Elmservices .ServiceTip i {
+  color: green;
+  margin-inline: 2em;
+}
+.Elmservices .Service--Section {
+  padding-block: 2em;
+}
+.Elmservices .Service--Section::before, .Elmservices .Service--Section::after {
+  content: "";
+  background: #77a0cb;
+  display: block;
+  height: 0.1em;
+}
+.Elmservices .Service--Section .header {
+  border-radius: 2%;
+}
+.Elmservices .Service--Section .header * {
+  display: inline;
+}
+.Elmservices .Service--Section .header p {
+  line-height: 1;
+}
+.Elmservices .Service--Section .header .IcoBTN {
+  position: relative;
+  height: 3em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  padding-inline: 1em;
+}
+.Elmservices .Service--Section .header .IcoBTN i {
+  position: relative;
+  font-size: 1.7em;
+  transition: all 0.1s;
+  float: inline-end;
+}
+.Elmservices .Service--Section .header .IcoBTN:hover {
+  color: #8b4848;
+}
+.Elmservices .Service--Section .header .IcoBTN:hover i {
+  font-size: 2em;
+}
+.Elmservices .Service--Section .contenu {
+  display: none;
+  transform: all 0.2s;
+  padding-block: 1.5em;
+  margin: 0 auto;
+}
+.Elmservices .Service--Section .contenu .Roadtransport {
+  background-image: url(../assets/images/IMG_1066.JPG);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25em;
+  box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
+  border-radius: 0.5em;
+  margin-block-end: 2em;
+}
+.Elmservices .Service--Section .contenu div .intro {
+  color: #8b4848;
+}
+.Elmservices .Service--Section .contenu div .Text-Title {
+  line-height: 1.5 !important;
+  font-size: clamp(2.5rem, 1vw, 3rem);
+  font-weight: bold;
+}
+.Elmservices .Service--Section .grid {
+  display: grid;
+  gap: 1em;
+  padding-block: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+}
+.Elmservices .Service--Section .grid li {
+  color: #8b4848;
+  font-size: clamp(1.4rem, 1vw, 2rem);
+  list-style: square;
 }
 
 footer {

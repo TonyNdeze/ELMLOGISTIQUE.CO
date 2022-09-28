@@ -81,3 +81,18 @@ updateCount();
 
 
 
+//something
+
+
+const revealed = document.querySelectorAll(".contenu");
+
+function revalService(){
+  document.getElementById("ToggleClosed").style.display = "none";
+  document.getElementById("ToggleOpened").style.display ="block";
+    document.getElementById("Contenu").style.display="block";
+}
+function hideService(){
+  document.getElementById("ToggleClosed").style.display = "block";
+  document.getElementById("ToggleOpened").style.display ="none";
+  document.getElementById("Contenu").style.display="none";
+}
