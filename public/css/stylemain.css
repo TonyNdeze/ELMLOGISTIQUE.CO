@@ -526,11 +526,10 @@ body .HR_Styled {
 }
 .Elmservices .ServiceTip {
   padding-block-start: 1em;
-  padding-inline-start: 2em;
 }
 .Elmservices .ServiceTip i {
   color: green;
-  margin-inline: 2em;
+  margin-inline: 1em;
 }
 .Elmservices .Service--Section {
   padding-block: 2em;
@@ -602,6 +601,7 @@ body .HR_Styled {
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 .Elmservices .Service--Section .grid li {
+  margin-inline-start: 2em;
   color: #8b4848;
   font-size: clamp(1.4rem, 1vw, 2rem);
   list-style: square;
