@@ -542,7 +542,7 @@ body .HR_Styled {
   height: 0.1em;
 }
 .Elmservices .Service--Section .header {
-  border-radius: 2%;
+  padding-block: 2em;
 }
 .Elmservices .Service--Section .header * {
   display: inline;
