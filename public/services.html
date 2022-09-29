@@ -27,6 +27,7 @@
 </head>
 
 <body>
+    <!-- Page -->
     <div class="PageBGOpac">
         <!-- Top bar -->
         <div class="Container" id="Top-bar">
@@ -185,43 +186,47 @@
                 </nav>
             </div>
         </div>
-        <!-- Hero Starts here -->
-        <div class="PageBGOPac">
-            <div class="Hero-small Container--backgroundimage" id="Hero-Section">
-            </div>
 
-            <!-- Content Starts Here -->
+        <!-- Content Starts Here -->
+
+        <div class="PageBGOPac">
+
+            <!-- Hero is here -->
+            <div class="Hero-small Container--backgroundimage" id="Hero-Section"></div>
+
+            <!-- Content is below -->
             <div class="ContentBGOPac">
                 <div class="row ContentBGOPac">
                     <div class="row Content-Width Text-Centered" style="padding-block:4em;"">
-                       <h1 class="Text-Header">Notre gamme de solutions logistques.</h1>
+                       <h1 class="Text-Header">Notre Gamme de Services.</h1>
                        <p class="Text-Subheader">Nos services sont actuellement disponibe majoritairement 
                         en RDC, et en afrique de l'Est.
                        </p><br><br>
                        <button class="Buttons">Voir notre Portee</button>
                     </div>
-                </div>
         
-                <div class="row Elmservices ContentBGOPac">
+                <div class="row Elmservices ">
                     <div class="row Content-WidthSmall ServiceIntro">
                         <h1 class="Text-Title">Solutions de fret routier</h1>
                     </div>
                     <div class="row Content-WidthSmall ServiceTip">
-                        <span class="Text-Paragraph">
-                            <i class="fa fa-check"></i>
-                            Solutions de transport pour vos besoins en transit de fret national.</span>
+                        <ul>
+                            <li class="Text-Paragraph">
+                                Solutions de transport pour vos besoins en transit de fret national.
+                            </li>
+                        </ul>
                     </div>
-                    <section class="row reveal Service--Section Content-WidthSmall Cointainer" id="fretRoutier">
+                    <section class="row Service--Section Content-WidthSmall Cointainer" id="fretRoutier">
                         <div class="row header">
                         <button class="IcoBTN" onclick="revalService()" id="ToggleClosed">
                             <p class="Text-Subheader" onclick="revalService()">Afficher les details</p>
                             <i class="IcoToggle fa fas fa-chevron-up" ></i>
                         </button>
                         <button class="IcoBTN" onclick="hideService()" style="display:none;" id="ToggleOpened">
-                            <p class="Text-Subheader" onclick="revalService()">Masquer les details</p>
+                            <p class="Text-Subheader" onclick="hideService()">Masquer les details</p>
                             <i class="IcoToggle fa fas fa-chevron-down"></i></button>
                         </div>
-                        <div class="row contenu" id="Contenu">
+                        <div class="row contenu" id="Hidden">
                             <div class="">
                                 <div class="img Roadtransport"></div>
                                 <div class="Text-Centered">
@@ -245,67 +250,159 @@
                                 </ul>
                                 <div class="Text-Centered row legende Table">
                                     <span class="Text-Paragraph">Legende: <span/> &nbsp;&nbsp;
-                                    <span class="Text-Paragraph"><i class="fa fa-check"></i>&nbsp;&nbsp;Compris</span>&nbsp;&nbsp;
-                                    <span class="Text-Paragraph"><i class="fa fa-times"></i>&nbsp;&nbsp;Non-compris</span><br>
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>Column 1</th>
-                                                <th>Column 2</th>
-                                                <th>Column 3</th>
-                                                <th>Column 4</th>
-                                                <th>Column 5</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Cell 1</td>
-                                                <td>Cell 2</td>
-                                                <td>Cell 3</td>
-                                                <td>Cell 4</td>
-                                                <td>Cell 5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cell 1</td>
-                                                <td>Cell 2</td>
-                                                <td>Cell 3</td>
-                                                <td>Cell 4</td>
-                                                <td>Cell 5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cell 1</td>
-                                                <td>Cell 2</td>
-                                                <td>Cell 3</td>
-                                                <td>Cell 4</td>
-                                                <td>Cell 5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cell 1</td>
-                                                <td>Cell 2</td>
-                                                <td>Cell 3</td>
-                                                <td>Cell 4</td>
-                                                <td>Cell 5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cell 1</td>
-                                                <td>Cell 2</td>
-                                                <td>Cell 3</td>
-                                                <td>Cell 4</td>
-                                                <td>Cell 5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <span class="Text-Paragraph" id="legendCheck">Compris</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span class="Text-Paragraph" id="legendCross">Non-compris</span><br>
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Column 1</th>
+                                                    <th>Column 2</th>
+                                                    <th>Column 3</th>
+                                                    <th>Column 4</th>
+                                                    <th>Column 5</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cell 1</td>
+                                                    <td>Cell 2</td>
+                                                    <td>Cell 3</td>
+                                                    <td>Cell 4</td>
+                                                    <td>Cell 5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    
+                    <div class="row Content-WidthSmall ServiceIntro">
+                        <h1 class="Text-Title">Solutions de manutenion</h1>
+                    </div>
+                    <div class="row Content-WidthSmall ServiceTip">
+                        <ul>
+                            <li class="Text-Paragraph">
+                                Solutions de manutention.
+                            </li>
+                        </ul>
+                    </div>
+                    <section class="row Service--Section Content-WidthSmall Cointainer" id="manutention">
+                        <div class="row header">
+                        <button class="IcoBTN" onclick="revalService()" id="ToggleClosed">
+                            <p class="Text-Subheader" onclick="revalService()">Afficher les details</p>
+                            <i class="IcoToggle fa fas fa-chevron-up" ></i>
+                        </button>
+                        <button class="IcoBTN" onclick="hideService()" style="display:none;" id="ToggleOpened">
+                            <p class="Text-Subheader" onclick="revalService()">Masquer les details</p>
+                            <i class="IcoToggle fa fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="row contenu" id="">
+                            <div class="">
+                                <div class="img Handling"></div>
+                                <div class="Text-Centered">
+                                    <h1 class="intro Text-Subheader">Une main d'oeauvre experimente a la manutention</h1>
+                                    <span class="Text-Title">Pour vos besoins de chargement et dechargement.
+                                    </span>
+                                    <hr class="HR_Styled">
+                                    <p class="Text-Paragraph">Au court du transport notre equipe vous oeuvre la main d'oeuvre pour
+                                        les processuses de chargement et dechargement.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3 class="Text-Subheader  Text-Centered" style="line-height: 1.2;">Quels sont les services inclus avec ce produit ?</h3>
+                                <ul class="grid-list">
+                                    <li>Main d'oeuvre au chargement et dechargement</li>
+                                    <li>transport local de vos marchandises jusqu'a destination finale</li>
+                                    <li>Manupilation de marchandises de grande taille</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row Service--Section Content-WidthSmall Cointainer" id="enreposage">
+                        <div class="row header">
+                        <button class="IcoBTN" onclick="revalService()" id="ToggleClosed">
+                            <p class="Text-Subheader" onclick="revalService()">Afficher les details</p>
+                            <i class="IcoToggle fa fas fa-chevron-up" ></i>
+                        </button>
+                        <button class="IcoBTN" onclick="hideService()" style="display:none;" id="ToggleOpened">
+                            <p class="Text-Subheader" onclick="revalService()">Masquer les details</p>
+                            <i class="IcoToggle fa fas fa-chevron-down"></i></button>
+                        </div>
+                        <div class="row contenu" id="">
+                            <div class="">
+                                <div class="img Wharehousing"></div>
+                                <div class="Text-Centered">
+                                    <h1 class="intro Text-Subheader">Un stockage conditionne et securise</h1>
+                                    <span class="Text-Title">Nous prenons soins de vos marchandises</span>
+                                    <hr class="HR_Styled">
+                                    <p class="Text-Paragraph">Nos produits d'entreposage' offrent des services de qualité supérieure, incluant 
+                                        des services standard tels que les solutions de groupage.</p>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <h3 class="Text-Subheader  Text-Centered" style="line-height: 1.2;">Quels sont les services inclus avec ce produit ?</h3>
+                                <ul class="grid-list">
+                                    <li>Un stockage sec a bonne temperature</li>
+                                    <li>Des espaces pour des grand colis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <hr class="HR_Styled">
                 </div>
+                
+                <div class="row WhyUs Content-WidthSmall reveal">
+                    <h1 class="Text-Centered Text-Title">Pourquoi Nous Choisir?</h1>
+                    <div class="imgWhyUs"></div>
+                    <ul>
+                        <li>Des solutions de transport flexibles et économiques pour charges complètes et lots partiels garantissent que vous receviez le service de qualité que vous attendez de la part de DHL</li>
+                        <li>Départs réguliers et planifiés vers des sites internationaux pour les expéditions en groupage, fret palettisé et non palettisé. Nous proposons des liaisons porte-à-porte fiables dans toute l’Asie-Pacifique et l’Afrique</li>
+                        <li>Délais de livraison programmés pour toutes vos expéditions ce qui vous permet de planifier votre activité en toute confiance</li>
+                    </ul>
+                </div>
+                
+            </div>
             </div>
         
         </div>
     </div>
+
+    <!-- Footer -->
     <footer class="row Container FooterBGOpac">
-        <div class="Footer Text-Centered Content-Width">
+        <div class="Footer Text-Centered Content-WidthSmall">
            <i class="Icons" id="Logo-Footer">
               <?xml version="1.0" encoding="utf-8"?>
               <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

@@ -323,7 +323,6 @@ body {
 
 .Hero-small {
   background-position: center !important;
-  height: 40vh !important;
   background-image: $HeroImage_0  !important;
 }
 
@@ -455,7 +454,6 @@ body {
 }
 
 .Container-Accent-grid {
-
   padding-block: 4em;
   display: grid;
   gap: 3em;
@@ -622,10 +620,20 @@ body {
     }
   }
   .ServiceTip{
+    display: flex;
     padding-block-start: 1em;
-    i{
-      color: green;
-      margin-inline: 1em;
+    li{
+      padding-left: 1em;
+      list-style: none;
+      &::before{
+        content: "\1F5F8";
+     color: green;
+     font-weight: bold;
+     display: inline-block;
+     width: 1em;
+     margin-left: -1em; 
+     position: relative;
+     }
     }
   }
   .Service--Section {
@@ -639,7 +647,7 @@ body {
     }
 
     .header {
-      padding-block: 2em;
+      padding-block: 0.8em;
       * {
         display: inline;
       }
@@ -670,12 +678,12 @@ body {
       }
     }
 
+    
     .contenu {
-      display: none;
       transform: all 0.2s;
       padding-block: 1.5em;
       margin: 0 auto;
-        .Roadtransport {
+        .Roadtransport, .Wharehousing, .Handling {
           background-image: url(../assets/images/IMG_1066.JPG);
           background-position: 50%;
           background-repeat: no-repeat;
@@ -684,6 +692,12 @@ body {
           box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
           border-radius: 0.5em;
           margin-block-end: 2em;
+        }
+        .Wharehousing{
+          background-image: url(../assets/images/World-map.jpg);
+        }
+        .Handling{
+          background-image: url(../assets/images/handling.jpg);
         }
         div{
           .intro{
@@ -704,76 +718,138 @@ body {
       grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
       li{
         margin-inline-start: 2em;
-        color: #8b4848;
         font-size: clamp(1.4rem, 1vw, 2rem);
-        list-style: square; 
+        list-style: none;
+        &::before{
+      content: "\25A0";
+       color: #8b4848;
+       font-weight: bold;
+       display: inline-block;
+       width: 1em; 
+       margin-left: -1em; 
+       position: relative;
+       } 
       }
     }
     
-  .legende{ 
+  .legende{
     padding-block: 1em;
    span{
-    .fa-check{
-      color: green;
+    margin-inline-end: 0.5em;
+    #legendCheck, #legendCross{
+      &::before{
+        content: "\1F5F8";
+     color: green;
+     font-weight: bold;
+     display: inline-block;
+     width: 1.5em;
+     margin-left: -1em; 
+     position: relative;
+     }	
+     
     }
-    .fa-times{
-      color: #8b4848;
+    #legendCross{
+      &::before{
+        content: "\2717" !important;
+        color: red;
+      }
     }
    }
    
-   table {
-    width: 800px;
-    border-collapse: collapse;
-    overflow: hidden;
+   div{
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  }
-  
-  th,
-  td {
-    padding: 15px;
-    background-color: whitesmoke;
-    color: rgb(38, 38, 38);
-  }
-  
-  th {
-    text-align: left;
-    color: #f2f2f2;
-  }
-  
-  thead {
-    th {
-      background-color: #55608f;
+    overflow: scroll;
+    table {
+      width: 100%;
+      overflow: scroll;
+      border-collapse: collapse;
+      overflow: hidden;
+      
+    th,
+    td {
+      padding: 1em;
+      background-color: whitesmoke;
+      color: rgb(38, 38, 38);
     }
-  }
-  
-  tbody {
-    tr {
-      &:hover {
-        background-color: rgba(255,255,255,0.3);
+    
+    th {
+      text-align: left;
+      color: #f2f2f2;
+    }
+    
+    thead {
+      th {
+        background-color: #55608f;
       }
     }
-    td {
-      position: relative;
-      &:hover {
-        &:before {
-          content: "";
-          position: absolute;
-          left: 0;
-          right: 0;
-          top: -9999px;
-          bottom: -9999px;
-          background-color: white;
-          z-index: -1;
+    
+    tbody {
+      tr {
+        &:hover {
+          background-color: rgba(255,255,255,0.3);
+        }
+      }
+      td {
+        position: relative;
+        &:hover {
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: white;
+            z-index: -1;
+          }
         }
       }
     }
-  }
+    }
+    
+   }
   }
     }
   }
 }
+.WhyUs{
+  h1{
+    line-height: 1.5 !important;
+    color: #000000;
+  }
+  .imgWhyUs{
+    margin-block-start: 1em;
+  margin-block-end: 3em;
+    background-image: url(../assets/images/IMG_1093.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 30em;
+    box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
+    border-radius: 0.5em;
+  }
+  li{
+    padding: 0.5em 1em;
+    font-size: clamp(1.4rem, 1vw, 2rem);
+    list-style: none; 
+    &::before{
+        content: "\25A0";
+     color: #8b4848;
+     font-weight: bold;
+     display: inline-block;
+     width: 1em;
+     margin-left: -1em; 
+     position: relative;
+     top: -0.1em;
+     }
+    
+  }
+}
 
 
+#Hidden{
+  display: none;
+}
 
 footer {
   color: #f9f9f9;

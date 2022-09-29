@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -286,7 +287,6 @@ body .HR_Styled {
 
 .Hero-small {
   background-position: center !important;
-  height: 40vh !important;
   background-image: url(../assets/images/Web-Large-Banner-IMG1.png) !important;
 }
 
@@ -525,11 +525,21 @@ body .HR_Styled {
   color: #000000;
 }
 .Elmservices .ServiceTip {
+  display: flex;
   padding-block-start: 1em;
 }
-.Elmservices .ServiceTip i {
+.Elmservices .ServiceTip li {
+  padding-left: 1em;
+  list-style: none;
+}
+.Elmservices .ServiceTip li::before {
+  content: "🗸";
   color: green;
-  margin-inline: 1em;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: relative;
 }
 .Elmservices .Service--Section {
   padding-block: 2em;
@@ -541,7 +551,7 @@ body .HR_Styled {
   height: 0.1em;
 }
 .Elmservices .Service--Section .header {
-  padding-block: 2em;
+  padding-block: 0.8em;
 }
 .Elmservices .Service--Section .header * {
   display: inline;
@@ -571,12 +581,11 @@ body .HR_Styled {
   font-size: 2em;
 }
 .Elmservices .Service--Section .contenu {
-  display: none;
   transform: all 0.2s;
   padding-block: 1.5em;
   margin: 0 auto;
 }
-.Elmservices .Service--Section .contenu .Roadtransport {
+.Elmservices .Service--Section .contenu .Roadtransport, .Elmservices .Service--Section .contenu .Wharehousing, .Elmservices .Service--Section .contenu .Handling {
   background-image: url(../assets/images/IMG_1066.JPG);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -585,6 +594,12 @@ body .HR_Styled {
   box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
   border-radius: 0.5em;
   margin-block-end: 2em;
+}
+.Elmservices .Service--Section .contenu .Wharehousing {
+  background-image: url(../assets/images/World-map.jpg);
+}
+.Elmservices .Service--Section .contenu .Handling {
+  background-image: url(../assets/images/handling.jpg);
 }
 .Elmservices .Service--Section .contenu div .intro {
   color: #8b4848;
@@ -602,45 +617,67 @@ body .HR_Styled {
 }
 .Elmservices .Service--Section .contenu .grid-list li {
   margin-inline-start: 2em;
-  color: #8b4848;
   font-size: clamp(1.4rem, 1vw, 2rem);
-  list-style: square;
+  list-style: none;
+}
+.Elmservices .Service--Section .contenu .grid-list li::before {
+  content: "■";
+  color: #8b4848;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: relative;
 }
 .Elmservices .Service--Section .contenu .legende {
   padding-block: 1em;
 }
-.Elmservices .Service--Section .contenu .legende span .fa-check {
+.Elmservices .Service--Section .contenu .legende span {
+  margin-inline-end: 0.5em;
+}
+.Elmservices .Service--Section .contenu .legende span #legendCheck::before, .Elmservices .Service--Section .contenu .legende span #legendCross::before {
+  content: "🗸";
   color: green;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+  position: relative;
 }
-.Elmservices .Service--Section .contenu .legende span .fa-times {
-  color: #8b4848;
+.Elmservices .Service--Section .contenu .legende span #legendCross::before {
+  content: "✗" !important;
+  color: red;
 }
-.Elmservices .Service--Section .contenu .legende table {
-  width: 800px;
+.Elmservices .Service--Section .contenu .legende div {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: scroll;
+}
+.Elmservices .Service--Section .contenu .legende div table {
+  width: 100%;
+  overflow: scroll;
   border-collapse: collapse;
   overflow: hidden;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
-.Elmservices .Service--Section .contenu .legende th,
-.Elmservices .Service--Section .contenu .legende td {
-  padding: 15px;
+.Elmservices .Service--Section .contenu .legende div table th,
+.Elmservices .Service--Section .contenu .legende div table td {
+  padding: 1em;
   background-color: whitesmoke;
   color: rgb(38, 38, 38);
 }
-.Elmservices .Service--Section .contenu .legende th {
+.Elmservices .Service--Section .contenu .legende div table th {
   text-align: left;
   color: #f2f2f2;
 }
-.Elmservices .Service--Section .contenu .legende thead th {
+.Elmservices .Service--Section .contenu .legende div table thead th {
   background-color: #55608f;
 }
-.Elmservices .Service--Section .contenu .legende tbody tr:hover {
+.Elmservices .Service--Section .contenu .legende div table tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.Elmservices .Service--Section .contenu .legende tbody td {
+.Elmservices .Service--Section .contenu .legende div table tbody td {
   position: relative;
 }
-.Elmservices .Service--Section .contenu .legende tbody td:hover:before {
+.Elmservices .Service--Section .contenu .legende div table tbody td:hover:before {
   content: "";
   position: absolute;
   left: 0;
@@ -649,6 +686,41 @@ body .HR_Styled {
   bottom: -9999px;
   background-color: white;
   z-index: -1;
+}
+
+.WhyUs h1 {
+  line-height: 1.5 !important;
+  color: #000000;
+}
+.WhyUs .imgWhyUs {
+  margin-block-start: 1em;
+  margin-block-end: 3em;
+  background-image: url(../assets/images/IMG_1093.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 30em;
+  box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
+  border-radius: 0.5em;
+}
+.WhyUs li {
+  padding: 0.5em 1em;
+  font-size: clamp(1.4rem, 1vw, 2rem);
+  list-style: none;
+}
+.WhyUs li::before {
+  content: "■";
+  color: #8b4848;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  position: relative;
+  top: -0.1em;
+}
+
+#Hidden {
+  display: none;
 }
 
 footer {
