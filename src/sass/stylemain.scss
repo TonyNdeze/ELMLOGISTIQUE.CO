@@ -247,13 +247,12 @@ body {
 .Hero,
 .Hero-minimazed,
 .Hero-small {
-  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image:
     $HeroImage-Gradient, $HeroImage_0;
   animation: HeroSlider 20s linear infinite;
-
+  background-attachment: fixed;
   .HeroContent {
     position: relative;
     color: #f9f9f9;
@@ -323,7 +322,7 @@ body {
 
 .Hero-small {
   background-position: center !important;
-  background-image: $HeroImage_0  !important;
+  background-image: $HeroImage_1  !important;
 }
 
 // Homepage
@@ -610,6 +609,9 @@ body {
 
 // Services Page
 .Elmservices {
+  .Services{
+    padding-block: 1em;
+  }
   .ServiceIntro{
     background-color: #f2f2f2;
     border-radius: 2%;
@@ -621,7 +623,8 @@ body {
   }
   .ServiceTip{
     display: flex;
-    padding-block-start: 1em;
+    padding-inline-start: 1em;
+    padding-block: 1em;
     li{
       padding-left: 1em;
       list-style: none;
@@ -636,17 +639,39 @@ body {
      }
     }
   }
+  .Roadtransport, .Wharehousing, .Handling {
+    background-image: url(../assets/images/IMG_1066.JPG);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25em;
+    box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
+    border-radius: 0.5em;
+    margin-block-end: 2em;
+  }
+  .Wharehousing{
+    background-image: url(../assets/images/World-map.jpg);
+  }
+  .Handling{
+    background-image: url(../assets/images/handling.jpg);
+  }
   .Service--Section {
     padding-block: 2em;
-    &::before,
-    &::after {
+    &::before, &::after{
       content: "";
-      background: #77a0cb;
-      display: block;
+      width: 100%;
       height: 0.1em;
+      background: #55608f;
+      display: block;
     }
 
-    .header {
+    &:hover{
+      &::before, &::after{
+        background: #8b4848;
+      }
+    }
+    }
+    .Shrinked {
       padding-block: 0.8em;
       * {
         display: inline;
@@ -654,170 +679,155 @@ body {
       p{
         line-height: 1;
       }
-      .IcoBTN {
-        position: relative;
-        height: 3em;
-        width: 100%;
-        text-align: left;
-        border: none;
-        background: none;
-        padding-inline: 1em;
-
-        i {
-          position: relative;
-          font-size: 1.7em;
-          transition: all 0.1s;
-          float: inline-end;
-        }
-        &:hover{
-          color: #8b4848;
-          i{
-            font-size: 2em;
-          }
-        }
-      }
-    }
-
-    
-    .contenu {
-      transform: all 0.2s;
-      padding-block: 1.5em;
-      margin: 0 auto;
-        .Roadtransport, .Wharehousing, .Handling {
-          background-image: url(../assets/images/IMG_1066.JPG);
-          background-position: 50%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 25em;
-          box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
-          border-radius: 0.5em;
-          margin-block-end: 2em;
-        }
-        .Wharehousing{
-          background-image: url(../assets/images/World-map.jpg);
-        }
-        .Handling{
-          background-image: url(../assets/images/handling.jpg);
-        }
-        div{
-          .intro{
-            color: #8b4848;
-          }
-          .Text-Title{
-            line-height: 1.5 !important;
-            font-size: clamp(2.5rem, 1vw, 3rem);
-            font-weight: bold;
-          }
-
-      }
       
-    .grid-list{
-      display: grid;
-      gap: 1em;
-      padding-block: 4em;
-      grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
-      li{
-        margin-inline-start: 2em;
-        font-size: clamp(1.4rem, 1vw, 2rem);
-        list-style: none;
-        &::before{
-      content: "\25A0";
-       color: #8b4848;
-       font-weight: bold;
-       display: inline-block;
-       width: 1em; 
-       margin-left: -1em; 
-       position: relative;
-       } 
+    .IcoBTN {
+      position: relative;
+      height: 3em;
+      width: 100%;
+      text-align: left;
+      border: none;
+      background: none;
+      padding-inline: 1em;
+      color: #55608f;
+
+      i {
+        position: relative;
+        font-size: 1.7em;
+        transition: all 0.1s;
+        float: inline-end;
+      }
+      &:hover{
+        color: #8b4848;
+        i{
+          font-size: 2em;
+        }
       }
     }
     
-  .legende{
-    padding-block: 1em;
-   span{
-    margin-inline-end: 0.5em;
-    #legendCheck, #legendCross{
+  }
+  
+    .intro{
+      color: #8b4848;
+    }
+    .Text-Title{
+      line-height: 1.5 !important;
+      font-size: clamp(2.5rem, 1vw, 3rem);
+      font-weight: bold;
+    }
+
+  .contenu {
+    transform: all 0.2s;
+    padding-block: 1.5em;
+    margin: 0 auto;
+  .grid-list{
+    display: grid;
+    gap: 1em;
+    padding-block: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
+    li{
+      margin-inline-start: 2em;
+      font-size: clamp(1.4rem, 1vw, 2rem);
+      list-style: none;
       &::before{
-        content: "\1F5F8";
-     color: green;
+    content: "\25A0";
+     color: #8b4848;
      font-weight: bold;
      display: inline-block;
-     width: 1.5em;
+     width: 1em; 
      margin-left: -1em; 
      position: relative;
-     }	
-     
+     } 
     }
-    #legendCross{
-      &::before{
-        content: "\2717" !important;
-        color: red;
-      }
-    }
-   }
-   
-   div{
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    overflow: scroll;
-    table {
-      width: 100%;
-      overflow: scroll;
-      border-collapse: collapse;
-      overflow: hidden;
-      
-    th,
-    td {
-      padding: 1em;
-      background-color: whitesmoke;
-      color: rgb(38, 38, 38);
-    }
-    
-    th {
-      text-align: left;
-      color: #f2f2f2;
-    }
-    
-    thead {
-      th {
-        background-color: #55608f;
-      }
-    }
-    
-    tbody {
-      tr {
-        &:hover {
-          background-color: rgba(255,255,255,0.3);
-        }
-      }
-      td {
-        position: relative;
-        &:hover {
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: -9999px;
-            bottom: -9999px;
-            background-color: white;
-            z-index: -1;
-          }
-        }
-      }
-    }
-    }
-    
-   }
   }
+  
+.legende{
+  padding-block: 1em;
+ span{
+  margin-inline-end: 0.5em;
+  #legendCheck, #legendCross{
+    &::before{
+      content: "\1F5F8";
+   color: green;
+   font-weight: bold;
+   display: inline-block;
+   width: 1.5em;
+   margin-left: -1em; 
+   position: relative;
+   }	
+   
+  }
+  #legendCross{
+    &::before{
+      content: "\2717" !important;
+      color: red;
     }
+  }
+ }
+ 
+ div{
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  overflow: scroll;
+  table {
+    width: 100%;
+    overflow: scroll;
+    border-collapse: collapse;
+    overflow: hidden;
+    
+  th,
+  td {
+    padding: 1em;
+    background-color: whitesmoke;
+    color: rgb(38, 38, 38);
+  }
+  
+  th {
+    text-align: left;
+    color: #f2f2f2;
+  }
+  
+  thead {
+    th {
+      background-color: #55608f;
+    }
+  }
+  
+  tbody {
+    tr {
+      &:hover {
+        background-color: rgba(255,255,255,0.3);
+      }
+    }
+    td {
+      position: relative;
+      &:hover {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -9999px;
+          bottom: -9999px;
+          background-color: white;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  }
+  
+ }
+}
   }
 }
 .WhyUs{
+  padding-bottom: 2em;
   h1{
     line-height: 1.5 !important;
     color: #000000;
   }
   .imgWhyUs{
+    max-width: 90em;
+    margin-inline: auto;
     margin-block-start: 1em;
   margin-block-end: 3em;
     background-image: url(../assets/images/IMG_1093.JPG);
@@ -826,7 +836,6 @@ body {
     background-position: 50%;
     height: 30em;
     box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
-    border-radius: 0.5em;
   }
   li{
     padding: 0.5em 1em;
@@ -847,8 +856,11 @@ body {
 }
 
 
-#Hidden{
+.Hidden{
   display: none;
+}
+.Shown{
+  display: block;
 }
 
 footer {

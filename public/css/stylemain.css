@@ -218,11 +218,11 @@ body .HR_Styled {
 .Hero,
 .Hero-minimazed,
 .Hero-small {
-  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
   animation: HeroSlider 20s linear infinite;
+  background-attachment: fixed;
 }
 .Hero .HeroContent,
 .Hero-minimazed .HeroContent,
@@ -287,7 +287,7 @@ body .HR_Styled {
 
 .Hero-small {
   background-position: center !important;
-  background-image: url(../assets/images/Web-Large-Banner-IMG1.png) !important;
+  background-image: url(../assets/images/Web-Exta-Large-Banner-IMG2.png) !important;
 }
 
 .Card-services-set,
@@ -515,6 +515,9 @@ body .HR_Styled {
   font-size: 2rem;
 }
 
+.Elmservices .Services {
+  padding-block: 1em;
+}
 .Elmservices .ServiceIntro {
   background-color: #f2f2f2;
   border-radius: 2%;
@@ -526,7 +529,8 @@ body .HR_Styled {
 }
 .Elmservices .ServiceTip {
   display: flex;
-  padding-block-start: 1em;
+  padding-inline-start: 1em;
+  padding-block: 1em;
 }
 .Elmservices .ServiceTip li {
   padding-left: 1em;
@@ -541,51 +545,7 @@ body .HR_Styled {
   margin-left: -1em;
   position: relative;
 }
-.Elmservices .Service--Section {
-  padding-block: 2em;
-}
-.Elmservices .Service--Section::before, .Elmservices .Service--Section::after {
-  content: "";
-  background: #77a0cb;
-  display: block;
-  height: 0.1em;
-}
-.Elmservices .Service--Section .header {
-  padding-block: 0.8em;
-}
-.Elmservices .Service--Section .header * {
-  display: inline;
-}
-.Elmservices .Service--Section .header p {
-  line-height: 1;
-}
-.Elmservices .Service--Section .header .IcoBTN {
-  position: relative;
-  height: 3em;
-  width: 100%;
-  text-align: left;
-  border: none;
-  background: none;
-  padding-inline: 1em;
-}
-.Elmservices .Service--Section .header .IcoBTN i {
-  position: relative;
-  font-size: 1.7em;
-  transition: all 0.1s;
-  float: inline-end;
-}
-.Elmservices .Service--Section .header .IcoBTN:hover {
-  color: #8b4848;
-}
-.Elmservices .Service--Section .header .IcoBTN:hover i {
-  font-size: 2em;
-}
-.Elmservices .Service--Section .contenu {
-  transform: all 0.2s;
-  padding-block: 1.5em;
-  margin: 0 auto;
-}
-.Elmservices .Service--Section .contenu .Roadtransport, .Elmservices .Service--Section .contenu .Wharehousing, .Elmservices .Service--Section .contenu .Handling {
+.Elmservices .Roadtransport, .Elmservices .Wharehousing, .Elmservices .Handling {
   background-image: url(../assets/images/IMG_1066.JPG);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -595,32 +555,81 @@ body .HR_Styled {
   border-radius: 0.5em;
   margin-block-end: 2em;
 }
-.Elmservices .Service--Section .contenu .Wharehousing {
+.Elmservices .Wharehousing {
   background-image: url(../assets/images/World-map.jpg);
 }
-.Elmservices .Service--Section .contenu .Handling {
+.Elmservices .Handling {
   background-image: url(../assets/images/handling.jpg);
 }
-.Elmservices .Service--Section .contenu div .intro {
+.Elmservices .Service--Section {
+  padding-block: 2em;
+}
+.Elmservices .Service--Section::before, .Elmservices .Service--Section::after {
+  content: "";
+  width: 100%;
+  height: 0.1em;
+  background: #55608f;
+  display: block;
+}
+.Elmservices .Service--Section:hover::before, .Elmservices .Service--Section:hover::after {
+  background: #8b4848;
+}
+.Elmservices .Shrinked {
+  padding-block: 0.8em;
+}
+.Elmservices .Shrinked * {
+  display: inline;
+}
+.Elmservices .Shrinked p {
+  line-height: 1;
+}
+.Elmservices .Shrinked .IcoBTN {
+  position: relative;
+  height: 3em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+  padding-inline: 1em;
+  color: #55608f;
+}
+.Elmservices .Shrinked .IcoBTN i {
+  position: relative;
+  font-size: 1.7em;
+  transition: all 0.1s;
+  float: inline-end;
+}
+.Elmservices .Shrinked .IcoBTN:hover {
   color: #8b4848;
 }
-.Elmservices .Service--Section .contenu div .Text-Title {
+.Elmservices .Shrinked .IcoBTN:hover i {
+  font-size: 2em;
+}
+.Elmservices .intro {
+  color: #8b4848;
+}
+.Elmservices .Text-Title {
   line-height: 1.5 !important;
   font-size: clamp(2.5rem, 1vw, 3rem);
   font-weight: bold;
 }
-.Elmservices .Service--Section .contenu .grid-list {
+.Elmservices .contenu {
+  transform: all 0.2s;
+  padding-block: 1.5em;
+  margin: 0 auto;
+}
+.Elmservices .contenu .grid-list {
   display: grid;
   gap: 1em;
   padding-block: 4em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
-.Elmservices .Service--Section .contenu .grid-list li {
+.Elmservices .contenu .grid-list li {
   margin-inline-start: 2em;
   font-size: clamp(1.4rem, 1vw, 2rem);
   list-style: none;
 }
-.Elmservices .Service--Section .contenu .grid-list li::before {
+.Elmservices .contenu .grid-list li::before {
   content: "■";
   color: #8b4848;
   font-weight: bold;
@@ -629,13 +638,13 @@ body .HR_Styled {
   margin-left: -1em;
   position: relative;
 }
-.Elmservices .Service--Section .contenu .legende {
+.Elmservices .contenu .legende {
   padding-block: 1em;
 }
-.Elmservices .Service--Section .contenu .legende span {
+.Elmservices .contenu .legende span {
   margin-inline-end: 0.5em;
 }
-.Elmservices .Service--Section .contenu .legende span #legendCheck::before, .Elmservices .Service--Section .contenu .legende span #legendCross::before {
+.Elmservices .contenu .legende span #legendCheck::before, .Elmservices .contenu .legende span #legendCross::before {
   content: "🗸";
   color: green;
   font-weight: bold;
@@ -644,40 +653,40 @@ body .HR_Styled {
   margin-left: -1em;
   position: relative;
 }
-.Elmservices .Service--Section .contenu .legende span #legendCross::before {
+.Elmservices .contenu .legende span #legendCross::before {
   content: "✗" !important;
   color: red;
 }
-.Elmservices .Service--Section .contenu .legende div {
+.Elmservices .contenu .legende div {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   overflow: scroll;
 }
-.Elmservices .Service--Section .contenu .legende div table {
+.Elmservices .contenu .legende div table {
   width: 100%;
   overflow: scroll;
   border-collapse: collapse;
   overflow: hidden;
 }
-.Elmservices .Service--Section .contenu .legende div table th,
-.Elmservices .Service--Section .contenu .legende div table td {
+.Elmservices .contenu .legende div table th,
+.Elmservices .contenu .legende div table td {
   padding: 1em;
   background-color: whitesmoke;
   color: rgb(38, 38, 38);
 }
-.Elmservices .Service--Section .contenu .legende div table th {
+.Elmservices .contenu .legende div table th {
   text-align: left;
   color: #f2f2f2;
 }
-.Elmservices .Service--Section .contenu .legende div table thead th {
+.Elmservices .contenu .legende div table thead th {
   background-color: #55608f;
 }
-.Elmservices .Service--Section .contenu .legende div table tbody tr:hover {
+.Elmservices .contenu .legende div table tbody tr:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.Elmservices .Service--Section .contenu .legende div table tbody td {
+.Elmservices .contenu .legende div table tbody td {
   position: relative;
 }
-.Elmservices .Service--Section .contenu .legende div table tbody td:hover:before {
+.Elmservices .contenu .legende div table tbody td:hover:before {
   content: "";
   position: absolute;
   left: 0;
@@ -688,11 +697,16 @@ body .HR_Styled {
   z-index: -1;
 }
 
+.WhyUs {
+  padding-bottom: 2em;
+}
 .WhyUs h1 {
   line-height: 1.5 !important;
   color: #000000;
 }
 .WhyUs .imgWhyUs {
+  max-width: 90em;
+  margin-inline: auto;
   margin-block-start: 1em;
   margin-block-end: 3em;
   background-image: url(../assets/images/IMG_1093.JPG);
@@ -701,7 +715,6 @@ body .HR_Styled {
   background-position: 50%;
   height: 30em;
   box-shadow: rgba(27, 27, 30, 0.2) 0px 7px 20px 0px;
-  border-radius: 0.5em;
 }
 .WhyUs li {
   padding: 0.5em 1em;
@@ -719,8 +732,12 @@ body .HR_Styled {
   top: -0.1em;
 }
 
-#Hidden {
+.Hidden {
   display: none;
+}
+
+.Shown {
+  display: block;
 }
 
 footer {

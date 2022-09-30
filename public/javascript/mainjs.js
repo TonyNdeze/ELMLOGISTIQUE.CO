@@ -19,7 +19,8 @@ function myStickyNav() {
 }
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myStickyNav()};
-});
+
+
 
 // Reveal content block
 window.addEventListener('scroll', reveal);
@@ -30,7 +31,7 @@ function reveal(){
     
     var windowheight = window.innerHeight;
     var revealtop = reveals[i].getBoundingClientRect().top;
-    var revealpoint = 100;
+    var revealpoint = 50;
 
     if(revealtop < windowheight - revealpoint){
      reveals[i].classList.add('active');
@@ -41,58 +42,72 @@ function reveal(){
   }
 }
 
+//Reval & Hide Sections
+  
 
-// Counter Section 
 
- const counts = document.querySelectorAll(".CountNumber");
- const speed = 97;
+});
+  
 
-counts.forEach(counter => {
-  const updateCount = () => {
-    const target = +counter.getAttribute('data-target');
-    const count = +counter.innerText;
+  
 
-    const inc = target / speed;
+  
 
-    if(count < target){
-      counter.innerText = count +inc;
-      setTimeout(updateCount, 1);
-    }else{
-      count.innerText = target;
+
+
+  function revealHideRTService(){
+    let RTRvlHideSectionLabel = document.getElementById("RTServiceLabel");
+    let RTServiceSectionContent = document.getElementById("RodTransServiveContent");
+    let RTServiceHSCmdIcon = document.getElementById("RTServiceHSCmdIcon");
+  if(RTRvlHideSectionLabel.textContent == "Afficher les details" ){
+    RTRvlHideSectionLabel.textContent = "Masquer les details";
+    RTServiceHSCmdIcon.classList.remove('fa-chevron-up');
+    RTServiceHSCmdIcon.classList.add('fa-chevron-down');
+    RTServiceSectionContent.classList.remove('Hidden');
+
+  }
+  else{
+    RTRvlHideSectionLabel.textContent = "Afficher les details";
+    RTServiceHSCmdIcon.classList.remove('fa-chevron-down');
+    RTServiceHSCmdIcon.classList.add('fa-chevron-up');
+    RTServiceSectionContent.classList.add('Hidden');
+  }
+  }
+  function revealHideHndService(){
+    let HndRvlHideSectionLabel = document.getElementById("HndServiceLabel");
+    let HndServiceSectionContent = document.getElementById("HandlingServiceContent");
+    let HndServiceHSCmdIcon = document.getElementById("HndServiceHSCmdIcon");
+
+    if(HndRvlHideSectionLabel.textContent == "Afficher les details" ){
+      HndRvlHideSectionLabel.textContent = "Masquer les details";
+      HndServiceHSCmdIcon.classList.remove('fa-chevron-up');
+      HndServiceHSCmdIcon.classList.add('fa-chevron-down');
+      HndServiceSectionContent.classList.remove('Hidden');
+  
+    }
+    else{
+      HndRvlHideSectionLabel.textContent = "Afficher les details";
+      HndServiceHSCmdIcon.classList.remove('fa-chevron-down');
+      HndServiceHSCmdIcon.classList.add('fa-chevron-up');
+      HndServiceSectionContent.classList.add('Hidden');
     }
   }
-updateCount();
-
-
-// function upData(){
-//   const target = Number(counter.getAttribute('data-target'));
-//   const count = Number(counter.innerText);
-//   const inc = target /speed;
-//   if(count < target){
-//     counter.innerText = Math.floor(inc + count);
-//      setTimeout(upData, 1);
-      
-//       }
-//       else{
-//         counter.innerText = target;
-//       }
-// }
-});
-
-
-
-//something
-
-
-const revealed = document.querySelectorAll(".contenu");
-
-function revalService(){
-  document.getElementById("ToggleClosed").style.display = "none";
-  document.getElementById("ToggleOpened").style.display ="block";
-    document.getElementById("Hidden").style.display="block";
-}
-function hideService(){
-  document.getElementById("ToggleClosed").style.display = "block";
-  document.getElementById("ToggleOpened").style.display ="none";
-  document.getElementById("Hidden").style.display="none";
-}
+  function revealHideWHService(){
+    let WHRvlHideSectionLabel = document.getElementById("WHServiceLabel");
+    let WHServiceSectionContent = document.getElementById("WarehousingServiveContent");
+    let WHServiceHSCmdIcon = document.getElementById("WHServiceHSCmdIcon");
+  
+    if(WHRvlHideSectionLabel.textContent == "Afficher les details" ){
+      WHRvlHideSectionLabel.textContent = "Masquer les details";
+      WHServiceHSCmdIcon.classList.remove('fa-chevron-up');
+      WHServiceHSCmdIcon.classList.add('fa-chevron-down');
+      WHServiceSectionContent.classList.remove('Hidden');
+  
+    }
+    else{
+      WHRvlHideSectionLabel.textContent = "Afficher les details";
+      WHServiceHSCmdIcon.classList.remove('fa-chevron-down');
+      WHServiceHSCmdIcon.classList.add('fa-chevron-up');
+      WHServiceSectionContent.classList.add('Hidden');
+    }
+  }
