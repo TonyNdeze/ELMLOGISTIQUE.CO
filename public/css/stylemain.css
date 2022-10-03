@@ -221,8 +221,9 @@ body .HR_Styled {
 .Hero-small {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-block: 2em;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Large-Banner-IMG1.png);
+  padding-block: 5em;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/images/Web-Large-Banner-IMG1.png);
 }
 .Hero .HeroContent,
 .Hero-minimized .HeroContent,
@@ -290,7 +291,8 @@ body .HR_Styled {
 .Hero-minimized .HeroContent .row .Card-quickjump-set,
 .Hero-small .HeroContent .row .Card-quickjump-set {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  max-width: 60em;
+  margin-inline: auto;
   position: relative;
   gap: 1.5em;
 }
@@ -351,7 +353,7 @@ body .HR_Styled {
 }
 
 .Hero-minimazed {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../assets/images/Web-Exta-Large-Banner-IMG2.png) !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/images/Web-Exta-Large-Banner-IMG2.png) !important;
 }
 
 #LearnMore-BTN {
@@ -375,6 +377,9 @@ body .HR_Styled {
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 }
 
+.Card-services-set {
+  max-width: 600px;
+}
 .Card-services-set .Card-Services {
   background-color: white;
   border-radius: 0.6em;

@@ -2,7 +2,7 @@ $HeroImage_0: url(../assets/images/Web-Large-Banner-IMG1.png);
 $HeroImage_1: url(../assets/images/Web-Exta-Large-Banner-IMG2.png);
 $HeroImage_2: url(../assets/images/Web-Exta-Large-Banner-IMG3.png);
 $HeroImage_3: url(../assets/images/IMG_1079.JPG);
-$HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+$HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
 
 
 $Font_FontAwesome : 'font awesome 5 Free';
@@ -253,7 +253,8 @@ body {
 .Hero-small {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-block: 2em;
+  padding-block: 5em;
+  background-position: center;
   background-image: $HeroImage-Gradient,$HeroImage_0;
   .HeroContent {
     top: 10em;
@@ -301,7 +302,8 @@ body {
       
 .Card-quickjump-set{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  max-width: 60em;
+  margin-inline: auto;
   position: relative;
   gap: 1.5em;
   .Card{
@@ -379,6 +381,7 @@ body {
 }
 
 .Card-services-set {
+  max-width: 600px;
   .Card-Services {
     background-color: white;
     border-radius: .6em;

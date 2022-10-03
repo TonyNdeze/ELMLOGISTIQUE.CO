@@ -54,13 +54,13 @@
   .Hero .HeroContent .row .Card-quickjump-set, .Hero-minimized .HeroContent .row .Card-quickjump-set {
     box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
     background-color: white;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
     gap: 0.8em;
   }
   .Hero .HeroContent .row .Card-quickjump-set .Card, .Hero-minimized .HeroContent .row .Card-quickjump-set .Card {
     box-shadow: none;
     border-radius: 0;
-    padding-block: 4em !important;
+    padding-block: 2em !important;
   }
   .Hero .HeroContent .row .Card-quickjump-set .Card:hover, .Hero-minimized .HeroContent .row .Card-quickjump-set .Card:hover {
     box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
