@@ -5,29 +5,22 @@
     transition-duration: 1s;
     z-index: 999;
   }
-  .Hero-minimazed {
-    height: 60vh;
-    animation: none !important;
-  }
-  .Hero-minimazed .HeroContent {
-    top: 23vh !important;
-  }
-  .Container--ContactForm .Contact_form {
-    width: 90vw;
-  }
-  .Container--ContactForm .Contact_form fieldset * {
-    margin-inline: auto;
-  }
-  .Container--ContactForm .Contact_form fieldset #Ufname {
-    width: 35%;
-  }
-  .Container--ContactForm .Contact_form fieldset #Ulname {
-    width: 50%;
-  }
-  .Container--ContactForm .Contact_form fieldset textarea {
-    width: 100% !important;
-  }
-  .Container--ContactForm .Contact_form fieldset .intext {
-    width: 88%;
-  }
+}
+.Container--ContactForm .Contact_form {
+  width: 90vw;
+}
+.Container--ContactForm .Contact_form fieldset * {
+  margin-inline: auto;
+}
+.Container--ContactForm .Contact_form fieldset #Ufname {
+  width: 35%;
+}
+.Container--ContactForm .Contact_form fieldset #Ulname {
+  width: 50%;
+}
+.Container--ContactForm .Contact_form fieldset textarea {
+  width: 100% !important;
+}
+.Container--ContactForm .Contact_form fieldset .intext {
+  width: 88%;
 }

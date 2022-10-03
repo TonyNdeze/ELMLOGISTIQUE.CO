@@ -44,18 +44,33 @@
   .Wrapper-Navigation .Nav-bar .Navigation-Menu .LinkMenu .NavLinkActivePage {
     border-bottom: 0.2rem solid #6695d2;
   }
-  .Card-services-set, .Split, .Counter--set {
+  .Card-services-set, .Split, .Counter--set, .Card-quickjump-set {
     grid-gap: 2em;
   }
-  .Hero {
+  .Hero, .Hero-minimized {
     background-position: 50%;
-    height: 95vh;
+    padding-top: 10em;
   }
-  .Hero .HeroContent {
-    top: 8.2em;
+  .Hero .HeroContent .row .Card-quickjump-set, .Hero-minimized .HeroContent .row .Card-quickjump-set {
+    box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+    background-color: white;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    gap: 0.8em;
   }
-  .Hero-minimazed {
-    height: 100vh !important;
+  .Hero .HeroContent .row .Card-quickjump-set .Card, .Hero-minimized .HeroContent .row .Card-quickjump-set .Card {
+    box-shadow: none;
+    border-radius: 0;
+    padding-block: 4em !important;
+  }
+  .Hero .HeroContent .row .Card-quickjump-set .Card:hover, .Hero-minimized .HeroContent .row .Card-quickjump-set .Card:hover {
+    box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+  }
+  .Hero .HeroContent .row .Card-quickjump-set .Card a, .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a {
+    text-align: center;
+    display: block;
+  }
+  .Hero .HeroContent .row .Card-quickjump-set .Card a::after, .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a::after {
+    top: 0em;
   }
   .Container-Accent-grid {
     grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
@@ -84,10 +99,5 @@
   }
   .Footer .FooterLinks {
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  }
-}
-@media only screen and (min-width: 768px) and (min-height: 912px) {
-  .Hero-minimazed {
-    height: 55vh !important;
   }
 }

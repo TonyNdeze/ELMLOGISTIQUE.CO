@@ -51,19 +51,38 @@
     } 
   }
 
-  .Card-services-set, .Split, .Counter--set{
+  .Card-services-set, .Split, .Counter--set, .Card-quickjump-set{
     grid-gap: 2em;
   }
-  .Hero{
-      background-position:50%;
-      height: 95vh;
-      .HeroContent {
-       top: 8.2em;
+  .Hero, .Hero-minimized {
+    background-position: 50%;
+    padding-top: 10em;
+    .HeroContent {
+      .row{
+        .Card-quickjump-set {
+        box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+        background-color: white;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+        gap: 0.8em;
+        .Card {
+          box-shadow: none;
+          border-radius: 0;
+          padding-block: 4em !important;
+          &:hover{
+              box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+          }
+          a{
+            text-align: center;
+            display: block;
+              &::after{
+                top: 0em;
+              }
+          }
         }
       }
-    .Hero-minimazed{
-      height: 100vh!important;
+      }
     }
+  }
     .Container-Accent-grid{
       grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     }
@@ -102,15 +121,6 @@
     .Footer{
       .FooterLinks{
         grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-      }
-    }
-
-
-    @media only screen and (min-height:912px){
-     
-      .Hero-minimazed{
-        height: 55vh!important;
-        
       }
     }
   }

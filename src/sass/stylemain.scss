@@ -4,6 +4,9 @@ $HeroImage_2: url(../assets/images/Web-Exta-Large-Banner-IMG3.png);
 $HeroImage_3: url(../assets/images/IMG_1079.JPG);
 $HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
 
+
+$Font_FontAwesome : 'font awesome 5 Free';
+
 html {
   font-size: 62.5%;
 
@@ -246,16 +249,22 @@ body {
 }
 
 .Hero,
-.Hero-minimazed,
+.Hero-minimized,
 .Hero-small {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-block: 2em ;
+  padding-block: 2em;
   background-image: $HeroImage-Gradient,$HeroImage_0;
   .HeroContent {
+    top: 10em;
     position: relative;
     .row{
+      padding-block-end: 2em;
+    h1, p{
+      color: #f2f2f2;
+    }
       form{
+        padding: 3em 0;
         margin-inline: auto;
         max-width: 50em;
         label{
@@ -271,7 +280,7 @@ body {
           height: fit-content;
           background-color: #f5f5f5;
           border-radius: 0.4em;
-          border: 0.1em inset #f2f2f2;
+          border: 0.1em solid #f2f2f2;
           input[type="text"]{
             border: none;
             font-size: medium;
@@ -289,14 +298,61 @@ body {
           }
         }
       }
+      
+.Card-quickjump-set{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80%, 1fr));
+  position: relative;
+  gap: 1.5em;
+  .Card{
+    padding: 2em ;
+    background-color: white;
+    border-radius: .6em;
+    box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+    a{
+      display: flex;
+      .Container{
+        display: inline;
+        padding-inline: 0.4em;
+      }
+      color: #655f5f;
+      text-decoration: none;
+      h2{
+        color: #6695d2;
+        font-weight: 800;
+      }
+      span{
+        font-size: clamp(1.2rem, 1.4rem, 1.6rem);
+      }
+      i{
+        font-size: 2.4rem;
+        color: #8b4848;
+        fill: #8b4848;
+      }
+      &::after{
+        content: "\276F";
+        top: 1.1em;
+        font-size: large;
+        position: relative;
+        color: #8b4848;
+        font-weight: bold;
+    }
+    &:hover{
+      span{
+        text-decoration: underline;
+        color: #8b4848;
+      }
+
+    }   
+    }
     }
   }
-
+    }
+  }
 }
-
 .Hero-minimazed {
-  background-image: $HeroImage-Gradient, $HeroImage_0  !important;
-  animation: none !important;
+  background-image: $HeroImage-Gradient, $HeroImage_1  !important;
+
 }
 
 #LearnMore-BTN {
@@ -316,7 +372,7 @@ body {
 // Homepage
 .Card-services-set,
 .Split,
-.Counter--set {
+.Counter--set{
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
@@ -454,42 +510,39 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     gap: 1em !important;
-
+    
     .Card-Contacts {
       background-color: white;
       border-radius: .6em;
       box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
       padding: 2em;
-
-      i {
-        color: #655f5f;
-        display: block;
-        font-size: 3rem;
-      }
-
-      a {
-        font-size: clamp(1.6rem, 1vw, 2rem);
-        line-height: 1.6;
-        color: #77a0cb;
-        display: block;
-        text-decoration: none;
-
-        &:hover {
-          color: #8b4848;
-          fill: #77a0cb;
-          -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-        }
-
         i {
-          position: relative;
-          bottom: -0.1em;
-          margin-inline-end: 1em;
-          color: inherit;
-          display: inline;
-          font-size: 2rem;
+          color: #655f5f;
+          display: block;
+          font-size: 3rem;
         }
-      }
+  
+        a {
+          font-size: clamp(1.6rem, 1vw, 2rem);
+          line-height: 1.6;
+          color: #77a0cb;
+          display: block;
+          text-decoration: none;
+  
+          &:hover {
+            color: #8b4848;
+            fill: #77a0cb;
+          }
+  
+          i {
+            position: relative;
+            bottom: -0.1em;
+            margin-inline-end: 1em;
+            color: inherit;
+            display: inline;
+            font-size: 2rem;
+          }
+        }
     }
 
   }
@@ -580,16 +633,11 @@ body {
             outline: max(2px, 0.15em) solid currentColor;
             outline-offset: max(2px, 0.15em);
           }
-
-
-
-
         }
       }
 
       .inButton {
         float: right;
-        font-size: 2rem;
       }
     }
   }

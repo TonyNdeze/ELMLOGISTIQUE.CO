@@ -11,14 +11,6 @@
   }
  
   }
- 
-.Hero-minimazed{
-  height: 75vh;
-  animation: none !important;
-  .HeroContent{
-    top: 5vh !important;
-  }
-}
 
 .Container--ContactForm{
   .Contact_form{
@@ -41,23 +33,6 @@
      }
   }
 }
-@media only screen and ( max-height:600px){
-  .Hero-small {
-    height: 25vh !important;
-  }}
-  @media only screen and ( min-height:601px){
-    .Hero-small {
-      height: 40vh !important;
-    }}
-
-
-
-
-
-
-
-
-
 
 
 
