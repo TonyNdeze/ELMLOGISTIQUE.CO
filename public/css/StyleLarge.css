@@ -1,12 +1,6 @@
 @media only screen and (min-width: 912px) {
   .Content-Width {
-    max-width: 140em;
-  }
-  .HeroContent {
-    top: 45vh !important;
-  }
-  .HeroContent button {
-    width: 20vw !important;
+    max-width: 130em;
   }
   .Card-services-set {
     width: 80%;

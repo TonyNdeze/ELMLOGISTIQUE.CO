@@ -52,17 +52,13 @@
     height: 95vh;
   }
   .Hero .HeroContent {
-    top: 24vh;
-  }
-  .Hero .HeroContent button {
-    width: 35vw;
-    display: inline;
+    top: 8.2em;
   }
   .Hero-minimazed {
     height: 100vh !important;
   }
   .Container-Accent-grid {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
   }
   .Container--ContactForm .Contact_form {
     width: 90vw;
@@ -87,17 +83,11 @@
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)) !important;
   }
   .Footer .FooterLinks {
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)) !important;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   }
 }
-@media only screen and (min-height: 912px) {
-  .Hero .HeroContent {
-    top: 50vh !important;
-  }
+@media only screen and (min-width: 768px) and (min-height: 912px) {
   .Hero-minimazed {
     height: 55vh !important;
-  }
-  .Hero-minimazed .HeroContent {
-    transform: translateY(-15%) !important;
   }
 }

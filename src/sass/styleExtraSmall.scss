@@ -9,16 +9,7 @@
     transition-duration:1s;
     z-index:999;
   }
-  .Hero{
-    height: calc(100vh - 10em);
-    .HeroContent {
-      top: 10vh;
-      button{
-        width: 90vw;
-        margin-inline: 0;
-        margin-block-end: 0 !important;
-      }
-    }
+ 
   }
  
 .Hero-minimazed{
@@ -49,7 +40,6 @@
   }
      }
   }
-}
 }
 @media only screen and ( max-height:600px){
   .Hero-small {

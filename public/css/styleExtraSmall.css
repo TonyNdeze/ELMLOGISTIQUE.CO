@@ -8,40 +8,31 @@
     transition-duration: 1s;
     z-index: 999;
   }
-  .Hero {
-    height: calc(100vh - 10em);
-  }
-  .Hero .HeroContent {
-    top: 10vh;
-  }
-  .Hero .HeroContent button {
-    width: 90vw;
-    margin-inline: 0;
-    margin-block-end: 0 !important;
-  }
-  .Hero-minimazed {
-    height: 75vh;
-    animation: none !important;
-  }
-  .Hero-minimazed .HeroContent {
-    top: 5vh !important;
-  }
-  .Container--ContactForm .Contact_form {
-    width: 100vw;
-  }
-  .Container--ContactForm .Contact_form fieldset #Ufname {
-    width: 35vw;
-  }
-  .Container--ContactForm .Contact_form fieldset #Ulname {
-    width: 43vw;
-  }
-  .Container--ContactForm .Contact_form fieldset textarea {
-    width: 93vw !important;
-  }
-  .Container--ContactForm .Contact_form fieldset .intext {
-    width: 81vw;
-  }
 }
+.Hero-minimazed {
+  height: 75vh;
+  animation: none !important;
+}
+.Hero-minimazed .HeroContent {
+  top: 5vh !important;
+}
+
+.Container--ContactForm .Contact_form {
+  width: 100vw;
+}
+.Container--ContactForm .Contact_form fieldset #Ufname {
+  width: 35vw;
+}
+.Container--ContactForm .Contact_form fieldset #Ulname {
+  width: 43vw;
+}
+.Container--ContactForm .Contact_form fieldset textarea {
+  width: 93vw !important;
+}
+.Container--ContactForm .Contact_form fieldset .intext {
+  width: 81vw;
+}
+
 @media only screen and (max-height: 600px) {
   .Hero-small {
     height: 25vh !important;
