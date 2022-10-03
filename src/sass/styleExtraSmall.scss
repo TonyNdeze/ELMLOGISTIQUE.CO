@@ -42,7 +42,10 @@
     .Card-services-set, .contact_list, .Counter--set{
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   }
+}
+@media  only screen and ( min-width: 490px) {
+  
   .Card-quickjump-set{
-  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  }
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
 }

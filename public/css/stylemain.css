@@ -236,11 +236,13 @@ body .HR_Styled {
 .Hero-small .HeroContent .row {
   padding-block-end: 2em;
 }
-.Hero .HeroContent .row h1, .Hero .HeroContent .row p,
+.Hero .HeroContent .row h1, .Hero .HeroContent .row p, .Hero .HeroContent .row h2,
 .Hero-minimized .HeroContent .row h1,
 .Hero-minimized .HeroContent .row p,
+.Hero-minimized .HeroContent .row h2,
 .Hero-small .HeroContent .row h1,
-.Hero-small .HeroContent .row p {
+.Hero-small .HeroContent .row p,
+.Hero-small .HeroContent .row h2 {
   color: #f2f2f2;
 }
 .Hero .HeroContent .row form,
