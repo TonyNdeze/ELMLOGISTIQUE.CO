@@ -197,6 +197,7 @@ body .HR_Styled {
   margin-block: auto;
 }
 #TopBar #LowerBar {
+  display: none;
   width: 90%;
   height: 80vh;
   margin-inline: auto;
