@@ -21,8 +21,7 @@
   });
 
 
-
-function toggleNavMenu(x){
+  function toggleNavMenu(x){
   var LowerBar = document.getElementById("LowerBar");
   x.classList.toggle("changeNavMenuToggle");
   LowerBar.classList.toggle("changeMenuShow")
