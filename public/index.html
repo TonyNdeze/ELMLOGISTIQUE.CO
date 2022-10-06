@@ -123,20 +123,20 @@
                   <ul class="NavList">
                      <li class="NavItem"><a href="index.html"><i class="Page-Icons fa fas fa-home-lg"></i>Home</a></li>
                      <li class="NavItem NavSub">
-                        <span class="SubHolder" href="#"><i class="Page-Icons fa fas fa-briefcase"></i>Nos Services <i class="toggle"></i>
-                        <ul class="NavSublist">
-                           <li class="NavSubItem"><a href="services.html">ELM Transport</a></li>
-                           <li class="NavSubItem"><a href="services.html">ELM Manutention</a></li>
-                           <li class="NavSubItem"><a href="services.html">ELM Entreposage</a></li>
+                        <span class="SubHolder" onclick="toggleNavServiceSubMenu(this, ServiceSubMenu)"><i class="Page-Icons fa fas fa-briefcase"></i>Nos Services <i class="ToggleSubMenu fa fas fa-caret-down" id="ServicesToggleMenu"></i>
+                        <ul class="NavSublist" id="ServiceSubMenu">
+                           <li class="NavSubItem"><a href="services.html#RoadtransportLinked"><i class="Page-Icons fa fas fa-truck"></i>ELM Transport</a></li>
+                           <li class="NavSubItem"><a href="services.html#HandlingLinked"><i class="Page-Icons fa fas fa-dolly"></i>ELM Manutention</a></li>
+                           <li class="NavSubItem"><a href="services.html#WarehousingLinked"><i class="Page-Icons fa fas fa-warehouse"></i>ELM Entreposage</a></li>
                         </ul>
                      </span>
                      </li>
                      <li class="NavItem"><a href="ourreach.html"><i class="Page-Icons fa fas fa-globe-africa"></i>Notre Portee</a></li>
                      <li class="NavItem NavSub">
-                        <span class="SubHolder" href="#"><i class="Page-Icons fa fas fa-users"></i>Contacts <i class="toggle"></i>
-                        <ul class="NavSublist">
-                           <li class="NavSubItem"><a href="contactus.html">Nos Coordonees</a></li>
-                           <li class="NavSubItem"><a href="contactus.html">Service Client</a></li>
+                        <span class="SubHolder" onclick="toggleNavContactSubMenu(this, ContactSubMenu)"><i class="Page-Icons fa fas fa-users"></i>Contacts <i class="ToggleSubMenu fa fas fa-caret-down" id="ContactToggleMenu"></i>
+                        <ul class="NavSublist" id="ContactSubMenu">
+                           <li class="NavSubItem"><a href="contactus.html#ContactsLinked"><i class="Page-Icons fa fas fa-address-book"></i>Nos Coordonees</a></li>
+                           <li class="NavSubItem"><a href="contactus.html#GoServiceClient"><i class="Page-Icons fa fas fa-comments"></i>Service Client</a></li>
                         </ul>
                      </span>
                      </li>

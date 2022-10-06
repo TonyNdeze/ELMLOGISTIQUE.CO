@@ -24,8 +24,37 @@
 
 function toggleNavMenu(x){
   var LowerBar = document.getElementById("LowerBar");
-  x.classList.toggle("change");
-  LowerBar.classList.toggle("change")
+  x.classList.toggle("changeNavMenuToggle");
+  LowerBar.classList.toggle("changeMenuShow")
+}
+
+function toggleNavServiceSubMenu(x, ServiceSubMenu, ToggleSubMenu){
+  ServiceSubMenu = document.getElementById("ServiceSubMenu");
+  ToggleSubMenu = document.getElementById("ServicesToggleMenu");
+  ServiceSubMenu.classList.toggle("changeSubmenuShow");
+
+  if(ToggleSubMenu.classList == "ToggleSubMenu fa fas fa-caret-down"){
+    ToggleSubMenu.classList.remove("fa-caret-down");
+    ToggleSubMenu.classList.add("fa-caret-up");
+  }else{
+    ToggleSubMenu.classList.remove("fa-caret-up");
+    ToggleSubMenu.classList.add("fa-caret-down");
+  } endif;
+  
+}
+
+function toggleNavContactSubMenu(x, ContactSubMenu, ToggleSubMenu){
+  ContactSubMenu = document.getElementById("ContactSubMenu");
+  ToggleSubMenu = document.getElementById("ContactToggleMenu");
+  ContactSubMenu.classList.toggle("changeSubmenuShow");
+  if(ToggleSubMenu.classList == "ToggleSubMenu fa fas fa-caret-down"){
+    ToggleSubMenu.classList.remove("fa-caret-down");
+    ToggleSubMenu.classList.add("fa-caret-up");
+  }else{
+    ToggleSubMenu.classList.remove("fa-caret-up");
+  ToggleSubMenu.classList.add("fa-caret-down");
+  } endif;
+  
 }
 
 
