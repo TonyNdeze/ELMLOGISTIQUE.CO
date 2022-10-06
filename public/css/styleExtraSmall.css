@@ -1,5 +1,5 @@
 @media only screen and (max-width: 350px) {
-  .Wrapper-Navigation .Content-Width {
+  .Content-Width {
     width: 100% !important;
   }
   .sticky {
