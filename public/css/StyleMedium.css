@@ -37,15 +37,15 @@
     position: relative;
   }
   #TopBar #LowerBar .Navigation .NavMenu .ActivePage {
-    border-bottom: 4px solid #6695d2;
+    border-bottom: 2px solid #6695d2;
   }
   #TopBar #LowerBar .Navigation .NavMenu span {
-    padding-bottom: 1.1em;
+    padding-bottom: 1.2em;
   }
   #TopBar #LowerBar .Navigation .NavMenu li {
     display: inline;
     border-block: none;
-    padding-bottom: 2.2em;
+    padding-bottom: 2.4em;
     margin-inline-end: 2em;
   }
   #TopBar #LowerBar .Navigation .NavMenu li i {
