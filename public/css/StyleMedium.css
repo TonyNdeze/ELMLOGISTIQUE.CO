@@ -99,13 +99,16 @@
     border-bottom: 2px solid #6695d2;
   }
   #TopBar #LowerBar .Navigation .NavMenu span {
-    padding-bottom: 1.2em;
+    padding-bottom: 1.4em;
   }
   #TopBar #LowerBar .Navigation .NavMenu li {
     display: inline;
     border-block: none;
     padding-bottom: 2.4em;
     margin-inline-end: 2em;
+  }
+  #TopBar #LowerBar .Navigation .NavMenu li a, #TopBar #LowerBar .Navigation .NavMenu li span {
+    font-weight: 600;
   }
   #TopBar #LowerBar .Navigation .NavMenu li i {
     width: fit-content;
@@ -115,7 +118,7 @@
     left: 60%;
   }
   #TopBar #LowerBar .Navigation .NavMenu .NavSub .SubHolder .NavSublist {
-    border-radius: 5%;
+    border-radius: 10%;
     position: absolute;
     left: 10%;
     top: 100%;
