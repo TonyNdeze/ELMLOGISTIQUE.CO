@@ -9,11 +9,10 @@
   function shrinkStick() {
     var topBar = document.getElementById("TopBar");
     var topLogo = document.getElementById("TopBarLogo");
-    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
       topLogo.style.width = "5em";
-      
     }else{
-      topLogo.style.width = "8em";
+      topLogo.style.width = "10em";
     }
   }
   // When the user scrolls the page, execute myFunction
@@ -38,7 +37,7 @@ function toggleNavServiceSubMenu(x, ServiceSubMenu, ToggleSubMenu){
   }else{
     ToggleSubMenu.classList.remove("fa-caret-up");
     ToggleSubMenu.classList.add("fa-caret-down");
-  } endif;
+  } 
   
 }
 

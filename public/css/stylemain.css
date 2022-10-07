@@ -135,14 +135,14 @@ body .HR_Styled {
 #TopBar {
   position: fixed;
   z-index: 1;
-  transition: all 0.5s;
   width: 100%;
-  box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
-  background-color: white;
 }
 #TopBar .UpperBar {
-  width: 90%;
-  margin-inline: auto;
+  background-color: white;
+  box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
+  border-bottom: #6695d2 inset 3px;
+  width: 100%;
+  padding-inline: 1.5em;
   display: flex;
   align-items: center;
 }
@@ -174,8 +174,8 @@ body .HR_Styled {
   width: 60%;
 }
 #TopBar .UpperBar .TopBarLogo .LogoTopBar {
-  padding-block: 0.2em;
-  width: 8em;
+  padding-block: 0.3em;
+  width: 10em;
   display: block;
   margin-inline: auto;
   transition: 0.2s;
@@ -196,12 +196,11 @@ body .HR_Styled {
   margin-block: auto;
 }
 #TopBar #LowerBar {
+  background-color: whitesmoke;
   position: relative;
-  left: -100vw;
-  display: none;
-  transition: all 0.4s;
-  padding-top: 2em;
-  width: 80%;
+  top: -100vh;
+  padding: 2em;
+  width: 100%;
   max-height: 90vh;
   overflow: scroll;
   margin-inline: auto;
@@ -209,7 +208,7 @@ body .HR_Styled {
 #TopBar #LowerBar .Navigation .NavMenu li {
   list-style: none;
   padding-block: 1em;
-  border-block-start: 1px solid #8b4848;
+  border-block-end: 1px solid #8b4848;
 }
 #TopBar #LowerBar .Navigation .NavMenu a, #TopBar #LowerBar .Navigation .NavMenu span {
   cursor: pointer;
@@ -220,15 +219,12 @@ body .HR_Styled {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #TopBar #LowerBar .Navigation .NavMenu i {
-  color: #655f5f;
-  font-size: medium;
+  color: #6695d2;
+  font-size: large;
 }
 #TopBar #LowerBar .Navigation .NavMenu a:hover {
   color: #6695d2;
   text-decoration: underline;
-}
-#TopBar #LowerBar .Navigation .NavMenu a:hover i {
-  color: #6695d2;
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder {
   color: #8b4848;
@@ -236,22 +232,25 @@ body .HR_Styled {
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder .ToggleSubMenu {
   color: #8b4848;
 }
-#TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder li:first-child {
+#TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder li {
+  background-color: rgb(242, 242, 242);
+  padding: 1em;
+}
+#TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder li:last-child {
   border-block: none;
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .NavSublist {
-  background-color: whitesmoke;
   display: none;
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .changeSubmenuShow {
   display: block;
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub li {
-  margin-left: 1em;
+  margin-left: 0.5em;
 }
 #TopBar .changeMenuShow {
   display: block !important;
-  left: 0vw !important;
+  top: 0vh !important;
 }
 
 .Container--Section {

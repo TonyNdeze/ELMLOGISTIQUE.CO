@@ -27,10 +27,126 @@
 
 <body>
     <div class="PageBGOpac">
-        <!-- Top bar -->
         
-        <!-- Navigation Menu -->
-        
+      <!-- Top bar -->
+      <div class="" id="TopBar">
+         
+         <div class="row UpperBar Container">
+            <div class="NavControl">
+               <div class="Container--" id="NavigationToggleBTN" onclick="toggleNavMenu(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+               </div>
+            </div>
+            <div class="TopBarLogo" id="TopLogo" onclick="href='index.html'">
+               <i class="LogoTopBar" id="TopBarLogo">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" viewBox="0 0 160 160" style="enable-background:new 0 0 160 160;" xml:space="preserve">
+                  <style type="text/css">
+                     .st0 {
+                        fill: none;
+                     }
+               
+                     .st1 {
+                        fill: #595971;
+                     }
+               
+                     .st2 {
+                        fill: #655F5F;
+                     }
+               
+                     .st3 {
+                        fill: #6695D2;
+                     }
+                  </style>
+                  <rect x="72" y="72" class="st0" width="16" height="16" />
+                  <g id="ELM_Ligistic">
+                     <path class="st1" d="M145.4,90.2c0,36.4-30,65.8-67,65.8c-11.1,0-21.7-2.7-30.9-7.4c-0.1,0,0-0.2,0.1-0.2c7,2.5,14.6,3.8,22.6,3.8
+               		c37,0,67-29.5,67-65.8c0-22.4-11.4-42.1-28.7-54c-0.5-0.4-0.1-1.1,0.5-0.9C130.6,42.5,145.4,64.6,145.4,90.2z" />
+                     <path class="st2" d="M133.4,93.3C120.8,124.6,99,136,77.6,138.1c-41.9,4-77.8-30.1-74.2-72c0.2-1.9,0.4-3.8,0.7-5.7l0,0
+               		C1.9,66.9,0.7,74,0.7,81.3C0.7,118.1,31,148,68.3,148C97.1,145.8,124.4,133,133.4,93.3z" />
+                     <path class="st3" d="M159.3,86c0,27.4-15.9,51-39,62.1c-1.1,0.5-1.9-1-0.9-1.6c19-12.1,31.6-33.1,31.6-57c0-37.4-30.9-67.8-69-67.8
+               		c-7,0-13.8,1-20.1,2.9c-0.8,0.2-1.2-0.9-0.5-1.3c8.8-4.1,18.6-6.3,29-6.3C128.6,17,159.3,47.8,159.3,86z" />
+                     <path class="st3" d="M157.8,58.2c-9.6-26.4-40.8-45.1-67.5-45C53.4,13.3,25,42.1,24.7,79c0,0.2,0,0.4,0,0.6c0,1-1.5,1.1-1.7,0.1
+               		c-0.7-5.4-0.6-9.1,0-14.8C26.4,33.5,51.1,8.4,82.5,4.5c36.6-4.5,68.4,20,75.6,53.5C158.2,58.3,157.9,58.4,157.8,58.2z" />
+                     <g>
+                        <path class="st3" d="M39.3,51.7h19.1v5.6H45.3V62h12v5h-12v5H59v5H39.3V51.7z" />
+                        <path class="st3" d="M62.2,52h7.1v19.6h12.2v5.2H62.2V52z" />
+                        <path class="st3" d="M84,52h5.4c0.2,0,0.4,0.1,0.5,0.3l8.7,14c0.1,0.1,0.2,0.1,0.3,0l7.9-14c0.1-0.1,0.2-0.2,0.4-0.2h5.2l0.2,24.8
+               			h-5.9l-0.1-12.8c0-0.1-0.2-0.2-0.3-0.1l-5.5,10c-0.2,0.4-0.6,0.6-1,0.6h-2.3c-0.4,0-0.7-0.2-0.9-0.5l-6.2-9.7
+               			c-0.1-0.1-0.3-0.1-0.3,0.1L90,76.9h-6V52z" />
+                     </g>
+                     <g>
+                        <g>
+                           <path class="st2" d="M11.7,81.4h4.1v16.4h-4.1C11.7,97.8,11.7,81.4,11.7,81.4z" />
+                           <path class="st2" d="M30.6,92c0,4-3,6.1-6.4,6.1c-3.5,0-6.3-2.1-6.3-5.8c0-3.5,2.4-6,6.5-6C28.1,86.2,30.6,88.6,30.6,92z
+               				 M22.2,92.2c0,1.7,0.7,3.1,2.2,3.1c1.3,0,2.1-1.1,2.1-3.1c0-1.6-0.6-3.1-2.1-3.1C22.7,89.1,22.2,90.6,22.2,92.2z" />
+                           <path class="st2" d="M44.4,86.5c0,0.6-0.1,1.5-0.1,3.4V96c0,2-0.4,3.9-1.8,5.2c-1.4,1.2-3.2,1.4-4.9,1.4c-1.6,0-3.4-0.3-4.4-0.9
+               				l0.8-3.1c0.7,0.4,2.1,0.9,3.5,0.9c1.5,0,2.9-0.8,2.9-2.7v-0.6l0,0c-0.7,0.9-1.8,1.4-3.1,1.4c-2.8,0-5-2.1-5-5.5
+               				c0-3.6,2.5-5.9,5.4-5.9c1.6,0,2.6,0.6,3.2,1.6l0,0l0.1-1.3H44.4z M40.2,91.3c0-0.2,0-0.4,0-0.5c-0.2-1-0.9-1.5-1.8-1.5
+               				c-1.1,0-2.1,0.9-2.1,2.9c0,1.4,0.8,2.6,2.1,2.6c0.9,0,1.6-0.6,1.7-1.4c0.1-0.3,0.1-0.6,0.1-0.9V91.3z" />
+                           <path class="st2" d="M51.3,83.4c0,1.1-0.8,1.9-2.1,1.9s-2.1-0.9-2.1-1.9c0-1.1,0.8-1.9,2.1-1.9C50.5,81.4,51.3,82.3,51.3,83.4z
+               				 M47.1,97.8V86.5h4.1v11.3H47.1z" />
+                           <path class="st2" d="M54.1,94.4c0.7,0.4,2.3,0.9,3.3,0.9s1.4-0.2,1.4-0.7s-0.3-0.7-1.6-1c-2.6-0.7-3.5-2.1-3.5-3.5
+               				c0-2.2,2-3.9,5-3.9c1.5,0,2.8,0.3,3.5,0.7l-0.7,2.8C61,89.4,59.8,89,58.8,89c-0.8,0-1.2,0.2-1.2,0.7c0,0.4,0.4,0.7,1.8,1.1
+               				c2.3,0.7,3.3,1.8,3.3,3.5c0,2.1-1.7,3.8-5.3,3.8c-1.7,0-3.1-0.4-4.1-0.8L54.1,94.4z" />
+                           <path class="st2" d="M69.3,83.2v3.3h2.4v3h-2.4v3.2c0,1.4,0.3,2,1.4,2c0.5,0,0.8,0,1-0.1v3.1c-0.5,0.2-1.4,0.3-2.5,0.3
+               				c-1.3,0-2.3-0.5-2.9-1.1c-0.7-0.7-1-1.8-1-3.5v-4h-1.5v-3h1.5V84L69.3,83.2z" />
+                           <path class="st2" d="M78,83.4c0,1.1-0.8,1.9-2.1,1.9c-1.3,0-2.1-0.9-2.1-1.9c0-1.1,0.8-1.9,2.1-1.9C77.2,81.4,77.9,82.3,78,83.4z
+               				 M73.8,97.8V86.5h4.1v11.3H73.8z" />
+                           <path class="st2" d="M88.5,96.4L88.5,96.4c-0.8,1.2-2,1.7-3.6,1.7c-2.4,0-4.9-2-4.9-5.8c0-4,2.7-6,5.2-6c1.5,0,2.6,0.5,3.3,1.5
+               				l0,0l0.1-1.2h4c0,1.2-0.1,2.3-0.1,3.5v12.4h-4.1L88.5,96.4L88.5,96.4z M88.5,91.5c0-0.2,0-0.3,0-0.5c-0.2-0.9-0.9-1.7-2-1.7
+               				c-1.6,0-2.3,1.3-2.3,2.8c0,1.7,1,2.7,2.3,2.7c1,0,1.8-0.7,2-1.6c0.1-0.2,0.1-0.5,0.1-0.7L88.5,91.5L88.5,91.5z" />
+                           <path class="st2" d="M106.9,94c0,1.6,0,2.9,0.1,3.8h-3.5l-0.2-1.6h-0.1c-0.4,0.6-1.4,1.9-3.6,1.9c-2.5,0-4.2-1.6-4.2-4.9v-6.6
+               				h4.1v5.9c0,1.5,0.5,2.4,1.7,2.4c0.9,0,1.4-0.7,1.6-1.2c0.1-0.2,0.1-0.4,0.1-0.6v-6.6h4.1L106.9,94L106.9,94z" />
+                           <path class="st2" d="M112.9,93.5c0.1,1,1.6,1.6,3.1,1.6c1.2,0,2.2-0.1,3.3-0.5l0.5,2.7c-1.4,0.6-2.9,0.8-4.4,0.8
+               				c-4.1,0-6.5-2.3-6.5-5.8c0-2.4,1.6-6,6.1-6c3.9,0,5.4,3,5.4,5.8c0,0.6-0.1,1.2-0.2,1.5L112.9,93.5L112.9,93.5z M116.8,90.8
+               				c0-0.6-0.3-1.9-1.8-1.9c-1.4,0-1.9,1.2-2,1.9H116.8z" />
+                        </g>
+                     </g>
+                  </g>
+                  </svg>
+                </i>
+            </div>
+            <div class="SystemControl">
+               <div class="Containter--" onclick="">
+                  <div class="LangDropDown"></div>
+               </div>
+            </div>
+         </div>
+      <!-- Navigation Menu -->
+         <div class="row LowerBar Container" id="LowerBar">
+            <div  class="Navigation">
+               <nav class="NavMenu">
+                  <ul class="NavList">
+                     <li class="NavItem"><a href="index.html"><i class="Page-Icons fa fas fa-home-lg"></i>Home</a></li>
+                     <li class="NavItem NavSub">
+                        <span class="SubHolder" onclick="toggleNavServiceSubMenu(this, ServiceSubMenu)"><i class="Page-Icons fa fas fa-briefcase"></i>Nos Services <i class="ToggleSubMenu fa fas fa-caret-down" id="ServicesToggleMenu"></i>
+                        <ul class="NavSublist" id="ServiceSubMenu">
+                           <li class="NavSubItem"><a href="services.html"><i class="Page-Icons fa fas fa-clipboard-list"></i>Tous Nos Services</a></li>
+                           <li class="NavSubItem"><a href="services.html#RoadtransportLinked"><i class="Page-Icons fa fas fa-truck"></i>ELM Transport</a></li>
+                           <li class="NavSubItem"><a href="services.html#HandlingLinked"><i class="Page-Icons fa fas fa-dolly"></i>ELM Manutention</a></li>
+                           <li class="NavSubItem"><a href="services.html#WarehousingLinked"><i class="Page-Icons fa fas fa-warehouse"></i>ELM Entreposage</a></li>
+                        </ul>
+                     </span>
+                     </li>
+                     <li class="NavItem"><a href="ourreach.html"><i class="Page-Icons fa fas fa-globe-africa"></i>Notre Portee</a></li>
+                     <li class="NavItem NavSub ActivePage">
+                        <span class="SubHolder" onclick="toggleNavContactSubMenu(this, ContactSubMenu)"><i class="Page-Icons fa fas fa-users"></i>Contacts <i class="ToggleSubMenu fa fas fa-caret-down" id="ContactToggleMenu"></i>
+                        <ul class="NavSublist" id="ContactSubMenu">
+                           <li class="NavSubItem"><a href="contactus.html#ContactsLinked"><i class="Page-Icons fa fas fa-address-book"></i>Nos Coordonees</a></li>
+                           <li class="NavSubItem"><a href="contactus.html#GoServiceClient"><i class="Page-Icons fa fas fa-comments"></i>Service Client</a></li>
+                        </ul>
+                     </span>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </div>
 
         <!-- Cotent -->
         <div class="ContentBGOPac">
