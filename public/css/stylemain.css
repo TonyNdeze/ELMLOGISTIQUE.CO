@@ -220,7 +220,7 @@ body .HR_Styled {
 }
 #TopBar #LowerBar .Navigation .NavMenu i {
   color: #6695d2;
-  font-size: large;
+  font-size: 1.8rem;
 }
 #TopBar #LowerBar .Navigation .NavMenu a:hover {
   color: #6695d2;

@@ -50,7 +50,6 @@
   }
   #TopBar #LowerBar .Navigation .NavMenu li i {
     width: fit-content;
-    font-size: larger;
     padding-inline-end: 0.5em;
   }
   #TopBar #LowerBar .Navigation .NavMenu .NavSub .SubHolder #ContactSubMenu {
