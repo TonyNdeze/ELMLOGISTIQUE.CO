@@ -112,10 +112,9 @@
     padding-inline-end: 0.5em;
   }
   #TopBar #LowerBar .Navigation .NavMenu .NavSub .SubHolder #ContactSubMenu {
-    left: 60%;
+    left: 57%;
   }
   #TopBar #LowerBar .Navigation .NavMenu .NavSub .SubHolder .NavSublist {
-    border-radius: 10%;
     position: absolute;
     left: 10%;
     top: 100%;
@@ -131,5 +130,8 @@
   }
   #TopBar #LowerBar .Navigation .NavMenu .NavSub .SubHolder:hover .ToggleSubMenu {
     color: #6695d2;
+  }
+  #TopBar #LowerBar .Navigation .NavMenu .NavSub .SubHolder:hover .NavSublist {
+    display: block;
   }
 }
