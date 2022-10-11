@@ -5,7 +5,17 @@ $HeroImage_3: url(../assets/images/IMG_1079.JPG);
 $HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
 
 
-$Font_FontAwesome : 'font awesome 5 Free';
+$Clr-White: rgb(255, 255, 255);
+$Clr-White-Smoke: rgb(245, 245, 245);
+$Clr-Primary-gray: rgb(101, 95, 95);
+$Clr-Primary-Blue: rgb(94, 146, 201);
+$Clr-Focus-Blue: rgb(50, 115, 201);
+$Clr-Accent-Blue:  rgba(31, 46, 51);
+$Clr-Primary-Red: rgb(139, 72, 72);
+
+
+
+
 
 html {
   font-size: 62.5%;
@@ -76,7 +86,7 @@ body {
 
 
 .Buttons {
-  background-color: #5f92c9;
+  background-color: #3273c9;
   border-radius: 0.2em;
   border-style: none;
   color: white;
@@ -398,14 +408,6 @@ body {
 
 }
 
-#LearnMore-BTN {
-  background-color: transparent;
-  border: 0.15em solid #77a0cb;
-
-  &:hover {
-    background-color: #6695d2;
-  }
-}
 
 .Hero-small {
   background-position: center !important;

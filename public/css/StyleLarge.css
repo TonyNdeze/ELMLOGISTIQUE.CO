@@ -29,7 +29,12 @@
   .Split .Maps {
     grid-column: span 3/auto;
     float: right;
-    top: 15em;
+    top: 12em;
+  }
+  @-moz-document url-prefix() {
+    .Split .Maps {
+      top: 0em;
+    }
   }
   .Split .Maps iframe {
     width: 70%;

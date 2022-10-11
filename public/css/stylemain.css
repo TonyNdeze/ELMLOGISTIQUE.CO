@@ -65,7 +65,7 @@ body .HR_Styled {
 }
 
 .Buttons {
-  background-color: #5f92c9;
+  background-color: #3273c9;
   border-radius: 0.2em;
   border-style: none;
   color: white;
@@ -398,14 +398,6 @@ body .HR_Styled {
 
 .Hero-minimazed {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)), url(../assets/images/Web-Exta-Large-Banner-IMG2.png) !important;
-}
-
-#LearnMore-BTN {
-  background-color: transparent;
-  border: 0.15em solid #77a0cb;
-}
-#LearnMore-BTN:hover {
-  background-color: #6695d2;
 }
 
 .Hero-small {
