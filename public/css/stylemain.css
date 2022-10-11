@@ -65,10 +65,10 @@ body .HR_Styled {
 }
 
 .Buttons {
-  background-color: #77a0cb;
+  background-color: #5f92c9;
   border-radius: 0.2em;
   border-style: none;
-  color: #fff8dc;
+  color: white;
   font-size: 1.4rem;
   font-weight: 500;
   padding: 1rem 2rem;
@@ -76,7 +76,7 @@ body .HR_Styled {
   box-shadow: 0 1px 10px 1px rgba(67, 106, 145, 0.26);
 }
 .Buttons:hover {
-  background-color: #6695d2;
+  background-color: #3273c9;
   border-radius: 0.5em;
   text-decoration: underline;
 }

@@ -76,10 +76,10 @@ body {
 
 
 .Buttons {
-  background-color: #77a0cb;
+  background-color: #5f92c9;
   border-radius: 0.2em;
   border-style: none;
-  color: #fff8dc;
+  color: white;
   font-size: clamp(1.2rem, 1.4rem, 1.6rem);
   font-weight: 500;
   padding: 1rem 2rem;
@@ -87,7 +87,7 @@ body {
   box-shadow: 0 1px 10px 1px rgba(67, 106, 145, 0.26);
 
   &:hover {
-    background-color: #6695d2;
+    background-color: #3273c9;
     border-radius: 0.5em;
     text-decoration: underline;
   }
