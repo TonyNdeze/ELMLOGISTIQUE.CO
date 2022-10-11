@@ -7,6 +7,7 @@ $HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
 
 $Clr-White: rgb(255, 255, 255);
 $Clr-White-Smoke: rgb(245, 245, 245);
+$clr-Cleam: rgb(255, 248, 220);
 $Clr-Primary-gray: rgb(101, 95, 95);
 $Clr-Primary-Blue: rgb(94, 146, 201);
 $Clr-Focus-Blue: rgb(50, 115, 201);
@@ -969,7 +970,7 @@ footer {
     color: #fff8dc;
     display: block;
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 3;
     text-decoration: none;
 
     &:hover {
@@ -980,12 +981,11 @@ footer {
 
   i {
     font-size: 3.5rem;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0.6em;
   }
 
   .Copywrite {
     font-size: 1.6rem;
-
     a {
       display: inline;
       font-size: 1.4rem;
