@@ -65,7 +65,7 @@ body .HR_Styled {
 }
 
 .Buttons {
-  background-color: #3273c9;
+  background-color: rgb(50, 115, 201);
   border-radius: 0.2em;
   border-style: none;
   color: white;
@@ -76,7 +76,7 @@ body .HR_Styled {
   box-shadow: 0 1px 10px 1px rgba(67, 106, 145, 0.26);
 }
 .Buttons:hover {
-  background-color: #3273c9;
+  background-color: rgb(94, 146, 201);
   border-radius: 0.5em;
   text-decoration: underline;
 }
@@ -352,7 +352,7 @@ body .HR_Styled {
 .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a,
 .Hero-small .HeroContent .row .Card-quickjump-set .Card a {
   display: flex;
-  color: #655f5f;
+  color: rgb(101, 95, 95);
   text-decoration: none;
 }
 .Hero .HeroContent .row .Card-quickjump-set .Card a .Container,
@@ -364,7 +364,7 @@ body .HR_Styled {
 .Hero .HeroContent .row .Card-quickjump-set .Card a h2,
 .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a h2,
 .Hero-small .HeroContent .row .Card-quickjump-set .Card a h2 {
-  color: #6695d2;
+  color: rgb(50, 115, 201);
   font-weight: 800;
 }
 .Hero .HeroContent .row .Card-quickjump-set .Card a span,

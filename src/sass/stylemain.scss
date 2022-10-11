@@ -9,8 +9,8 @@ $Clr-White: rgb(255, 255, 255);
 $Clr-White-Smoke: rgb(245, 245, 245);
 $clr-Cleam: rgb(255, 248, 220);
 $Clr-Primary-gray: rgb(101, 95, 95);
-$Clr-Primary-Blue: rgb(94, 146, 201);
-$Clr-Focus-Blue: rgb(50, 115, 201);
+$Clr-Focus-Blue: rgb(94, 146, 201);
+$Clr-Primary-Blue: rgb(50, 115, 201);
 $Clr-Accent-Blue:  rgba(31, 46, 51);
 $Clr-Primary-Red: rgb(139, 72, 72);
 
@@ -87,7 +87,7 @@ body {
 
 
 .Buttons {
-  background-color: #3273c9;
+  background-color: $Clr-Primary-Blue;
   border-radius: 0.2em;
   border-style: none;
   color: white;
@@ -98,7 +98,7 @@ body {
   box-shadow: 0 1px 10px 1px rgba(67, 106, 145, 0.26);
 
   &:hover {
-    background-color: #3273c9;
+    background-color: $Clr-Focus-Blue;
     border-radius: 0.5em;
     text-decoration: underline;
   }
@@ -369,10 +369,10 @@ body {
         display: inline;
         padding-inline: 0.4em;
       }
-      color: #655f5f;
+      color: $Clr-Primary-gray;
       text-decoration: none;
       h2{
-        color: #6695d2;
+        color: $Clr-Primary-Blue;
         font-weight: 800;
       }
       span{
