@@ -56,7 +56,7 @@ body .HR_Styled {
 
 .ContentBGAccentBlue {
   background-color: rgba(31, 46, 51, 0.8);
-  color: #f9f9f9;
+  color: rgb(255, 255, 255);
 }
 
 .FooterBGOpac {
@@ -68,7 +68,7 @@ body .HR_Styled {
   background-color: rgb(50, 115, 201);
   border-radius: 0.2em;
   border-style: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.4rem;
   font-weight: 600;
   padding: 1rem 2rem;
@@ -91,7 +91,7 @@ body .HR_Styled {
 .Text-Header {
   font-size: clamp(4rem, 5vw, 5rem);
   line-height: 1.5;
-  color: #655f5f;
+  color: rgb(101, 95, 95);
 }
 
 .Text-Subheader {
@@ -100,7 +100,7 @@ body .HR_Styled {
 }
 
 .Text-Title {
-  color: #655f5f;
+  color: rgb(101, 95, 95);
   font-size: clamp(3rem, 3vw, 3.5rem);
   line-height: 2;
 }
@@ -121,7 +121,7 @@ body .HR_Styled {
 }
 
 .Page-Icons {
-  fill: #655f5f;
+  fill: rgb(101, 95, 95);
   display: block;
   margin-inline: auto;
   width: 3rem;
@@ -140,7 +140,7 @@ body .HR_Styled {
 #TopBar .UpperBar {
   background-color: white;
   box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
-  border-bottom: #6695d2 inset 1px;
+  border-bottom: rgb(94, 146, 201) inset 1px;
   width: 100%;
   padding-inline: 1.5em;
   display: flex;
@@ -154,7 +154,7 @@ body .HR_Styled {
   cursor: pointer;
 }
 #TopBar .UpperBar .NavControl .Container-- .bar1, #TopBar .UpperBar .NavControl .Container-- .bar2, #TopBar .UpperBar .NavControl .Container-- .bar3 {
-  background: #6695d2;
+  background: rgb(94, 146, 201);
   width: 3em;
   border-radius: 15%;
   height: 0.4em;
@@ -197,7 +197,7 @@ body .HR_Styled {
 }
 #TopBar #LowerBar {
   box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
-  background-color: whitesmoke;
+  background-color: rgb(248, 248, 248);
   position: relative;
   top: -100vh;
   padding: 2em;
@@ -209,7 +209,7 @@ body .HR_Styled {
 #TopBar #LowerBar .Navigation .NavMenu li {
   list-style: none;
   padding-block: 1em;
-  border-block-end: 1px solid #8b4848;
+  border-block-end: 1px solid rgb(139, 72, 72);
 }
 #TopBar #LowerBar .Navigation .NavMenu a, #TopBar #LowerBar .Navigation .NavMenu span {
   cursor: pointer;
@@ -219,18 +219,18 @@ body .HR_Styled {
   line-height: 1.6;
 }
 #TopBar #LowerBar .Navigation .NavMenu i {
-  color: #6695d2;
+  color: rgb(94, 146, 201);
   font-size: 1.5rem;
 }
 #TopBar #LowerBar .Navigation .NavMenu a:hover {
-  color: #6695d2;
+  color: rgb(94, 146, 201);
   text-decoration: underline;
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder {
-  color: #8b4848;
+  color: rgb(139, 72, 72);
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder .ToggleSubMenu {
-  color: #8b4848;
+  color: rgb(139, 72, 72);
 }
 #TopBar #LowerBar .Navigation .NavMenu .NavList .NavSub .SubHolder li {
   background-color: rgb(242, 242, 242);
@@ -344,7 +344,7 @@ body .HR_Styled {
 .Hero-minimized .HeroContent .row .Card-quickjump-set .Card,
 .Hero-small .HeroContent .row .Card-quickjump-set .Card {
   padding: 2em;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.6em;
   box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
 }
@@ -376,8 +376,8 @@ body .HR_Styled {
 .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a i,
 .Hero-small .HeroContent .row .Card-quickjump-set .Card a i {
   font-size: 2.4rem;
-  color: #8b4848;
-  fill: #8b4848;
+  color: rgb(139, 72, 72);
+  fill: rgb(139, 72, 72);
 }
 .Hero .HeroContent .row .Card-quickjump-set .Card a::after,
 .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a::after,
@@ -386,14 +386,14 @@ body .HR_Styled {
   top: 1.1em;
   font-size: large;
   position: relative;
-  color: #8b4848;
+  color: rgb(139, 72, 72);
   font-weight: bold;
 }
 .Hero .HeroContent .row .Card-quickjump-set .Card a:hover span,
 .Hero-minimized .HeroContent .row .Card-quickjump-set .Card a:hover span,
 .Hero-small .HeroContent .row .Card-quickjump-set .Card a:hover span {
   text-decoration: underline;
-  color: #8b4848;
+  color: rgb(139, 72, 72);
 }
 
 .Hero-minimazed {
@@ -417,24 +417,24 @@ body .HR_Styled {
   max-width: 600px;
 }
 .Card-services-set .Card-Services {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.6em;
   box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
   padding: 2em;
 }
 .Card-services-set .Card-Services:hover a {
-  color: #77a0cb;
+  color: rgb(94, 146, 201);
 }
 .Card-services-set .Card-Services:hover .Page-Icons {
-  fill: #77a0cb;
+  fill: rgb(94, 146, 201);
 }
 .Card-services-set .Card-Services .LinkToService {
-  color: #8b4848;
+  color: rgb(94, 146, 201);
   text-decoration: none;
 }
 .Card-services-set .Card-Services .LinkToService:hover {
-  color: #77a0cb;
-  fill: #77a0cb;
+  color: rgb(94, 146, 201);
+  fill: rgb(94, 146, 201);
   -webkit-text-decoration: wavy;
   text-decoration: wavy;
 }
@@ -454,18 +454,18 @@ body .HR_Styled {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  color: #f9f9f9;
+  color: rgb(248, 248, 248);
   height: fit-content;
   padding: 5rem 0;
 }
 #Counter-Section h1 {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #Counter-Section .Counter--set .Counter-item {
   grid-template-columns: repeat(autofit, minmax());
 }
 #Counter-Section .Counter--set .Counter-item .CountNumber {
-  color: #fff8dc;
+  color: rgb(255, 248, 220);
   line-height: 2;
 }
 
@@ -479,7 +479,7 @@ body .HR_Styled {
   width: 100%;
   margin: 0 auto;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: whitesmoke;
+  background-color: rgb(248, 248, 248);
 }
 .Maps .shrinked {
   height: fit-content;
@@ -493,14 +493,14 @@ body .HR_Styled {
   width: 10rem;
 }
 .PartnerSection h1 {
-  color: #f5f5f5;
+  color: rgb(255, 255, 255);
 }
 .PartnerSection .LinkToPartner {
-  color: #f9f9f9;
+  color: rgb(248, 248, 248);
   text-decoration: none;
 }
 .PartnerSection .LinkToPartner:hover {
-  color: #fff8dc;
+  color: rgb(255, 248, 220);
   text-decoration: underline;
 }
 .PartnerSection #PacificOilIcon {
@@ -520,7 +520,7 @@ body .HR_Styled {
   gap: 1em !important;
 }
 .block .contact_list .Card-Contacts {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 0.6em;
   box-shadow: 0 2px 10px 0 rgba(100, 100, 100, 0.2);
   padding: 2em;
@@ -534,13 +534,13 @@ body .HR_Styled {
 .block .contact_list .Card-Contacts a {
   font-size: clamp(1.6rem, 1vw, 2rem);
   line-height: 1.6;
-  color: #77a0cb;
+  color: rgb(94, 146, 201);
   display: block;
   text-decoration: none;
 }
 .block .contact_list .Card-Contacts a:hover {
   color: #8b4848;
-  fill: #77a0cb;
+  fill: rgb(94, 146, 201);
 }
 .block .contact_list .Card-Contacts a i {
   position: relative;
@@ -576,7 +576,7 @@ body .HR_Styled {
 }
 .Container--ContactForm .Contact_form fieldset div i {
   margin-inline: 0.1em;
-  color: whitesmoke;
+  color: rgb(248, 248, 248);
   font-size: 1.6em !important;
 }
 .Container--ContactForm .Contact_form fieldset div .intext {
@@ -584,7 +584,7 @@ body .HR_Styled {
   border: none;
   padding-block: 1em;
   padding-inline: 1em;
-  color: #888888;
+  color: rgb(101, 95, 95);
 }
 .Container--ContactForm .Contact_form fieldset div textarea {
   line-height: 1.5;
@@ -594,7 +594,7 @@ body .HR_Styled {
 .Container--ContactForm .Contact_form fieldset div label {
   line-height: 3;
   font-size: clamp(1.6rem, 1vw, 2.5rem);
-  color: whitesmoke;
+  color: rgb(248, 248, 248);
 }
 .Container--ContactForm .Contact_form fieldset div input[type=radio] {
   -webkit-appearance: none;
@@ -688,7 +688,7 @@ body .HR_Styled {
   display: block;
 }
 .Elmservices .Service--Section:hover::before, .Elmservices .Service--Section:hover::after {
-  background: #8b4848;
+  background: rgb(139, 72, 72);
 }
 .Elmservices .Shrinked {
   padding-block: 0.8em;
@@ -716,13 +716,13 @@ body .HR_Styled {
   float: inline-end;
 }
 .Elmservices .Shrinked .IcoBTN:hover {
-  color: #8b4848;
+  color: rgb(139, 72, 72);
 }
 .Elmservices .Shrinked .IcoBTN:hover i {
   font-size: 2em;
 }
 .Elmservices .intro {
-  color: #8b4848;
+  color: rgb(139, 72, 72);
 }
 .Elmservices .Text-Title {
   line-height: 1.5 !important;
@@ -747,7 +747,7 @@ body .HR_Styled {
 }
 .Elmservices .contenu .grid-list li::before {
   content: "■";
-  color: #8b4848;
+  color: rgb(139, 72, 72);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -771,7 +771,7 @@ body .HR_Styled {
 }
 .Elmservices .contenu .legende span #legendCross::before {
   content: "✗" !important;
-  color: red;
+  color: rgb(139, 72, 72);
 }
 .Elmservices .contenu .legende div {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -786,7 +786,7 @@ body .HR_Styled {
 .Elmservices .contenu .legende div table th,
 .Elmservices .contenu .legende div table td {
   padding: 1em;
-  background-color: whitesmoke;
+  background-color: rgb(248, 248, 248);
   color: rgb(38, 38, 38);
 }
 .Elmservices .contenu .legende div table th {
@@ -839,7 +839,7 @@ body .HR_Styled {
 }
 .WhyUs li::before {
   content: "■";
-  color: #8b4848;
+  color: rgb(139, 72, 72);
   font-weight: bold;
   display: inline-block;
   width: 1em;
