@@ -332,7 +332,7 @@ body {
         max-width: 50em;
         label{
           display: block;
-          color: #f5f5f5;
+          color: $Clr-White-Smoke;
           font-size: clamp(2rem, 2vw, 3rem);
           font-weight: 700;
           line-height: 2;
@@ -347,10 +347,9 @@ body {
           input[type="text"]{
             border: none;
             font-size: medium;
-            
             padding-inline: 1em;
             line-height: 2.5;
-            color: #888888;
+            color: $Clr-Neutral-Dark;
             width: 75%;
           }
           button{
@@ -748,7 +747,7 @@ body {
   .Handling{
     background-image: url(../assets/images/handling.jpg);
   }
-  .Service--Section {
+  .Service--Section {whitesmoke
     padding-block: 2em;
     &::before, &::after{
       content: "";
