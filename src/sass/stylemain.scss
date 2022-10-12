@@ -1,18 +1,29 @@
+@use 'sass:list';
+
+
 $HeroImage_0: url(../assets/images/Web-Large-Banner-IMG1.png);
 $HeroImage_1: url(../assets/images/Web-Exta-Large-Banner-IMG2.png);
 $HeroImage_2: url(../assets/images/Web-Exta-Large-Banner-IMG3.png);
 $HeroImage_3: url(../assets/images/IMG_1079.JPG);
 $HeroImage-Gradient: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
 
-
-$Clr-White: rgb(255, 255, 255);
-$Clr-White-Smoke: rgb(245, 245, 245);
-$clr-Cleam: rgb(255, 248, 220);
-$Clr-Primary-gray: rgb(101, 95, 95);
-$Clr-Focus-Blue: rgb(94, 146, 201);
+// Color Space
 $Clr-Primary-Blue: rgb(50, 115, 201);
-$Clr-Accent-Blue:  rgba(31, 46, 51);
 $Clr-Primary-Red: rgb(139, 72, 72);
+$Clr-Primary-gray: rgb(101, 95, 95);
+
+$Clr-Neutral-Light: rgb(255, 255, 255);
+$Clr-Neutral-Dark: rgb(0, 0, 0);
+
+$Clr-PageBGOpac: rgba(250, 250, 250, 0.9);
+$Clr-ContentBGOpac: rgba(250, 250, 250, 0.5);
+$Clr-ContentBGAccent-Blue: rgba(31, 46, 51, 0.8);
+$Clr-ContentBGOpac-Cream: rgb(255, 248, 220, 0.3);
+
+$clr-Cleam: rgb(255, 248, 220);
+$Clr-White-Smoke: rgb(248, 248, 248);
+$Clr-Focus-Blue: rgb(94, 146, 201);
+$Clr-Accent-Blue:  rgba(31, 46, 51);
 
 
 
@@ -64,25 +75,25 @@ body {
 }
 
 .PageBGOpac {
-  background-color: rgba(250, 250, 250, 0.9);
+  background-color: $Clr-PageBGOpac;
 }
 
 .ContentBGOPac {
-  background-color: rgba(250, 250, 250, 0.5);
+  background-color: $Clr-ContentBGOpac;
 }
 
 .CreamBGOpac {
-  background-color: rgb(255, 248, 220, 0.3);
+  background-color: $Clr-ContentBGOpac-Cream;
 }
 
 .ContentBGAccentBlue {
-  background-color: rgba(31, 46, 51, 0.808);
+  background-color: $Clr-ContentBGAccent-Blue;
   color: #f9f9f9;
 }
 
 .FooterBGOpac {
-  background-color: #655f5f;
-  border-top: 3px solid #6695d2;
+  background-color: $Clr-Primary-gray;
+  border-top: 3px solid $Clr-Neutral-Light;
 }
 
 

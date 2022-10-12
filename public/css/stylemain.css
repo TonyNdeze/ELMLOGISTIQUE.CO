@@ -55,13 +55,13 @@ body .HR_Styled {
 }
 
 .ContentBGAccentBlue {
-  background-color: rgba(31, 46, 51, 0.808);
+  background-color: rgba(31, 46, 51, 0.8);
   color: #f9f9f9;
 }
 
 .FooterBGOpac {
-  background-color: #655f5f;
-  border-top: 3px solid #6695d2;
+  background-color: rgb(101, 95, 95);
+  border-top: 3px solid rgb(255, 255, 255);
 }
 
 .Buttons {
