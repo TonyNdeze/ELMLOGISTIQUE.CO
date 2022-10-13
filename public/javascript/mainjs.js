@@ -20,10 +20,17 @@
 // Navigation Menu Hide and Show
   let menuToggleBTN = document.getElementById("NavigationToggleBTN");
   let navMenu = document.getElementById('LowerBar');
+
   menuToggleBTN.addEventListener('click', (Event) =>{
     menuToggleBTN.classList.toggle('changeNavMenuToggle');
     navMenu.classList.toggle("changeMenuShow"); 
   }); 
+  document.onclick = function(e){
+    if(e.target.id !== 'NavigationToggleBTN' && e.target.id !== 'LowerBar' && e.target.id !== 'ServicesToggleMenu' && e.target.id !== 'ServicesSubList' && e.target.id !== 'ContactsSubList'){
+    menuToggleBTN.classList.remove('changeNavMenuToggle');
+    navMenu.classList.remove("changeMenuShow"); 
+    }
+  }
   });
 
 
