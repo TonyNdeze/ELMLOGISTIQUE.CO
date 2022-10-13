@@ -1,13 +1,10 @@
+    
     // When the event DOMContentLoaded occurs, it is safe to access the DOM
     document.addEventListener('DOMContentLoaded', function() {
       // When the user scrolls the page, execute myFunction 
     window.addEventListener('scroll', shrinkStick);
   
-  // Get the offset position of the navbar
-  
-  // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function shrinkStick() {
-    var topBar = document.getElementById("TopBar");
     var topLogo = document.getElementById("TopBarLogo");
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
       topLogo.style.width = "5em";
@@ -17,43 +14,34 @@
   }
   // When the user scrolls the page, execute myFunction
   window.onscroll = function() {shrinkStick()};
+
+
+
+// Navigation Menu Hide and Show
+  let menuToggleBTN = document.getElementById("NavigationToggleBTN");
+  let navMenu = document.getElementById('LowerBar');
+  menuToggleBTN.addEventListener('click', (Event) =>{
+    menuToggleBTN.classList.toggle('changeNavMenuToggle');
+    navMenu.classList.toggle("changeMenuShow"); 
+  }); 
   });
 
 
-  function toggleNavMenu(x){
-  var LowerBar = document.getElementById("LowerBar");
-  x.classList.toggle("changeNavMenuToggle");
-  LowerBar.classList.toggle("changeMenuShow")
-}
-
-function toggleNavServiceSubMenu(x, ServiceSubMenu, ToggleSubMenu){
-  ServiceSubMenu = document.getElementById("ServiceSubMenu");
-  ToggleSubMenu = document.getElementById("ServicesToggleMenu");
-  ServiceSubMenu.classList.toggle("changeSubmenuShow");
-
-  if(ToggleSubMenu.classList == "ToggleSubMenu fa fas fa-caret-down"){
-    ToggleSubMenu.classList.remove("fa-caret-down");
-    ToggleSubMenu.classList.add("fa-caret-up");
-  }else{
-    ToggleSubMenu.classList.remove("fa-caret-up");
-    ToggleSubMenu.classList.add("fa-caret-down");
-  } 
+function toggleNavSubMenu(x){
+  let children = x.children;
+  let toggleMenuIcon = children[1];
+  let subMenu = children[2];
+  subMenu.classList.toggle("changeSubmenuShow");
   
+  if(toggleMenuIcon.classList == "ToggleSubMenu fa fas fa-caret-down"){
+    toggleMenuIcon.classList.remove("fa-caret-down");
+    toggleMenuIcon.classList.add("fa-caret-up");
+  }else{
+    toggleMenuIcon.classList.remove("fa-caret-up");
+    toggleMenuIcon.classList.add("fa-caret-down");
+} 
 }
 
-function toggleNavContactSubMenu(x, ContactSubMenu, ToggleSubMenu){
-  ContactSubMenu = document.getElementById("ContactSubMenu");
-  ToggleSubMenu = document.getElementById("ContactToggleMenu");
-  ContactSubMenu.classList.toggle("changeSubmenuShow");
-  if(ToggleSubMenu.classList == "ToggleSubMenu fa fas fa-caret-down"){
-    ToggleSubMenu.classList.remove("fa-caret-down");
-    ToggleSubMenu.classList.add("fa-caret-up");
-  }else{
-    ToggleSubMenu.classList.remove("fa-caret-up");
-  ToggleSubMenu.classList.add("fa-caret-down");
-  } endif;
-  
-}
 
 
 

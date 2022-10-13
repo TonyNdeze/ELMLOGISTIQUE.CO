@@ -36,7 +36,7 @@
 
          <div class="row UpperBar Container">
             <div class="NavControl">
-               <div class="Container--" id="NavigationToggleBTN" onclick="toggleNavMenu(this)">
+               <div class="Container--" id="NavigationToggleBTN">
                   <div class="bar1"></div>
                   <div class="bar2"></div>
                   <div class="bar3"></div>
@@ -129,16 +129,16 @@
             </div>
          </div>
          <!-- Navigation Menu -->
-         <div class="row LowerBar Container" id="LowerBar">
+         <div class="row LowerBar Container" id="LowerBar"  tabindex="0">
             <div class="Navigation">
                <nav class="NavMenu">
                   <ul class="NavList">
                      <li class="NavItem ActivePage"><a href="index.html"><i
                               class="Page-Icons fa fas fa-home-lg"></i>Acceuil</a></li>
                      <li class="NavItem NavSub">
-                        <span class="SubHolder" onclick="toggleNavServiceSubMenu(this, ServiceSubMenu)"><i
-                              class="Page-Icons fa fas fa-briefcase"></i>Nos Services <i
-                              class="ToggleSubMenu fa fas fa-caret-down" id="ServicesToggleMenu"></i>
+                        <span class="SubHolder" onclick="toggleNavSubMenu(this)">
+                           <i class="Page-Icons fa fas fa-briefcase"></i>Nos services
+                           <i class="ToggleSubMenu fa fas fa-caret-down" id="ServicesToggleMenu"></i>
                            <ul class="NavSublist" id="ServiceSubMenu">
                               <li class="NavSubItem"><a href="services.html"><i
                                        class="Page-Icons fa fas fa-clipboard-list"></i>Tous Nos Services</a></li>
@@ -154,7 +154,7 @@
                      <li class="NavItem"><a href="ourreach.html"><i class="Page-Icons fa fas fa-globe-africa"></i>Notre
                            Portee</a></li>
                      <li class="NavItem NavSub">
-                        <span class="SubHolder" onclick="toggleNavContactSubMenu(this, ContactSubMenu)"><i
+                        <span class="SubHolder" onclick="toggleNavSubMenu(this)""><i
                               class="Page-Icons fa fas fa-users"></i>Contacts <i
                               class="ToggleSubMenu fa fas fa-caret-down" id="ContactToggleMenu"></i>
                            <ul class="NavSublist" id="ContactSubMenu">
@@ -179,11 +179,11 @@
          <div class="Hero Container--backgroundimage" id="Hero-Section">
             <div class="row HeroContent Content-WidthSmall">
                <div class="row">
-                  <h2 class="Text-Centered Text-Subheader">TRANSPORT, SUPPLY CHAIN & STOCKAGE.</h2>
+                  <h2 class="Text-Centered Text-Subheader">TRANSPORT, LOGISTIQUE & SUPPLY CHAIN.</h2>
                   <form target="" method="" name="" class="" id="">
                      <label>Suivi de votre expedition</label>
                      <div><input type="text" name="" placeholder="votre numero de suivi...">
-                        <button class="Buttons">suivre &nbsp;<i class=" fas">&#xf061</i></button>
+                        <button class="Buttons">suivre &nbsp;&nbsp;<i class=" fas">&#xf061</i></button>
                      </div>
                   </form>
                </div>
@@ -191,7 +191,7 @@
                <div class="row">
                   <div class="Card-quickjump-set">
                      <div class="Card">
-                        <a href="">
+                        <a href="#">
                            <div class="Container">
                               <i class="Page-Icons">
                                  <?xml version="1.0" encoding="utf-8"?>

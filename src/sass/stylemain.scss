@@ -242,6 +242,7 @@ body {
     background-color: $Clr-White-Smoke;
     position: relative;
     top: -100vh;
+    transition: 1s transform ease-in-out;
     padding: 2em;
     width: 100%;
     max-height: 90vh;
@@ -257,7 +258,7 @@ body {
         a, span{
           cursor: pointer;
           text-decoration: none;
-          color: #655f5f;
+          color: $Clr-Primary-gray;
           font-size: 1.6rem;
           line-height: 1.6;
         }
@@ -301,7 +302,6 @@ body {
     }
   }
   .changeMenuShow{
-    display: block !important;
     top: 0vh !important;
   }
   }
@@ -332,7 +332,7 @@ body {
         max-width: 50em;
         label{
           display: block;
-          color: $Clr-White-Smoke;
+          color: #f5f5f5;
           font-size: clamp(2rem, 2vw, 3rem);
           font-weight: 700;
           line-height: 2;
@@ -347,6 +347,7 @@ body {
           input[type="text"]{
             border: none;
             font-size: medium;
+            
             padding-inline: 1em;
             line-height: 2.5;
             color: $Clr-Neutral-Dark;
@@ -678,7 +679,7 @@ body {
             transform: scale(0);
             transition: 120ms transform ease-in-out;
             box-shadow: inset 1em 1em #6695d2;
-            background-color: rgb(223, 60, 49);
+            background-color: $Clr-Primary-Red;
           }
 
           &:checked::before {
@@ -710,7 +711,7 @@ body {
     padding: 0.5em;
     h1{
       line-height: 1.5;
-      color: #000000;
+      color: $Clr-Neutral-Dark;
     }
   }
   .ServiceTip{
@@ -747,7 +748,7 @@ body {
   .Handling{
     background-image: url(../assets/images/handling.jpg);
   }
-  .Service--Section {whitesmoke
+  .Service--Section {
     padding-block: 2em;
     &::before, &::after{
       content: "";
@@ -869,7 +870,7 @@ body {
   td {
     padding: 1em;
     background-color: $Clr-White-Smoke;
-    color: rgb(38, 38, 38);
+    color: $Clr-Neutral-Dark;
   }
   
   th {
