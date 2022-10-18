@@ -1,9 +1,8 @@
-    
+
     // When the event DOMContentLoaded occurs, it is safe to access the DOM
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', () => {
       // When the user scrolls the page, execute myFunction 
     window.addEventListener('scroll', shrinkStick);
-  
   function shrinkStick() {
     var topLogo = document.getElementById("TopBarLogo");
     if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
@@ -21,12 +20,12 @@
   let menuToggleBTN = document.getElementById("NavigationToggleBTN");
   let navMenu = document.getElementById('LowerBar');
 
-  menuToggleBTN.addEventListener('click', (Event) =>{
+  menuToggleBTN.addEventListener('click', () =>{
     menuToggleBTN.classList.toggle('changeNavMenuToggle');
     navMenu.classList.toggle("changeMenuShow"); 
   }); 
   document.onclick = function(e){
-    if(e.target.id !== 'NavigationToggleBTN' && e.target.id !== 'LowerBar' && e.target.id !== 'ServicesToggleMenu' && e.target.id !== 'ServicesSubList' && e.target.id !== 'ContactsSubList'){
+    if(e.target !== menuToggleBTN && e.target !== navMenu && e.target.id !== 'ServicesSubList' && e.target.id !== 'ContactsSubList'){
     menuToggleBTN.classList.remove('changeNavMenuToggle');
     navMenu.classList.remove("changeMenuShow"); 
     }
@@ -34,21 +33,21 @@
   });
 
 
-function toggleNavSubMenu(x){
-  let children = x.children;
-  let toggleMenuIcon = children[1];
-  let subMenu = children[2];
-  subMenu.classList.toggle("changeSubmenuShow");
-  
-  if(toggleMenuIcon.classList == "ToggleSubMenu fa fas fa-caret-down"){
-    toggleMenuIcon.classList.remove("fa-caret-down");
-    toggleMenuIcon.classList.add("fa-caret-up");
-  }else{
-    toggleMenuIcon.classList.remove("fa-caret-up");
-    toggleMenuIcon.classList.add("fa-caret-down");
-} 
-}
 
+  function toggleNavSubMenu(x){
+    let children = x.children;
+    let toggleMenuIcon = children[1];
+    let subMenu = children[2];
+    subMenu.classList.toggle("changeSubmenuShow");
+    
+    if(toggleMenuIcon.classList == "ToggleSubMenu fa fas fa-caret-down"){
+      toggleMenuIcon.classList.remove("fa-caret-down");
+      toggleMenuIcon.classList.add("fa-caret-up");
+    }else{
+      toggleMenuIcon.classList.remove("fa-caret-up");
+      toggleMenuIcon.classList.add("fa-caret-down");
+  } 
+  }
 
 
 
